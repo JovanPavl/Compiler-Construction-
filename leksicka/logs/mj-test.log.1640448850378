@@ -1,0 +1,23 @@
+INFO  10:55:04,824 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  10:55:04,831 - #1 program
+INFO  10:55:04,831 - #4 MJProgram
+INFO  10:55:04,832 - #4 int
+INFO  10:55:04,832 - #4 x
+INFO  10:55:04,832 - #8 ,
+INFO  10:55:04,832 - #4 y
+INFO  10:55:04,832 - #9 ;
+INFO  10:55:04,833 - #12 {
+INFO  10:55:04,833 - #15 void
+INFO  10:55:04,833 - #4 main
+INFO  10:55:04,833 - #10 (
+INFO  10:55:04,833 - #11 )
+INFO  10:55:04,833 - #12 {
+INFO  10:55:04,834 - #4 int
+INFO  10:55:04,834 - #4 z
+INFO  10:55:04,834 - #7 =
+INFO  10:55:04,834 - #4 x
+INFO  10:55:04,834 - #6 +
+INFO  10:55:04,834 - #4 y
+INFO  10:55:04,834 - #9 ;
+INFO  10:55:04,835 - #13 }
+INFO  10:55:04,838 - #13 }
