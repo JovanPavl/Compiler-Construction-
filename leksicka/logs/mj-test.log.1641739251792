@@ -1,0 +1,180 @@
+INFO  15:40:26,698 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  15:40:26,733 - #2 program
+INFO  15:40:26,733 - #43 testiranje
+INFO  15:40:26,733 - #14 const
+INFO  15:40:26,734 - #43 bool
+INFO  15:40:26,734 - #43 promenljiva
+INFO  15:40:26,736 - #6 =
+INFO  15:40:26,736 - #41 4
+INFO  15:40:26,737 - #8 ;
+INFO  15:40:26,738 - #14 const
+INFO  15:40:26,739 - #43 char
+INFO  15:40:26,739 - #43 druga
+INFO  15:40:26,739 - #6 =
+INFO  15:40:26,740 - #42 c
+INFO  15:40:26,740 - #7 ,
+INFO  15:40:26,740 - #43 d
+INFO  15:40:26,741 - #6 =
+INFO  15:40:26,741 - #41 4
+INFO  15:40:26,741 - #8 ;
+INFO  15:40:26,741 - #43 int
+INFO  15:40:26,741 - #43 moj1
+INFO  15:40:26,745 - #35 [
+INFO  15:40:26,745 - #36 ]
+INFO  15:40:26,745 - #7 ,
+INFO  15:40:26,746 - #43 moj2
+INFO  15:40:26,746 - #7 ,
+INFO  15:40:26,747 - #43 c2
+INFO  15:40:26,747 - #35 [
+INFO  15:40:26,748 - #36 ]
+INFO  15:40:26,748 - #8 ;
+INFO  15:40:26,748 - #38 class
+INFO  15:40:26,749 - #43 Primer
+INFO  15:40:26,749 - #39 extends
+INFO  15:40:26,749 - #43 Primer2
+INFO  15:40:26,749 - #11 {
+INFO  15:40:26,751 - #43 int
+INFO  15:40:26,752 - #43 pos
+INFO  15:40:26,752 - #7 ,
+INFO  15:40:26,752 - #43 ukupno
+INFO  15:40:26,753 - #35 [
+INFO  15:40:26,753 - #36 ]
+INFO  15:40:26,753 - #8 ;
+INFO  15:40:26,753 - #43 char
+INFO  15:40:26,754 - #43 primer
+INFO  15:40:26,754 - #8 ;
+INFO  15:40:26,754 - #11 {
+INFO  15:40:26,754 - #13 void
+INFO  15:40:26,754 - #43 funkcija
+INFO  15:40:26,756 - #9 (
+INFO  15:40:26,756 - #10 )
+INFO  15:40:26,757 - #43 char
+INFO  15:40:26,757 - #43 x
+INFO  15:40:26,757 - #7 ,
+INFO  15:40:26,757 - #43 y
+INFO  15:40:26,758 - #8 ;
+INFO  15:40:26,758 - #11 {
+INFO  15:40:26,758 - #12 }
+INFO  15:40:26,758 - #12 }
+INFO  15:40:26,758 - #12 }
+INFO  15:40:26,761 - Program(
+  ClassDecleration(
+    VariableDeclaration(
+      ConstantDeclaration(
+        ConstantDeclaration(
+          EmptyDeclaration(
+          ) [EmptyDeclaration]
+          ConstantDecl(
+            TypeDerived1(
+            ) [TypeDerived1]
+            SimpleConstDecl(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [SimpleConstDecl]
+            LineConstDeclDerived1(
+            ) [LineConstDeclDerived1]
+          ) [ConstantDecl]
+        ) [ConstantDeclaration]
+        ConstantDecl(
+          TypeDerived1(
+          ) [TypeDerived1]
+          SimpleConstDecl(
+            CharacterConstant(
+            ) [CharacterConstant]
+          ) [SimpleConstDecl]
+          LineConstantDecl(
+            SimpleConstDecl(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [SimpleConstDecl]
+            LineConstDeclDerived1(
+            ) [LineConstDeclDerived1]
+          ) [LineConstantDecl]
+        ) [ConstantDecl]
+      ) [ConstantDeclaration]
+      VariableDecl(
+        SingleVariableDecl(
+          TypeDerived1(
+          ) [TypeDerived1]
+          ArrayOperator(
+          ) [ArrayOperator]
+        ) [SingleVariableDecl]
+        LineVariableDecl(
+          EmptyArrayOperator(
+          ) [EmptyArrayOperator]
+          LineVariableDecl(
+            ArrayOperator(
+            ) [ArrayOperator]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [LineVariableDecl]
+        ) [LineVariableDecl]
+      ) [VariableDecl]
+    ) [VariableDeclaration]
+    ClassDeclDerived1(
+      Extends(
+      ) [Extends]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              TypeDerived1(
+              ) [TypeDerived1]
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            LineVariableDecl(
+              ArrayOperator(
+              ) [ArrayOperator]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [LineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            TypeDerived1(
+            ) [TypeDerived1]
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MethodDeclarationOnly(
+        OneMethodDeclaration(
+          SingleMethodDeclaration(
+            MethodReturnTypeDerived2(
+            ) [MethodReturnTypeDerived2]
+            NoFormalParameters(
+            ) [NoFormalParameters]
+            MultipleVariableDecl(
+              EmptyVariableDecl(
+              ) [EmptyVariableDecl]
+              VariableDecl(
+                SingleVariableDecl(
+                  TypeDerived1(
+                  ) [TypeDerived1]
+                  EmptyArrayOperator(
+                  ) [EmptyArrayOperator]
+                ) [SingleVariableDecl]
+                LineVariableDecl(
+                  EmptyArrayOperator(
+                  ) [EmptyArrayOperator]
+                  EmptyLineVariableDecl(
+                  ) [EmptyLineVariableDecl]
+                ) [LineVariableDecl]
+              ) [VariableDecl]
+            ) [MultipleVariableDecl]
+          ) [SingleMethodDeclaration]
+        ) [OneMethodDeclaration]
+      ) [MethodDeclarationOnly]
+    ) [ClassDeclDerived1]
+  ) [ClassDecleration]
+) [Program]
+INFO  15:40:26,762 - ===================================
+INFO  15:40:26,766 - Program recognized
+

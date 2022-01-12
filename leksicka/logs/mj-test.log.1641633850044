@@ -1,0 +1,12 @@
+INFO  10:23:27,794 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  10:23:27,810 - #2 program
+INFO  10:23:27,810 - #42 testiranje
+INFO  10:23:27,810 - #14 const
+INFO  10:23:27,811 - #42 bool
+INFO  10:23:27,811 - #42 promenljiva
+INFO  10:23:27,813 - #6 =
+INFO  10:23:27,813 - #40 4
+INFO  10:23:27,813 - #8 ;
+ERROR 10:23:27,813 - 
+Sintaksna greska na liniji 2
+ERROR 10:23:27,813 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

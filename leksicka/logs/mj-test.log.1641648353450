@@ -1,0 +1,71 @@
+INFO  14:25:41,629 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  14:25:41,654 - #2 program
+INFO  14:25:41,654 - #41 testiranje
+INFO  14:25:41,654 - #14 const
+INFO  14:25:41,655 - #41 bool
+INFO  14:25:41,655 - #41 promenljiva
+INFO  14:25:41,656 - #6 =
+INFO  14:25:41,656 - #39 4
+INFO  14:25:41,657 - #8 ;
+INFO  14:25:41,658 - #14 const
+INFO  14:25:41,659 - #41 char
+INFO  14:25:41,659 - #41 druga
+INFO  14:25:41,659 - #6 =
+INFO  14:25:41,660 - #40 c
+INFO  14:25:41,660 - #7 ,
+INFO  14:25:41,661 - #41 f
+INFO  14:25:41,661 - #6 =
+INFO  14:25:41,661 - #40 f
+INFO  14:25:41,661 - #8 ;
+INFO  14:25:41,661 - #41 int
+INFO  14:25:41,661 - #41 moj1
+INFO  14:25:41,662 - #35 [
+INFO  14:25:41,662 - #36 ]
+INFO  14:25:41,662 - #8 ;
+INFO  14:25:41,665 - Program(
+  VariableDeclaration(
+    ConstantDeclaration(
+      ConstantDeclaration(
+        EmptyDeclaration(
+        ) [EmptyDeclaration]
+        ConstDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          SimpleDeclDerived1(
+            NumberConstant(
+            ) [NumberConstant]
+          ) [SimpleDeclDerived1]
+          MConstDeclDerived2(
+          ) [MConstDeclDerived2]
+        ) [ConstDeclDerived1]
+      ) [ConstantDeclaration]
+      ConstDeclDerived1(
+        TypeDerived1(
+        ) [TypeDerived1]
+        SimpleDeclDerived1(
+          CharacterConstant(
+          ) [CharacterConstant]
+        ) [SimpleDeclDerived1]
+        MConstDeclDerived1(
+          SimpleDeclDerived1(
+            CharacterConstant(
+            ) [CharacterConstant]
+          ) [SimpleDeclDerived1]
+          MConstDeclDerived2(
+          ) [MConstDeclDerived2]
+        ) [MConstDeclDerived1]
+      ) [ConstDeclDerived1]
+    ) [ConstantDeclaration]
+    VarDeclDerived1(
+      TypeDerived1(
+      ) [TypeDerived1]
+      ArrayOperatorDerived1(
+      ) [ArrayOperatorDerived1]
+      MVarDeclDerived2(
+      ) [MVarDeclDerived2]
+    ) [VarDeclDerived1]
+  ) [VariableDeclaration]
+) [Program]
+INFO  14:25:41,665 - ===================================
+INFO  14:25:41,667 - Program recognized
+

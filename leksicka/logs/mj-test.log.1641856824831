@@ -1,0 +1,263 @@
+INFO  00:18:52,007 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  00:18:52,123 - #2 program
+INFO  00:18:52,124 - #45 testiranje
+INFO  00:18:52,124 - #14 const
+INFO  00:18:52,125 - #45 bool
+INFO  00:18:52,125 - #45 promenljiva
+INFO  00:18:52,127 - #6 =
+INFO  00:18:52,127 - #43 4
+INFO  00:18:52,127 - #8 ;
+INFO  00:18:52,130 - #14 const
+INFO  00:18:52,132 - #45 char
+INFO  00:18:52,132 - #45 druga
+INFO  00:18:52,133 - #6 =
+INFO  00:18:52,133 - #44 c
+INFO  00:18:52,133 - #7 ,
+INFO  00:18:52,135 - #45 d
+INFO  00:18:52,135 - #6 =
+INFO  00:18:52,136 - #43 4
+INFO  00:18:52,136 - #8 ;
+INFO  00:18:52,136 - #45 int
+INFO  00:18:52,136 - #45 moj1
+INFO  00:18:52,137 - #36 [
+INFO  00:18:52,137 - #37 ]
+INFO  00:18:52,137 - #7 ,
+INFO  00:18:52,138 - #45 moj2
+INFO  00:18:52,139 - #7 ,
+INFO  00:18:52,140 - #45 c2
+INFO  00:18:52,140 - #36 [
+INFO  00:18:52,140 - #37 ]
+INFO  00:18:52,140 - #8 ;
+INFO  00:18:52,140 - #39 class
+INFO  00:18:52,141 - #45 Primer
+INFO  00:18:52,142 - #40 extends
+INFO  00:18:52,142 - #45 Primer2
+INFO  00:18:52,142 - #11 {
+INFO  00:18:52,144 - #45 int
+INFO  00:18:52,145 - #45 pos
+INFO  00:18:52,145 - #7 ,
+INFO  00:18:52,145 - #45 ukupno
+INFO  00:18:52,145 - #36 [
+INFO  00:18:52,145 - #37 ]
+INFO  00:18:52,146 - #8 ;
+INFO  00:18:52,146 - #45 char
+INFO  00:18:52,146 - #45 primer
+INFO  00:18:52,146 - #8 ;
+INFO  00:18:52,146 - #11 {
+INFO  00:18:52,146 - #13 void
+INFO  00:18:52,147 - #45 putp
+INFO  00:18:52,148 - #9 (
+INFO  00:18:52,149 - #45 int
+INFO  00:18:52,149 - #45 a
+INFO  00:18:52,149 - #7 ,
+INFO  00:18:52,149 - #45 int
+INFO  00:18:52,149 - #45 idx
+INFO  00:18:52,149 - #10 )
+INFO  00:18:52,150 - #11 {
+INFO  00:18:52,150 - #15 if
+INFO  00:18:52,151 - #9 (
+INFO  00:18:52,151 - #45 x
+INFO  00:18:52,151 - #23 >
+INFO  00:18:52,153 - #43 5
+INFO  00:18:52,155 - #10 )
+INFO  00:18:52,156 - #11 {
+INFO  00:18:52,156 - #12 }
+INFO  00:18:52,157 - #12 }
+INFO  00:18:52,159 - #12 }
+INFO  00:18:52,159 - #12 }
+INFO  00:18:52,160 - #46 record
+INFO  00:18:52,160 - #45 Board
+INFO  00:18:52,160 - #11 {
+INFO  00:18:52,160 - #45 int
+INFO  00:18:52,160 - #45 rows
+INFO  00:18:52,160 - #7 ,
+INFO  00:18:52,160 - #45 columns
+INFO  00:18:52,161 - #8 ;
+INFO  00:18:52,161 - #12 }
+INFO  00:18:52,164 - Program(
+  RecordDeclaration(
+    ClassDecleration(
+      VariableDeclaration(
+        ConstantDeclaration(
+          ConstantDeclaration(
+            EmptyDeclaration(
+            ) [EmptyDeclaration]
+            ConstantDecl(
+              TypeIdent(
+              ) [TypeIdent]
+              SimpleConstDecl(
+                NumberConstant(
+                ) [NumberConstant]
+              ) [SimpleConstDecl]
+              LineConstDeclDerived1(
+              ) [LineConstDeclDerived1]
+            ) [ConstantDecl]
+          ) [ConstantDeclaration]
+          ConstantDecl(
+            TypeIdent(
+            ) [TypeIdent]
+            SimpleConstDecl(
+              CharacterConstant(
+              ) [CharacterConstant]
+            ) [SimpleConstDecl]
+            LineConstantDecl(
+              SimpleConstDecl(
+                NumberConstant(
+                ) [NumberConstant]
+              ) [SimpleConstDecl]
+              LineConstDeclDerived1(
+              ) [LineConstDeclDerived1]
+            ) [LineConstantDecl]
+          ) [ConstantDecl]
+        ) [ConstantDeclaration]
+        VariableDecl(
+          SingleVariableDecl(
+            TypeIdent(
+            ) [TypeIdent]
+            ArrayOperator(
+            ) [ArrayOperator]
+          ) [SingleVariableDecl]
+          LineVariableDecl(
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+            LineVariableDecl(
+              ArrayOperator(
+              ) [ArrayOperator]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [LineVariableDecl]
+          ) [LineVariableDecl]
+        ) [VariableDecl]
+      ) [VariableDeclaration]
+      ClassDeclDerived1(
+        Extends(
+        ) [Extends]
+        MultipleVariableDecl(
+          MultipleVariableDecl(
+            EmptyVariableDecl(
+            ) [EmptyVariableDecl]
+            VariableDecl(
+              SingleVariableDecl(
+                TypeIdent(
+                ) [TypeIdent]
+                EmptyArrayOperator(
+                ) [EmptyArrayOperator]
+              ) [SingleVariableDecl]
+              LineVariableDecl(
+                ArrayOperator(
+                ) [ArrayOperator]
+                EmptyLineVariableDecl(
+                ) [EmptyLineVariableDecl]
+              ) [LineVariableDecl]
+            ) [VariableDecl]
+          ) [MultipleVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              TypeIdent(
+              ) [TypeIdent]
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        MethodDeclarationOnly(
+          OneMethodDeclaration(
+            SingleMethodDeclaration(
+              MethodReturnTypeDerived2(
+              ) [MethodReturnTypeDerived2]
+              FormalParameters(
+                MultipleFormalParameters(
+                  OnlyFormalParameter(
+                    SingleVariableDecl(
+                      TypeIdent(
+                      ) [TypeIdent]
+                      EmptyArrayOperator(
+                      ) [EmptyArrayOperator]
+                    ) [SingleVariableDecl]
+                  ) [OnlyFormalParameter]
+                  SingleVariableDecl(
+                    TypeIdent(
+                    ) [TypeIdent]
+                    EmptyArrayOperator(
+                    ) [EmptyArrayOperator]
+                  ) [SingleVariableDecl]
+                ) [MultipleFormalParameters]
+              ) [FormalParameters]
+              EmptyVariableDecl(
+              ) [EmptyVariableDecl]
+              MultipleStatement(
+                NoStatement(
+                ) [NoStatement]
+                StatementDerived2(
+                  IfElseStatement(
+                    SingleIfCondition(
+                      SingleCondTerm(
+                        MultipleCondFact(
+                          AddExptOnly(
+                            OneAddExpr(
+                              TermDerived1(
+                                DesignatorFactorExpresion(
+                                  DesignatorOnly(
+                                    DesignatorFullExpresion(
+                                      EmptyMultipleDesignator(
+                                      ) [EmptyMultipleDesignator]
+                                    ) [DesignatorFullExpresion]
+                                  ) [DesignatorOnly]
+                                ) [DesignatorFactorExpresion]
+                              ) [TermDerived1]
+                            ) [OneAddExpr]
+                          ) [AddExptOnly]
+                          GreaterOp(
+                          ) [GreaterOp]
+                          AddExptOnly(
+                            OneAddExpr(
+                              TermDerived1(
+                                NumConst(
+                                ) [NumConst]
+                              ) [TermDerived1]
+                            ) [OneAddExpr]
+                          ) [AddExptOnly]
+                        ) [MultipleCondFact]
+                      ) [SingleCondTerm]
+                    ) [SingleIfCondition]
+                    StatementDerived3(
+                      StatementsDerived2(
+                      ) [StatementsDerived2]
+                    ) [StatementDerived3]
+                    NoElseStatement(
+                    ) [NoElseStatement]
+                  ) [IfElseStatement]
+                ) [StatementDerived2]
+              ) [MultipleStatement]
+            ) [SingleMethodDeclaration]
+          ) [OneMethodDeclaration]
+        ) [MethodDeclarationOnly]
+      ) [ClassDeclDerived1]
+    ) [ClassDecleration]
+    RecordStruct(
+      MultipleVariableDecl(
+        EmptyVariableDecl(
+        ) [EmptyVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            TypeIdent(
+            ) [TypeIdent]
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          LineVariableDecl(
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [LineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+    ) [RecordStruct]
+  ) [RecordDeclaration]
+) [Program]
+INFO  00:18:52,164 - ===================================
+INFO  00:18:52,167 - Program recognized
+

@@ -1,0 +1,4 @@
+program testiranje 
+const bool promenljiva = 4;
+const char druga = 'c', d = 4;
+int moj1[];

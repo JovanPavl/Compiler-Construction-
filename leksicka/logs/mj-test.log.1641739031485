@@ -1,0 +1,133 @@
+INFO  21:14:45,123 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  21:14:45,161 - #2 program
+INFO  21:14:45,162 - #43 testiranje
+INFO  21:14:45,162 - #14 const
+INFO  21:14:45,164 - #43 bool
+INFO  21:14:45,164 - #43 promenljiva
+INFO  21:14:45,167 - #6 =
+INFO  21:14:45,168 - #41 4
+INFO  21:14:45,168 - #8 ;
+INFO  21:14:45,171 - #14 const
+INFO  21:14:45,173 - #43 char
+INFO  21:14:45,173 - #43 druga
+INFO  21:14:45,174 - #6 =
+INFO  21:14:45,174 - #42 c
+INFO  21:14:45,175 - #7 ,
+INFO  21:14:45,177 - #43 d
+INFO  21:14:45,178 - #6 =
+INFO  21:14:45,179 - #41 4
+INFO  21:14:45,179 - #8 ;
+INFO  21:14:45,179 - #43 int
+INFO  21:14:45,180 - #43 moj1
+INFO  21:14:45,185 - #35 [
+INFO  21:14:45,185 - #36 ]
+INFO  21:14:45,185 - #7 ,
+INFO  21:14:45,188 - #43 moj2
+INFO  21:14:45,188 - #7 ,
+INFO  21:14:45,189 - #43 c2
+INFO  21:14:45,189 - #35 [
+INFO  21:14:45,190 - #36 ]
+INFO  21:14:45,190 - #8 ;
+INFO  21:14:45,190 - #38 class
+INFO  21:14:45,192 - #43 Primer
+INFO  21:14:45,192 - #39 extends
+INFO  21:14:45,192 - #43 Primer2
+INFO  21:14:45,192 - #11 {
+INFO  21:14:45,196 - #43 int
+INFO  21:14:45,197 - #43 pos
+INFO  21:14:45,198 - #7 ,
+INFO  21:14:45,199 - #43 ukupno
+INFO  21:14:45,199 - #35 [
+INFO  21:14:45,199 - #36 ]
+INFO  21:14:45,199 - #8 ;
+INFO  21:14:45,199 - #43 char
+INFO  21:14:45,200 - #43 primer
+INFO  21:14:45,200 - #8 ;
+INFO  21:14:45,200 - #12 }
+INFO  21:14:45,203 - Program(
+  ClassDecleration(
+    VariableDeclaration(
+      ConstantDeclaration(
+        ConstantDeclaration(
+          EmptyDeclaration(
+          ) [EmptyDeclaration]
+          ConstDeclDerived1(
+            TypeDerived1(
+            ) [TypeDerived1]
+            SimpleDeclDerived1(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [SimpleDeclDerived1]
+            LineConstDeclDerived2(
+            ) [LineConstDeclDerived2]
+          ) [ConstDeclDerived1]
+        ) [ConstantDeclaration]
+        ConstDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          SimpleDeclDerived1(
+            CharacterConstant(
+            ) [CharacterConstant]
+          ) [SimpleDeclDerived1]
+          LineConstDeclDerived1(
+            SimpleDeclDerived1(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [SimpleDeclDerived1]
+            LineConstDeclDerived2(
+            ) [LineConstDeclDerived2]
+          ) [LineConstDeclDerived1]
+        ) [ConstDeclDerived1]
+      ) [ConstantDeclaration]
+      VarDeclDerived1(
+        TypeDerived1(
+        ) [TypeDerived1]
+        ArrayOperatorDerived1(
+        ) [ArrayOperatorDerived1]
+        LineVarDeclDerived1(
+          EmptyArrayOperator(
+          ) [EmptyArrayOperator]
+          LineVarDeclDerived1(
+            ArrayOperatorDerived1(
+            ) [ArrayOperatorDerived1]
+            LineVarDeclDerived2(
+            ) [LineVarDeclDerived2]
+          ) [LineVarDeclDerived1]
+        ) [LineVarDeclDerived1]
+      ) [VarDeclDerived1]
+    ) [VariableDeclaration]
+    ClassDeclDerived1(
+      Extends(
+      ) [Extends]
+      MultipleVarDeclDerived1(
+        MultipleVarDeclDerived1(
+          MultipleVarDeclDerived2(
+          ) [MultipleVarDeclDerived2]
+          VarDeclDerived1(
+            TypeDerived1(
+            ) [TypeDerived1]
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+            LineVarDeclDerived1(
+              ArrayOperatorDerived1(
+              ) [ArrayOperatorDerived1]
+              LineVarDeclDerived2(
+              ) [LineVarDeclDerived2]
+            ) [LineVarDeclDerived1]
+          ) [VarDeclDerived1]
+        ) [MultipleVarDeclDerived1]
+        VarDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          EmptyArrayOperator(
+          ) [EmptyArrayOperator]
+          LineVarDeclDerived2(
+          ) [LineVarDeclDerived2]
+        ) [VarDeclDerived1]
+      ) [MultipleVarDeclDerived1]
+    ) [ClassDeclDerived1]
+  ) [ClassDecleration]
+) [Program]
+INFO  21:14:45,204 - ===================================
+INFO  21:14:45,208 - Program recognized
+

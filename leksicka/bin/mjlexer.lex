@@ -7,12 +7,10 @@ import java_cup.runtime.Symbol;
 
 %{
 
-	// ukljucivanje informacije o poziciji tokena
 	private Symbol new_symbol(int type) {
 		return new Symbol(type, yyline+1, yycolumn);
 	}
 	
-	// ukljucivanje informacije o poziciji tokena
 	private Symbol new_symbol(int type, Object value) {
 		return new Symbol(type, yyline+1, yycolumn, value);
 	}
@@ -46,9 +44,16 @@ import java_cup.runtime.Symbol;
 "else"		{ return new_symbol(sym.ELSE, yytext()); } 
 "for"		{ return new_symbol(sym.FOR, yytext()); }
 "while"		{ return new_symbol(sym.WHILE, yytext());}
+"break"     { return new_symbol(sym.BREAK, yytext());}
+"continue"  { return new_symbol(sym.CONTINUE, yytext());}
 "switch" 	{ return new_symbol(sym.SWITCH, yytext());}
 "case" 		{ return new_symbol(sym.CASE, yytext());}
-
+"class"     { return new_symbol(sym.CLASS, yytext());}
+"extends"   { return new_symbol(sym.EXTENDS, yytext());}
+"record"    { return new_symbol(sym.RECORD, yytext());}
+"goto" 		{ return new_symbol(sym.GOTO, yytext());}
+"do"		{ return new_symbol(sym.DO, yytext());}
+"read"		{ return new_symbol(sym.READ, yytext());}
 
 ";" 		{ return new_symbol(sym.SEMI, yytext()); }
 "," 		{ return new_symbol(sym.COMMA, yytext()); }
@@ -59,6 +64,7 @@ import java_cup.runtime.Symbol;
 "["			{ return new_symbol(sym.LBRACKET, yytext());}
 "]"			{ return new_symbol(sym.RBRACKET, yytext());}
 ":"			{ return new_symbol(sym.COL, yytext()); }
+"."			{ return new_symbol(sym.DOT, yytext()); }
 
 "++" 		{ return new_symbol(sym.INC, yytext()); }
 "--"		{ return new_symbol(sym.DEC, yytext()); }
@@ -70,6 +76,7 @@ import java_cup.runtime.Symbol;
 "&&"		{ return new_symbol(sym.AND, yytext());}
 "||"		{ return new_symbol(sym.OR, yytext());}
 "=="		{ return new_symbol(sym.ISEQUAL, yytext());}
+"!="		{ return new_symbol(sym.NEQUAL, yytext());}
 "=" 		{ return new_symbol(sym.EQUAL, yytext()); }
 "new"		{ return new_symbol(sym.NEW, yytext()); }
 "<="		{ return new_symbol(sym.LEQ, yytext()); }
@@ -77,13 +84,13 @@ import java_cup.runtime.Symbol;
 "<"			{ return new_symbol(sym.LE, yytext()); }
 ">"			{ return new_symbol(sym.GE, yytext()); }
 
-
 "//" {yybegin(COMMENT);}
 <COMMENT> . {yybegin(COMMENT);}
 <COMMENT> "\r\n" { yybegin(YYINITIAL); }
 
 [0-9]+  { return new_symbol(sym.NUMBER, new Integer (yytext())); }
-true|false { return new_symbol(sym.NUMBER, Boolean.parseBoolean(yytext()));}
+true|false { return new_symbol(sym.BOOL, Boolean.parseBoolean(yytext()));}
+"'"."'" { return new_symbol(sym.CHAR, yytext().charAt(1)); }
 
 
 ([a-z]|[A-Z])[a-zA-Z0-9_]* 	{return new_symbol (sym.IDENT, yytext()); }

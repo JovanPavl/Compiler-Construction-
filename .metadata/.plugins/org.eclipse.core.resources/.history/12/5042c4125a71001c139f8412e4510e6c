@@ -1,0 +1,13 @@
+program testiranje 
+const bool promenljiva = 4;
+const char druga = 'c', d = 4;
+int moj1[], moj2, c2[];
+
+class Primer extends Primer2
+{
+	int pos, ukupno[];
+	char primer;
+	{
+		void funkcija() char x;{	}
+	}
+}

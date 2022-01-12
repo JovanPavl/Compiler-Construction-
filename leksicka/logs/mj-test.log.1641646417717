@@ -1,0 +1,20 @@
+INFO  13:53:28,196 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  13:53:28,210 - #2 program
+INFO  13:53:28,210 - #41 testiranje
+INFO  13:53:28,211 - #14 const
+INFO  13:53:28,211 - #41 bool
+INFO  13:53:28,212 - #41 promenljiva
+INFO  13:53:28,213 - #6 =
+INFO  13:53:28,213 - #39 4
+INFO  13:53:28,213 - #8 ;
+INFO  13:53:28,214 - #14 const
+INFO  13:53:28,215 - #41 char
+INFO  13:53:28,215 - #41 druga
+INFO  13:53:28,215 - #6 =
+INFO  13:53:28,215 - #38 true
+INFO  13:53:28,215 - #8 ;
+INFO  13:53:28,216 - #14 const
+INFO  13:53:28,216 - #41 int
+ERROR 13:53:28,216 - 
+Sintaksna greska na liniji 4
+ERROR 13:53:28,217 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4

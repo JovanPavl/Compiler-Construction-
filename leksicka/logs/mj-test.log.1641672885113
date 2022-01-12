@@ -1,0 +1,120 @@
+INFO  21:14:20,937 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  21:14:20,974 - #2 program
+INFO  21:14:20,974 - #43 testiranje
+INFO  21:14:20,975 - #14 const
+INFO  21:14:20,975 - #43 bool
+INFO  21:14:20,975 - #43 promenljiva
+INFO  21:14:20,977 - #6 =
+INFO  21:14:20,977 - #41 4
+INFO  21:14:20,977 - #8 ;
+INFO  21:14:20,979 - #14 const
+INFO  21:14:20,980 - #43 char
+INFO  21:14:20,980 - #43 druga
+INFO  21:14:20,980 - #6 =
+INFO  21:14:20,980 - #42 c
+INFO  21:14:20,980 - #7 ,
+INFO  21:14:20,981 - #43 d
+INFO  21:14:20,981 - #6 =
+INFO  21:14:20,981 - #41 4
+INFO  21:14:20,981 - #8 ;
+INFO  21:14:20,982 - #43 int
+INFO  21:14:20,982 - #43 moj1
+INFO  21:14:20,986 - #35 [
+INFO  21:14:20,986 - #36 ]
+INFO  21:14:20,986 - #7 ,
+INFO  21:14:20,988 - #43 moj2
+INFO  21:14:20,988 - #7 ,
+INFO  21:14:20,989 - #43 c2
+INFO  21:14:20,989 - #35 [
+INFO  21:14:20,989 - #36 ]
+INFO  21:14:20,989 - #8 ;
+INFO  21:14:20,989 - #38 class
+INFO  21:14:20,990 - #43 Primer
+INFO  21:14:20,990 - #39 extends
+INFO  21:14:20,990 - #43 Primer2
+INFO  21:14:20,991 - #11 {
+INFO  21:14:20,992 - #43 int
+INFO  21:14:20,992 - #43 pos
+INFO  21:14:20,993 - #7 ,
+INFO  21:14:20,993 - #43 ukupno
+INFO  21:14:20,993 - #35 [
+INFO  21:14:20,993 - #36 ]
+INFO  21:14:20,994 - #8 ;
+INFO  21:14:20,994 - #12 }
+INFO  21:14:20,997 - Program(
+  ClassDecleration(
+    VariableDeclaration(
+      ConstantDeclaration(
+        ConstantDeclaration(
+          EmptyDeclaration(
+          ) [EmptyDeclaration]
+          ConstDeclDerived1(
+            TypeDerived1(
+            ) [TypeDerived1]
+            SimpleDeclDerived1(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [SimpleDeclDerived1]
+            LineConstDeclDerived2(
+            ) [LineConstDeclDerived2]
+          ) [ConstDeclDerived1]
+        ) [ConstantDeclaration]
+        ConstDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          SimpleDeclDerived1(
+            CharacterConstant(
+            ) [CharacterConstant]
+          ) [SimpleDeclDerived1]
+          LineConstDeclDerived1(
+            SimpleDeclDerived1(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [SimpleDeclDerived1]
+            LineConstDeclDerived2(
+            ) [LineConstDeclDerived2]
+          ) [LineConstDeclDerived1]
+        ) [ConstDeclDerived1]
+      ) [ConstantDeclaration]
+      VarDeclDerived1(
+        TypeDerived1(
+        ) [TypeDerived1]
+        ArrayOperatorDerived1(
+        ) [ArrayOperatorDerived1]
+        LineVarDeclDerived1(
+          EmptyArrayOperator(
+          ) [EmptyArrayOperator]
+          LineVarDeclDerived1(
+            ArrayOperatorDerived1(
+            ) [ArrayOperatorDerived1]
+            LineVarDeclDerived2(
+            ) [LineVarDeclDerived2]
+          ) [LineVarDeclDerived1]
+        ) [LineVarDeclDerived1]
+      ) [VarDeclDerived1]
+    ) [VariableDeclaration]
+    ClassDeclDerived1(
+      Extends(
+      ) [Extends]
+      MultipleVarDeclDerived1(
+        MultipleVarDeclDerived2(
+        ) [MultipleVarDeclDerived2]
+        VarDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          EmptyArrayOperator(
+          ) [EmptyArrayOperator]
+          LineVarDeclDerived1(
+            ArrayOperatorDerived1(
+            ) [ArrayOperatorDerived1]
+            LineVarDeclDerived2(
+            ) [LineVarDeclDerived2]
+          ) [LineVarDeclDerived1]
+        ) [VarDeclDerived1]
+      ) [MultipleVarDeclDerived1]
+    ) [ClassDeclDerived1]
+  ) [ClassDecleration]
+) [Program]
+INFO  21:14:20,998 - ===================================
+INFO  21:14:21,001 - Program recognized
+

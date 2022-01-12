@@ -1,0 +1,25 @@
+program testiranje 
+const bool promenljiva = 4;
+const char druga = 'c', d = 4;
+int moj1[], moj2, c2[];
+
+class Primer extends Primer2
+{
+	int pos, ukupno[];
+	char primer;
+	{
+		void putp (int a, int idx) {
+			if(x > 5 && idx < 10){
+				
+			}
+		}
+		void putn (int a, int idx) { this.neg[idx][tmp].x--; }
+		int getp (int idx) { break; }
+ 		int getn (int idx) { continue; }
+		
+	}
+}
+
+record Board {
+int rows, columns;
+}

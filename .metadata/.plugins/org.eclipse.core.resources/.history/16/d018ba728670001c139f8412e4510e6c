@@ -1,0 +1,2 @@
+program testiranje 
+const bool promenljiva = 4, c = 8;

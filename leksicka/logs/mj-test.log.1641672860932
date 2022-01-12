@@ -1,0 +1,85 @@
+INFO  14:39:43,641 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  14:39:43,661 - #2 program
+INFO  14:39:43,661 - #41 testiranje
+INFO  14:39:43,661 - #14 const
+INFO  14:39:43,662 - #41 bool
+INFO  14:39:43,662 - #41 promenljiva
+INFO  14:39:43,663 - #6 =
+INFO  14:39:43,663 - #39 4
+INFO  14:39:43,663 - #8 ;
+INFO  14:39:43,665 - #14 const
+INFO  14:39:43,666 - #41 char
+INFO  14:39:43,666 - #41 druga
+INFO  14:39:43,666 - #6 =
+INFO  14:39:43,666 - #40 c
+INFO  14:39:43,666 - #7 ,
+INFO  14:39:43,667 - #41 d
+INFO  14:39:43,667 - #6 =
+INFO  14:39:43,667 - #39 4
+INFO  14:39:43,668 - #8 ;
+INFO  14:39:43,668 - #41 int
+INFO  14:39:43,668 - #41 moj1
+INFO  14:39:43,668 - #35 [
+INFO  14:39:43,668 - #36 ]
+INFO  14:39:43,668 - #7 ,
+INFO  14:39:43,670 - #41 moj2
+INFO  14:39:43,670 - #7 ,
+INFO  14:39:43,670 - #41 c2
+INFO  14:39:43,670 - #35 [
+INFO  14:39:43,671 - #36 ]
+INFO  14:39:43,671 - #8 ;
+INFO  14:39:43,673 - Program(
+  VariableDeclaration(
+    ConstantDeclaration(
+      ConstantDeclaration(
+        EmptyDeclaration(
+        ) [EmptyDeclaration]
+        ConstDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          SimpleDeclDerived1(
+            NumberConstant(
+            ) [NumberConstant]
+          ) [SimpleDeclDerived1]
+          MConstDeclDerived2(
+          ) [MConstDeclDerived2]
+        ) [ConstDeclDerived1]
+      ) [ConstantDeclaration]
+      ConstDeclDerived1(
+        TypeDerived1(
+        ) [TypeDerived1]
+        SimpleDeclDerived1(
+          CharacterConstant(
+          ) [CharacterConstant]
+        ) [SimpleDeclDerived1]
+        MConstDeclDerived1(
+          SimpleDeclDerived1(
+            NumberConstant(
+            ) [NumberConstant]
+          ) [SimpleDeclDerived1]
+          MConstDeclDerived2(
+          ) [MConstDeclDerived2]
+        ) [MConstDeclDerived1]
+      ) [ConstDeclDerived1]
+    ) [ConstantDeclaration]
+    VarDeclDerived1(
+      TypeDerived1(
+      ) [TypeDerived1]
+      ArrayOperatorDerived1(
+      ) [ArrayOperatorDerived1]
+      MVarDeclDerived1(
+        EmptyArrayOperator(
+        ) [EmptyArrayOperator]
+        MVarDeclDerived1(
+          ArrayOperatorDerived1(
+          ) [ArrayOperatorDerived1]
+          MVarDeclDerived2(
+          ) [MVarDeclDerived2]
+        ) [MVarDeclDerived1]
+      ) [MVarDeclDerived1]
+    ) [VarDeclDerived1]
+  ) [VariableDeclaration]
+) [Program]
+INFO  14:39:43,673 - ===================================
+INFO  14:39:43,675 - Program recognized
+

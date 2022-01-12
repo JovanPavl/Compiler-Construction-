@@ -1,0 +1,69 @@
+INFO  14:35:46,180 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  14:35:46,199 - #2 program
+INFO  14:35:46,199 - #41 testiranje
+INFO  14:35:46,199 - #14 const
+INFO  14:35:46,200 - #41 bool
+INFO  14:35:46,200 - #41 promenljiva
+INFO  14:35:46,201 - #6 =
+INFO  14:35:46,201 - #39 4
+INFO  14:35:46,201 - #8 ;
+INFO  14:35:46,202 - #14 const
+INFO  14:35:46,203 - #41 char
+INFO  14:35:46,203 - #41 druga
+INFO  14:35:46,204 - #6 =
+INFO  14:35:46,204 - #40 c
+INFO  14:35:46,204 - #7 ,
+INFO  14:35:46,205 - #41 d
+INFO  14:35:46,205 - #6 =
+INFO  14:35:46,205 - #39 4
+INFO  14:35:46,205 - #8 ;
+INFO  14:35:46,205 - #41 int
+INFO  14:35:46,206 - #41 moj1
+INFO  14:35:46,210 - #8 ;
+INFO  14:35:46,215 - Program(
+  VariableDeclaration(
+    ConstantDeclaration(
+      ConstantDeclaration(
+        EmptyDeclaration(
+        ) [EmptyDeclaration]
+        ConstDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          SimpleDeclDerived1(
+            NumberConstant(
+            ) [NumberConstant]
+          ) [SimpleDeclDerived1]
+          MConstDeclDerived2(
+          ) [MConstDeclDerived2]
+        ) [ConstDeclDerived1]
+      ) [ConstantDeclaration]
+      ConstDeclDerived1(
+        TypeDerived1(
+        ) [TypeDerived1]
+        SimpleDeclDerived1(
+          CharacterConstant(
+          ) [CharacterConstant]
+        ) [SimpleDeclDerived1]
+        MConstDeclDerived1(
+          SimpleDeclDerived1(
+            NumberConstant(
+            ) [NumberConstant]
+          ) [SimpleDeclDerived1]
+          MConstDeclDerived2(
+          ) [MConstDeclDerived2]
+        ) [MConstDeclDerived1]
+      ) [ConstDeclDerived1]
+    ) [ConstantDeclaration]
+    VarDeclDerived1(
+      TypeDerived1(
+      ) [TypeDerived1]
+      EmptyArrayOperator(
+      ) [EmptyArrayOperator]
+      MVarDeclDerived2(
+      ) [MVarDeclDerived2]
+    ) [VarDeclDerived1]
+  ) [VariableDeclaration]
+) [Program]
+INFO  14:35:46,215 - ===================================
+INFO  14:35:46,217 - Program recognized
+

@@ -1,0 +1,46 @@
+INFO  13:53:37,725 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  13:53:37,749 - #2 program
+INFO  13:53:37,750 - #41 testiranje
+INFO  13:53:37,750 - #14 const
+INFO  13:53:37,751 - #41 bool
+INFO  13:53:37,751 - #41 promenljiva
+INFO  13:53:37,754 - #6 =
+INFO  13:53:37,755 - #39 4
+INFO  13:53:37,755 - #8 ;
+INFO  13:53:37,757 - #14 const
+INFO  13:53:37,759 - #41 char
+INFO  13:53:37,759 - #41 druga
+INFO  13:53:37,759 - #6 =
+INFO  13:53:37,759 - #38 true
+INFO  13:53:37,759 - #8 ;
+INFO  13:53:37,762 - Program(
+  ConstantDecleration(
+    ConstantDecleration(
+      EmptyDecleration(
+      ) [EmptyDecleration]
+      ConstDeclDerived1(
+        TypeDerived1(
+        ) [TypeDerived1]
+        SimpleDeclDerived1(
+          NumberConstant(
+          ) [NumberConstant]
+        ) [SimpleDeclDerived1]
+        MConstDeclDerived2(
+        ) [MConstDeclDerived2]
+      ) [ConstDeclDerived1]
+    ) [ConstantDecleration]
+    ConstDeclDerived1(
+      TypeDerived1(
+      ) [TypeDerived1]
+      SimpleDeclDerived1(
+        BooleanConstant(
+        ) [BooleanConstant]
+      ) [SimpleDeclDerived1]
+      MConstDeclDerived2(
+      ) [MConstDeclDerived2]
+    ) [ConstDeclDerived1]
+  ) [ConstantDecleration]
+) [Program]
+INFO  13:53:37,767 - ===================================
+INFO  13:53:37,771 - Program recognized
+

@@ -1,0 +1,451 @@
+INFO  13:02:16,554 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  13:02:16,687 - #2 program
+INFO  13:02:16,688 - #49 p
+INFO  13:02:16,688 - #14 const
+INFO  13:02:16,690 - #49 int
+INFO  13:02:16,691 - #49 size
+INFO  13:02:16,694 - #6 =
+INFO  13:02:16,694 - #47 10
+INFO  13:02:16,695 - #8 ;
+INFO  13:02:16,699 - #41 class
+INFO  13:02:16,700 - #49 Table
+INFO  13:02:16,701 - #11 {
+INFO  13:02:16,703 - #49 int
+INFO  13:02:16,705 - #49 pos
+INFO  13:02:16,705 - #38 [
+INFO  13:02:16,705 - #39 ]
+INFO  13:02:16,706 - #7 ,
+INFO  13:02:16,707 - #49 neg
+INFO  13:02:16,708 - #38 [
+INFO  13:02:16,708 - #39 ]
+INFO  13:02:16,708 - #8 ;
+INFO  13:02:16,708 - #11 {
+INFO  13:02:16,710 - #13 void
+INFO  13:02:16,710 - #49 putp
+INFO  13:02:16,712 - #9 (
+INFO  13:02:16,712 - #49 int
+INFO  13:02:16,712 - #49 a
+INFO  13:02:16,712 - #7 ,
+INFO  13:02:16,715 - #49 int
+INFO  13:02:16,716 - #49 idx
+INFO  13:02:16,716 - #10 )
+INFO  13:02:16,716 - #11 {
+INFO  13:02:16,716 - #49 this
+INFO  13:02:16,718 - #43 .
+INFO  13:02:16,719 - #49 pos
+INFO  13:02:16,719 - #38 [
+INFO  13:02:16,719 - #49 idx
+INFO  13:02:16,719 - #39 ]
+INFO  13:02:16,720 - #6 =
+INFO  13:02:16,721 - #49 a
+INFO  13:02:16,723 - #8 ;
+INFO  13:02:16,724 - #12 }
+INFO  13:02:16,724 - #13 void
+INFO  13:02:16,725 - #49 putn
+INFO  13:02:16,725 - #9 (
+INFO  13:02:16,725 - #49 int
+INFO  13:02:16,725 - #49 a
+INFO  13:02:16,725 - #7 ,
+INFO  13:02:16,725 - #49 int
+INFO  13:02:16,725 - #49 idx
+INFO  13:02:16,726 - #10 )
+INFO  13:02:16,726 - #11 {
+INFO  13:02:16,726 - #49 this
+INFO  13:02:16,726 - #43 .
+INFO  13:02:16,726 - #49 neg
+INFO  13:02:16,726 - #38 [
+INFO  13:02:16,726 - #49 idx
+INFO  13:02:16,727 - #39 ]
+INFO  13:02:16,727 - #6 =
+INFO  13:02:16,727 - #49 a
+INFO  13:02:16,727 - #8 ;
+INFO  13:02:16,727 - #12 }
+INFO  13:02:16,728 - #49 int
+INFO  13:02:16,728 - #49 getp
+INFO  13:02:16,728 - #9 (
+INFO  13:02:16,728 - #49 int
+INFO  13:02:16,728 - #49 idx
+INFO  13:02:16,729 - #10 )
+INFO  13:02:16,729 - #11 {
+INFO  13:02:16,729 - #4 return
+INFO  13:02:16,729 - #49 pos
+INFO  13:02:16,729 - #38 [
+INFO  13:02:16,729 - #49 idx
+INFO  13:02:16,729 - #39 ]
+INFO  13:02:16,729 - #8 ;
+INFO  13:02:16,730 - #12 }
+INFO  13:02:16,730 - #49 int
+INFO  13:02:16,730 - #49 getn
+INFO  13:02:16,730 - #9 (
+INFO  13:02:16,730 - #49 int
+INFO  13:02:16,730 - #49 idx
+INFO  13:02:16,730 - #10 )
+INFO  13:02:16,730 - #11 {
+INFO  13:02:16,731 - #4 return
+INFO  13:02:16,731 - #49 neg
+INFO  13:02:16,731 - #38 [
+INFO  13:02:16,731 - #49 idx
+INFO  13:02:16,731 - #39 ]
+INFO  13:02:16,731 - #8 ;
+INFO  13:02:16,731 - #12 }
+INFO  13:02:16,732 - #12 }
+INFO  13:02:16,732 - #12 }
+INFO  13:02:16,732 - #50 record
+INFO  13:02:16,732 - #49 Board
+INFO  13:02:16,732 - #11 {
+INFO  13:02:16,733 - #49 int
+INFO  13:02:16,733 - #49 rows
+INFO  13:02:16,733 - #7 ,
+INFO  13:02:16,733 - #49 columns
+INFO  13:02:16,733 - #8 ;
+INFO  13:02:16,733 - #12 }
+INFO  13:02:16,733 - #49 Table
+INFO  13:02:16,733 - #49 val
+INFO  13:02:16,734 - #8 ;
+INFO  13:02:16,738 - Program(
+  VariableDeclaration(
+    RecordDeclaration(
+      ClassDecleration(
+        ConstantDeclaration(
+          EmptyDeclaration(
+          ) [EmptyDeclaration]
+          ConstantDecl(
+            TypeIdent(
+            ) [TypeIdent]
+            SimpleConstDecl(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [SimpleConstDecl]
+            LineConstDeclDerived1(
+            ) [LineConstDeclDerived1]
+          ) [ConstantDecl]
+        ) [ConstantDeclaration]
+        ClassDeclDerived1(
+          EmptyExtends(
+          ) [EmptyExtends]
+          MultipleVariableDecl(
+            EmptyVariableDecl(
+            ) [EmptyVariableDecl]
+            VariableDecl(
+              SingleVariableDecl(
+                TypeIdent(
+                ) [TypeIdent]
+                ArrayOperator(
+                ) [ArrayOperator]
+              ) [SingleVariableDecl]
+              LineVariableDecl(
+                ArrayOperator(
+                ) [ArrayOperator]
+                EmptyLineVariableDecl(
+                ) [EmptyLineVariableDecl]
+              ) [LineVariableDecl]
+            ) [VariableDecl]
+          ) [MultipleVariableDecl]
+          MethodDeclarationOnly(
+            MultipleMethodDeclaration(
+              MultipleMethodDeclaration(
+                MultipleMethodDeclaration(
+                  OneMethodDeclaration(
+                    SingleMethodDeclaration(
+                      MethodReturnTypeDerived2(
+                      ) [MethodReturnTypeDerived2]
+                      FormalParameters(
+                        MultipleFormalParameters(
+                          OnlyFormalParameter(
+                            SingleVariableDecl(
+                              TypeIdent(
+                              ) [TypeIdent]
+                              EmptyArrayOperator(
+                              ) [EmptyArrayOperator]
+                            ) [SingleVariableDecl]
+                          ) [OnlyFormalParameter]
+                          SingleVariableDecl(
+                            TypeIdent(
+                            ) [TypeIdent]
+                            EmptyArrayOperator(
+                            ) [EmptyArrayOperator]
+                          ) [SingleVariableDecl]
+                        ) [MultipleFormalParameters]
+                      ) [FormalParameters]
+                      EmptyVariableDecl(
+                      ) [EmptyVariableDecl]
+                      MultipleStatement(
+                        NoStatement(
+                        ) [NoStatement]
+                        OneStatementRed(
+                          DesignStatement(
+                            DesignatorStat(
+                              DesignatorFullExpresion(
+                                DesignatorArray(
+                                  DesignatorStructure(
+                                    EmptyMultipleDesignator(
+                                    ) [EmptyMultipleDesignator]
+                                  ) [DesignatorStructure]
+                                  AddExptOnly(
+                                    OneAddExpr(
+                                      TermDerived1(
+                                        DesignatorFactorExpresion(
+                                          DesignatorOnly(
+                                            DesignatorFullExpresion(
+                                              EmptyMultipleDesignator(
+                                              ) [EmptyMultipleDesignator]
+                                            ) [DesignatorFullExpresion]
+                                          ) [DesignatorOnly]
+                                        ) [DesignatorFactorExpresion]
+                                      ) [TermDerived1]
+                                    ) [OneAddExpr]
+                                  ) [AddExptOnly]
+                                ) [DesignatorArray]
+                              ) [DesignatorFullExpresion]
+                              AssignDesignatorOp(
+                                AssignOperation(
+                                ) [AssignOperation]
+                                AddExptOnly(
+                                  OneAddExpr(
+                                    TermDerived1(
+                                      DesignatorFactorExpresion(
+                                        DesignatorOnly(
+                                          DesignatorFullExpresion(
+                                            EmptyMultipleDesignator(
+                                            ) [EmptyMultipleDesignator]
+                                          ) [DesignatorFullExpresion]
+                                        ) [DesignatorOnly]
+                                      ) [DesignatorFactorExpresion]
+                                    ) [TermDerived1]
+                                  ) [OneAddExpr]
+                                ) [AddExptOnly]
+                              ) [AssignDesignatorOp]
+                            ) [DesignatorStat]
+                          ) [DesignStatement]
+                        ) [OneStatementRed]
+                      ) [MultipleStatement]
+                    ) [SingleMethodDeclaration]
+                  ) [OneMethodDeclaration]
+                  SingleMethodDeclaration(
+                    MethodReturnTypeDerived2(
+                    ) [MethodReturnTypeDerived2]
+                    FormalParameters(
+                      MultipleFormalParameters(
+                        OnlyFormalParameter(
+                          SingleVariableDecl(
+                            TypeIdent(
+                            ) [TypeIdent]
+                            EmptyArrayOperator(
+                            ) [EmptyArrayOperator]
+                          ) [SingleVariableDecl]
+                        ) [OnlyFormalParameter]
+                        SingleVariableDecl(
+                          TypeIdent(
+                          ) [TypeIdent]
+                          EmptyArrayOperator(
+                          ) [EmptyArrayOperator]
+                        ) [SingleVariableDecl]
+                      ) [MultipleFormalParameters]
+                    ) [FormalParameters]
+                    EmptyVariableDecl(
+                    ) [EmptyVariableDecl]
+                    MultipleStatement(
+                      NoStatement(
+                      ) [NoStatement]
+                      OneStatementRed(
+                        DesignStatement(
+                          DesignatorStat(
+                            DesignatorFullExpresion(
+                              DesignatorArray(
+                                DesignatorStructure(
+                                  EmptyMultipleDesignator(
+                                  ) [EmptyMultipleDesignator]
+                                ) [DesignatorStructure]
+                                AddExptOnly(
+                                  OneAddExpr(
+                                    TermDerived1(
+                                      DesignatorFactorExpresion(
+                                        DesignatorOnly(
+                                          DesignatorFullExpresion(
+                                            EmptyMultipleDesignator(
+                                            ) [EmptyMultipleDesignator]
+                                          ) [DesignatorFullExpresion]
+                                        ) [DesignatorOnly]
+                                      ) [DesignatorFactorExpresion]
+                                    ) [TermDerived1]
+                                  ) [OneAddExpr]
+                                ) [AddExptOnly]
+                              ) [DesignatorArray]
+                            ) [DesignatorFullExpresion]
+                            AssignDesignatorOp(
+                              AssignOperation(
+                              ) [AssignOperation]
+                              AddExptOnly(
+                                OneAddExpr(
+                                  TermDerived1(
+                                    DesignatorFactorExpresion(
+                                      DesignatorOnly(
+                                        DesignatorFullExpresion(
+                                          EmptyMultipleDesignator(
+                                          ) [EmptyMultipleDesignator]
+                                        ) [DesignatorFullExpresion]
+                                      ) [DesignatorOnly]
+                                    ) [DesignatorFactorExpresion]
+                                  ) [TermDerived1]
+                                ) [OneAddExpr]
+                              ) [AddExptOnly]
+                            ) [AssignDesignatorOp]
+                          ) [DesignatorStat]
+                        ) [DesignStatement]
+                      ) [OneStatementRed]
+                    ) [MultipleStatement]
+                  ) [SingleMethodDeclaration]
+                ) [MultipleMethodDeclaration]
+                SingleMethodDeclaration(
+                  MethodReturnTypeDerived1(
+                    TypeIdent(
+                    ) [TypeIdent]
+                  ) [MethodReturnTypeDerived1]
+                  FormalParameters(
+                    OnlyFormalParameter(
+                      SingleVariableDecl(
+                        TypeIdent(
+                        ) [TypeIdent]
+                        EmptyArrayOperator(
+                        ) [EmptyArrayOperator]
+                      ) [SingleVariableDecl]
+                    ) [OnlyFormalParameter]
+                  ) [FormalParameters]
+                  EmptyVariableDecl(
+                  ) [EmptyVariableDecl]
+                  MultipleStatement(
+                    NoStatement(
+                    ) [NoStatement]
+                    OneStatementRed(
+                      ReturnStatementExpr(
+                        AddExptOnly(
+                          OneAddExpr(
+                            TermDerived1(
+                              DesignatorFactorExpresion(
+                                DesignatorOnly(
+                                  DesignatorFullExpresion(
+                                    DesignatorArray(
+                                      EmptyMultipleDesignator(
+                                      ) [EmptyMultipleDesignator]
+                                      AddExptOnly(
+                                        OneAddExpr(
+                                          TermDerived1(
+                                            DesignatorFactorExpresion(
+                                              DesignatorOnly(
+                                                DesignatorFullExpresion(
+                                                  EmptyMultipleDesignator(
+                                                  ) [EmptyMultipleDesignator]
+                                                ) [DesignatorFullExpresion]
+                                              ) [DesignatorOnly]
+                                            ) [DesignatorFactorExpresion]
+                                          ) [TermDerived1]
+                                        ) [OneAddExpr]
+                                      ) [AddExptOnly]
+                                    ) [DesignatorArray]
+                                  ) [DesignatorFullExpresion]
+                                ) [DesignatorOnly]
+                              ) [DesignatorFactorExpresion]
+                            ) [TermDerived1]
+                          ) [OneAddExpr]
+                        ) [AddExptOnly]
+                      ) [ReturnStatementExpr]
+                    ) [OneStatementRed]
+                  ) [MultipleStatement]
+                ) [SingleMethodDeclaration]
+              ) [MultipleMethodDeclaration]
+              SingleMethodDeclaration(
+                MethodReturnTypeDerived1(
+                  TypeIdent(
+                  ) [TypeIdent]
+                ) [MethodReturnTypeDerived1]
+                FormalParameters(
+                  OnlyFormalParameter(
+                    SingleVariableDecl(
+                      TypeIdent(
+                      ) [TypeIdent]
+                      EmptyArrayOperator(
+                      ) [EmptyArrayOperator]
+                    ) [SingleVariableDecl]
+                  ) [OnlyFormalParameter]
+                ) [FormalParameters]
+                EmptyVariableDecl(
+                ) [EmptyVariableDecl]
+                MultipleStatement(
+                  NoStatement(
+                  ) [NoStatement]
+                  OneStatementRed(
+                    ReturnStatementExpr(
+                      AddExptOnly(
+                        OneAddExpr(
+                          TermDerived1(
+                            DesignatorFactorExpresion(
+                              DesignatorOnly(
+                                DesignatorFullExpresion(
+                                  DesignatorArray(
+                                    EmptyMultipleDesignator(
+                                    ) [EmptyMultipleDesignator]
+                                    AddExptOnly(
+                                      OneAddExpr(
+                                        TermDerived1(
+                                          DesignatorFactorExpresion(
+                                            DesignatorOnly(
+                                              DesignatorFullExpresion(
+                                                EmptyMultipleDesignator(
+                                                ) [EmptyMultipleDesignator]
+                                              ) [DesignatorFullExpresion]
+                                            ) [DesignatorOnly]
+                                          ) [DesignatorFactorExpresion]
+                                        ) [TermDerived1]
+                                      ) [OneAddExpr]
+                                    ) [AddExptOnly]
+                                  ) [DesignatorArray]
+                                ) [DesignatorFullExpresion]
+                              ) [DesignatorOnly]
+                            ) [DesignatorFactorExpresion]
+                          ) [TermDerived1]
+                        ) [OneAddExpr]
+                      ) [AddExptOnly]
+                    ) [ReturnStatementExpr]
+                  ) [OneStatementRed]
+                ) [MultipleStatement]
+              ) [SingleMethodDeclaration]
+            ) [MultipleMethodDeclaration]
+          ) [MethodDeclarationOnly]
+        ) [ClassDeclDerived1]
+      ) [ClassDecleration]
+      RecordStruct(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              TypeIdent(
+              ) [TypeIdent]
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            LineVariableDecl(
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [LineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+      ) [RecordStruct]
+    ) [RecordDeclaration]
+    VariableDecl(
+      SingleVariableDecl(
+        TypeIdent(
+        ) [TypeIdent]
+        EmptyArrayOperator(
+        ) [EmptyArrayOperator]
+      ) [SingleVariableDecl]
+      EmptyLineVariableDecl(
+      ) [EmptyLineVariableDecl]
+    ) [VariableDecl]
+  ) [VariableDeclaration]
+) [Program]
+INFO  13:02:16,739 - ===================================
+INFO  13:02:16,744 - Program recognized
+

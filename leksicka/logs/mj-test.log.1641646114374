@@ -1,0 +1,7 @@
+INFO  13:44:29,008 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  13:44:29,027 - #2 program
+INFO  13:44:29,027 - #41 testiranje
+INFO  13:44:29,027 - #41 cost
+ERROR 13:44:29,027 - 
+Sintaksna greska na liniji 2
+ERROR 13:44:29,027 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2
