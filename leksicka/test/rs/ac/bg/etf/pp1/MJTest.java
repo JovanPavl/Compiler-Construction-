@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 
+import java_cup.sym;
 import java_cup.runtime.Symbol;
 
 import org.apache.log4j.Logger;

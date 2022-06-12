@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -19,6 +19,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Addop Addop) { }
     public void visit(Factor Factor) { }
     public void visit(CondTerm CondTerm) { }
+    public void visit(GlobalVarDecl GlobalVarDecl) { }
     public void visit(RecordStructure RecordStructure) { }
     public void visit(Designator Designator) { }
     public void visit(NewTypeFactor NewTypeFactor) { }
@@ -48,16 +49,20 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ClassDecl ClassDecl) { }
     public void visit(ConstDecl ConstDecl) { }
     public void visit(CondFact CondFact) { }
+    public void visit(GlobalLineVarDecl GlobalLineVarDecl) { }
     public void visit(Program Program) { }
     public void visit(SingleStatement SingleStatement) { }
     public void visit(SingleVarDecl SingleVarDecl) { }
     public void visit(Consts Consts) { }
+    public void visit(MultipleNumConst MultipleNumConst) { }
     public void visit(ClassMethodDecl ClassMethodDecl) { }
     public void visit(LabelIdent LabelIdent) { visit(); }
     public void visit(TypeIdent TypeIdent) { visit(); }
     public void visit(CharacterConstant CharacterConstant) { visit(); }
     public void visit(NumberConstant NumberConstant) { visit(); }
     public void visit(BooleanConstant BooleanConstant) { visit(); }
+    public void visit(NoNumConsts NoNumConsts) { visit(); }
+    public void visit(NumConsts NumConsts) { visit(); }
     public void visit(RecordStruct RecordStruct) { visit(); }
     public void visit(ModulOperation ModulOperation) { visit(); }
     public void visit(DivOperation DivOperation) { visit(); }
@@ -115,6 +120,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(OneStatement OneStatement) { visit(); }
     public void visit(HaveElseStatement HaveElseStatement) { visit(); }
     public void visit(NoElseStatement NoElseStatement) { visit(); }
+    public void visit(PrintStatement PrintStatement) { visit(); }
     public void visit(ReadStatement ReadStatement) { visit(); }
     public void visit(DoWhileStatement DoWhileStatement) { visit(); }
     public void visit(ReturnStatementExpr ReturnStatementExpr) { visit(); }
@@ -149,8 +155,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ArrayOperator ArrayOperator) { visit(); }
     public void visit(EmptyLineVariableDecl EmptyLineVariableDecl) { visit(); }
     public void visit(LineVariableDecl LineVariableDecl) { visit(); }
+    public void visit(ErrorLineVariableDecl ErrorLineVariableDecl) { visit(); }
+    public void visit(EmptyGlobalLineVariableDecl EmptyGlobalLineVariableDecl) { visit(); }
+    public void visit(GlobalLineVariableDecl GlobalLineVariableDecl) { visit(); }
     public void visit(SingleVariableDecl SingleVariableDecl) { visit(); }
     public void visit(VariableDecl VariableDecl) { visit(); }
+    public void visit(ErrorVarDecl ErrorVarDecl) { visit(); }
+    public void visit(GlobalVariableDecl GlobalVariableDecl) { visit(); }
     public void visit(LineConstDeclDerived1 LineConstDeclDerived1) { visit(); }
     public void visit(LineConstantDecl LineConstantDecl) { visit(); }
     public void visit(SimpleConstDecl SimpleConstDecl) { visit(); }
@@ -158,8 +169,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(EmptyDeclaration EmptyDeclaration) { visit(); }
     public void visit(RecordDeclaration RecordDeclaration) { visit(); }
     public void visit(ClassDecleration ClassDecleration) { visit(); }
-    public void visit(VariableDeclaration VariableDeclaration) { visit(); }
+    public void visit(GlobalVariableDeclaration GlobalVariableDeclaration) { visit(); }
     public void visit(ConstantDeclaration ConstantDeclaration) { visit(); }
+    public void visit(ProgName ProgName) { visit(); }
     public void visit(ProgramWithoutMethods ProgramWithoutMethods) { visit(); }
     public void visit(ProgramWithMethods ProgramWithMethods) { visit(); }
 

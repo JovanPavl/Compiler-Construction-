@@ -1,17 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ProgramWithoutMethods extends Program {
 
+    private ProgName ProgName;
     private Mdecl Mdecl;
 
-    public ProgramWithoutMethods (Mdecl Mdecl) {
+    public ProgramWithoutMethods (ProgName ProgName, Mdecl Mdecl) {
+        this.ProgName=ProgName;
+        if(ProgName!=null) ProgName.setParent(this);
         this.Mdecl=Mdecl;
         if(Mdecl!=null) Mdecl.setParent(this);
+    }
+
+    public ProgName getProgName() {
+        return ProgName;
+    }
+
+    public void setProgName(ProgName ProgName) {
+        this.ProgName=ProgName;
     }
 
     public Mdecl getMdecl() {
@@ -27,15 +38,18 @@ public class ProgramWithoutMethods extends Program {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(ProgName!=null) ProgName.accept(visitor);
         if(Mdecl!=null) Mdecl.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(ProgName!=null) ProgName.traverseTopDown(visitor);
         if(Mdecl!=null) Mdecl.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(ProgName!=null) ProgName.traverseBottomUp(visitor);
         if(Mdecl!=null) Mdecl.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -44,6 +58,12 @@ public class ProgramWithoutMethods extends Program {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ProgramWithoutMethods(\n");
+
+        if(ProgName!=null)
+            buffer.append(ProgName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(Mdecl!=null)
             buffer.append(Mdecl.toString("  "+tab));

@@ -1,23 +1,33 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ClassDeclDerived1 extends ClassDecl {
 
+    private String I1;
     private ExtendsOper ExtendsOper;
     private MultipleVarDecl MultipleVarDecl;
     private ClassAllMethodDecl ClassAllMethodDecl;
 
-    public ClassDeclDerived1 (ExtendsOper ExtendsOper, MultipleVarDecl MultipleVarDecl, ClassAllMethodDecl ClassAllMethodDecl) {
+    public ClassDeclDerived1 (String I1, ExtendsOper ExtendsOper, MultipleVarDecl MultipleVarDecl, ClassAllMethodDecl ClassAllMethodDecl) {
+        this.I1=I1;
         this.ExtendsOper=ExtendsOper;
         if(ExtendsOper!=null) ExtendsOper.setParent(this);
         this.MultipleVarDecl=MultipleVarDecl;
         if(MultipleVarDecl!=null) MultipleVarDecl.setParent(this);
         this.ClassAllMethodDecl=ClassAllMethodDecl;
         if(ClassAllMethodDecl!=null) ClassAllMethodDecl.setParent(this);
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public ExtendsOper getExtendsOper() {
@@ -72,6 +82,9 @@ public class ClassDeclDerived1 extends ClassDecl {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ClassDeclDerived1(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         if(ExtendsOper!=null)
             buffer.append(ExtendsOper.toString("  "+tab));

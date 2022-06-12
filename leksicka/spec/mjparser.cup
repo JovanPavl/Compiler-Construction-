@@ -7,27 +7,30 @@ import rs.ac.bg.etf.pp1.ast.*;
 parser code {:
 
 	Logger log = Logger.getLogger(getClass());
-   
+    boolean errorDetected = false;
    
     // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
     public void report_fatal_error(String message, Object info) throws java.lang.Exception {
       done_parsing();
       report_error(message, info);
+      errorDetected = true;
     }
   
     public void syntax_error(Symbol cur_token) {
-        report_error("\nSintaksna greska", cur_token);
+        report_error("\nSyntax fault ", cur_token);
+        errorDetected = true;
     }
   
     public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
-        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+        report_fatal_error("Fatal error, parsing couldn't be continued", cur_token);
     }
 
     public void report_error(String message, Object info) {
     	StringBuilder msg = new StringBuilder(message); 
+    	 errorDetected = true;
     	if (info instanceof Symbol)
-            msg.append (" na liniji ").append(((Symbol)info).left);
+            msg.append (" on the line ").append(((Symbol)info).left);
         log.error(msg.toString());
     }
 
@@ -46,13 +49,18 @@ terminal PROG, PRINT, RETURN, PLUS, EQUAL, COMMA, SEMI, LPAREN, RPAREN, LBRACE, 
 terminal VOID, CONST, IF, ELSE, FOR, WHILE, INC, DEC, NEW, LE, GE, LEQ, GEQ, ISEQUAL, NEQUAL, MUL, DIV, GOTO, READ;
 terminal SWITCH, AND, OR, CASE, MODUL, MINUS, LBRACKET, RBRACKET, COL, CLASS, EXTENDS, DOT, CONTINUE, BREAK;
 
-terminal BOOL, NUMBER, CHAR, IDENT, RECORD, DO;
+terminal RECORD, DO;
 
-nonterminal Program, Mdecl;
+terminal String IDENT;
+terminal Character CHAR;
+terminal Integer BOOL;
+terminal Integer NUMBER;
+
+nonterminal Mdecl;
 
 nonterminal ConstDecl, MethodDecl, SimpleConstDecl, LineConstDecl;
 
-nonterminal VarDecl, SingleVarDecl, LineVarDecl, ArrayOperator, MultipleVarDecl;
+nonterminal VarDecl, SingleVarDecl, LineVarDecl, ArrayOperator, MultipleVarDecl, GlobalVarDecl, GlobalLineVarDecl;
 
 nonterminal ClassDecl, ClassAllMethodDecl, ExtendsOper;
 
@@ -72,17 +80,21 @@ nonterminal ActPars;
 
 nonterminal Assignop, Relop, Addop, Mulop;
 
-nonterminal Consts, Type, Label;
+nonterminal Consts, Type, Label, MultipleNumConst;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 
 precedence left ELSE;
 
-Program ::= (ProgramWithMethods) PROG IDENT Mdecl LBRACE ClassMethodDecl RBRACE
+Program ::= (ProgramWithMethods) PROG ProgName Mdecl LBRACE ClassMethodDecl RBRACE
 			|
-			(ProgramWithoutMethods) PROG IDENT Mdecl LBRACE RBRACE;
+			(ProgramWithoutMethods) PROG ProgName Mdecl LBRACE RBRACE;
+
+ProgName ::= (ProgName) IDENT:progName;
 
 Mdecl ::= (ConstantDeclaration) Mdecl ConstDecl 
 			|
-			(VariableDeclaration) Mdecl VarDecl 
+			(GlobalVariableDeclaration) Mdecl GlobalVarDecl 
 			|
 			(ClassDecleration) Mdecl ClassDecl
 			|
@@ -99,9 +111,16 @@ LineConstDecl ::= (LineConstantDecl) COMMA SimpleConstDecl LineConstDecl
 			   SEMI; 
 
 
-
+GlobalVarDecl ::= (GlobalVariableDecl)SingleVarDecl GlobalLineVarDecl
+			|
+			(ErrorVarDecl)error GlobalLineVarDecl;
 VarDecl ::= (VariableDecl)SingleVarDecl LineVarDecl;
 SingleVarDecl ::= (SingleVariableDecl) Type IDENT ArrayOperator;
+GlobalLineVarDecl ::= (GlobalLineVariableDecl) COMMA IDENT ArrayOperator GlobalLineVarDecl
+			|
+			(EmptyGlobalLineVariableDecl)SEMI
+			| 
+			(ErrorLineVariableDecl) COMMA error GlobalLineVarDecl;
 LineVarDecl ::= (LineVariableDecl) COMMA IDENT ArrayOperator LineVarDecl
 			| 
 			(EmptyLineVariableDecl)SEMI;
@@ -167,7 +186,9 @@ SingleStatement ::=	(IfElseStatement)IF LPAREN Condition RPAREN Statement ElseSt
 					|
 					(DoWhileStatement) DO Statement WHILE LPAREN Condition RPAREN SEMI
 					|
-					(ReadStatement) READ LPAREN Designator RPAREN SEMI;
+					(ReadStatement) READ LPAREN Designator RPAREN SEMI
+					|
+					(PrintStatement) PRINT LPAREN Expr MultipleNumConst RPAREN SEMI;
 ElseStatement ::= (NoElseStatement)
 				|
 				  (HaveElseStatement) ELSE Statement; 
@@ -255,7 +276,9 @@ Mulop ::= (MulOperation)MUL
 RecordStructure ::= (RecordStruct)RECORD IDENT LBRACE MultipleVarDecl RBRACE;
 
 
-
+MultipleNumConst ::= (NumConsts) MultipleNumConst COMMA NUMBER
+					|
+					(NoNumConsts);
 Consts ::= (BooleanConstant)BOOL 
 			| 
 			(NumberConstant)NUMBER 

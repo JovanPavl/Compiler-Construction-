@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -19,6 +19,7 @@ public interface Visitor {
     public void visit(Addop Addop);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
+    public void visit(GlobalVarDecl GlobalVarDecl);
     public void visit(RecordStructure RecordStructure);
     public void visit(Designator Designator);
     public void visit(NewTypeFactor NewTypeFactor);
@@ -48,16 +49,20 @@ public interface Visitor {
     public void visit(ClassDecl ClassDecl);
     public void visit(ConstDecl ConstDecl);
     public void visit(CondFact CondFact);
+    public void visit(GlobalLineVarDecl GlobalLineVarDecl);
     public void visit(Program Program);
     public void visit(SingleStatement SingleStatement);
     public void visit(SingleVarDecl SingleVarDecl);
     public void visit(Consts Consts);
+    public void visit(MultipleNumConst MultipleNumConst);
     public void visit(ClassMethodDecl ClassMethodDecl);
     public void visit(LabelIdent LabelIdent);
     public void visit(TypeIdent TypeIdent);
     public void visit(CharacterConstant CharacterConstant);
     public void visit(NumberConstant NumberConstant);
     public void visit(BooleanConstant BooleanConstant);
+    public void visit(NoNumConsts NoNumConsts);
+    public void visit(NumConsts NumConsts);
     public void visit(RecordStruct RecordStruct);
     public void visit(ModulOperation ModulOperation);
     public void visit(DivOperation DivOperation);
@@ -115,6 +120,7 @@ public interface Visitor {
     public void visit(OneStatement OneStatement);
     public void visit(HaveElseStatement HaveElseStatement);
     public void visit(NoElseStatement NoElseStatement);
+    public void visit(PrintStatement PrintStatement);
     public void visit(ReadStatement ReadStatement);
     public void visit(DoWhileStatement DoWhileStatement);
     public void visit(ReturnStatementExpr ReturnStatementExpr);
@@ -149,8 +155,13 @@ public interface Visitor {
     public void visit(ArrayOperator ArrayOperator);
     public void visit(EmptyLineVariableDecl EmptyLineVariableDecl);
     public void visit(LineVariableDecl LineVariableDecl);
+    public void visit(ErrorLineVariableDecl ErrorLineVariableDecl);
+    public void visit(EmptyGlobalLineVariableDecl EmptyGlobalLineVariableDecl);
+    public void visit(GlobalLineVariableDecl GlobalLineVariableDecl);
     public void visit(SingleVariableDecl SingleVariableDecl);
     public void visit(VariableDecl VariableDecl);
+    public void visit(ErrorVarDecl ErrorVarDecl);
+    public void visit(GlobalVariableDecl GlobalVariableDecl);
     public void visit(LineConstDeclDerived1 LineConstDeclDerived1);
     public void visit(LineConstantDecl LineConstantDecl);
     public void visit(SimpleConstDecl SimpleConstDecl);
@@ -158,8 +169,9 @@ public interface Visitor {
     public void visit(EmptyDeclaration EmptyDeclaration);
     public void visit(RecordDeclaration RecordDeclaration);
     public void visit(ClassDecleration ClassDecleration);
-    public void visit(VariableDeclaration VariableDeclaration);
+    public void visit(GlobalVariableDeclaration GlobalVariableDeclaration);
     public void visit(ConstantDeclaration ConstantDeclaration);
+    public void visit(ProgName ProgName);
     public void visit(ProgramWithoutMethods ProgramWithoutMethods);
     public void visit(ProgramWithMethods ProgramWithMethods);
 

@@ -1,17 +1,27 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class RecordStruct extends RecordStructure {
 
+    private String I1;
     private MultipleVarDecl MultipleVarDecl;
 
-    public RecordStruct (MultipleVarDecl MultipleVarDecl) {
+    public RecordStruct (String I1, MultipleVarDecl MultipleVarDecl) {
+        this.I1=I1;
         this.MultipleVarDecl=MultipleVarDecl;
         if(MultipleVarDecl!=null) MultipleVarDecl.setParent(this);
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public MultipleVarDecl getMultipleVarDecl() {
@@ -44,6 +54,9 @@ public class RecordStruct extends RecordStructure {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("RecordStruct(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         if(MultipleVarDecl!=null)
             buffer.append(MultipleVarDecl.toString("  "+tab));

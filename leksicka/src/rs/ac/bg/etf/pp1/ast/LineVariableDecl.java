@@ -1,20 +1,30 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class LineVariableDecl extends LineVarDecl {
 
+    private String I1;
     private ArrayOperator ArrayOperator;
     private LineVarDecl LineVarDecl;
 
-    public LineVariableDecl (ArrayOperator ArrayOperator, LineVarDecl LineVarDecl) {
+    public LineVariableDecl (String I1, ArrayOperator ArrayOperator, LineVarDecl LineVarDecl) {
+        this.I1=I1;
         this.ArrayOperator=ArrayOperator;
         if(ArrayOperator!=null) ArrayOperator.setParent(this);
         this.LineVarDecl=LineVarDecl;
         if(LineVarDecl!=null) LineVarDecl.setParent(this);
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public ArrayOperator getArrayOperator() {
@@ -58,6 +68,9 @@ public class LineVariableDecl extends LineVarDecl {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("LineVariableDecl(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         if(ArrayOperator!=null)
             buffer.append(ArrayOperator.toString("  "+tab));

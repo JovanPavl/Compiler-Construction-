@@ -1,4 +1,0 @@
-program testiranje 
-const bool promenljiva = 4;
-const char druga = 'c', f = 'f';
-int moj1[]

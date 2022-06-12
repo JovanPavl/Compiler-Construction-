@@ -1,0 +1,1360 @@
+INFO  22:26:52,582 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  22:26:52,656 - #2 program
+INFO  22:26:52,656 - #49 p
+INFO  22:26:52,657 - #14 const
+INFO  22:26:52,657 - #49 int
+INFO  22:26:52,658 - #49 size
+INFO  22:26:52,659 - #6 =
+INFO  22:26:52,659 - #47 10
+INFO  22:26:52,659 - #8 ;
+INFO  22:26:52,661 - #41 class
+INFO  22:26:52,662 - #49 Table
+INFO  22:26:52,662 - #11 {
+INFO  22:26:52,664 - #49 int
+INFO  22:26:52,664 - #49 pos
+INFO  22:26:52,665 - #38 [
+INFO  22:26:52,665 - #39 ]
+INFO  22:26:52,665 - #7 ,
+INFO  22:26:52,665 - #49 neg
+INFO  22:26:52,666 - #38 [
+INFO  22:26:52,666 - #39 ]
+INFO  22:26:52,666 - #8 ;
+INFO  22:26:52,666 - #11 {
+INFO  22:26:52,671 - #13 void
+INFO  22:26:52,671 - #49 putp
+INFO  22:26:52,672 - #9 (
+INFO  22:26:52,672 - #49 int
+INFO  22:26:52,672 - #49 a
+INFO  22:26:52,672 - #7 ,
+INFO  22:26:52,672 - #49 int
+INFO  22:26:52,673 - #49 idx
+INFO  22:26:52,673 - #10 )
+INFO  22:26:52,673 - #11 {
+INFO  22:26:52,673 - #49 this
+INFO  22:26:52,674 - #43 .
+INFO  22:26:52,675 - #49 pos
+INFO  22:26:52,675 - #38 [
+INFO  22:26:52,675 - #49 idx
+INFO  22:26:52,675 - #39 ]
+INFO  22:26:52,676 - #6 =
+INFO  22:26:52,676 - #49 a
+INFO  22:26:52,677 - #8 ;
+INFO  22:26:52,678 - #12 }
+INFO  22:26:52,678 - #13 void
+INFO  22:26:52,679 - #49 putn
+INFO  22:26:52,679 - #9 (
+INFO  22:26:52,679 - #49 int
+INFO  22:26:52,679 - #49 a
+INFO  22:26:52,679 - #7 ,
+INFO  22:26:52,679 - #49 int
+INFO  22:26:52,679 - #49 idx
+INFO  22:26:52,680 - #10 )
+INFO  22:26:52,680 - #11 {
+INFO  22:26:52,680 - #49 this
+INFO  22:26:52,680 - #43 .
+INFO  22:26:52,680 - #49 neg
+INFO  22:26:52,680 - #38 [
+INFO  22:26:52,680 - #49 idx
+INFO  22:26:52,680 - #39 ]
+INFO  22:26:52,681 - #43 .
+INFO  22:26:52,681 - #6 =
+ERROR 22:26:52,681 - 
+Sintaksna greska na liniji 7
+INFO  22:26:52,681 - #49 a
+INFO  22:26:52,681 - #8 ;
+INFO  22:26:52,681 - #12 }
+INFO  22:26:52,682 - #49 int
+INFO  22:26:52,682 - #49 getp
+INFO  22:26:52,682 - #9 (
+INFO  22:26:52,682 - #49 int
+INFO  22:26:52,683 - #49 idx
+INFO  22:26:52,683 - #10 )
+INFO  22:26:52,683 - #11 {
+INFO  22:26:52,683 - #4 return
+INFO  22:26:52,683 - #49 pos
+INFO  22:26:52,683 - #38 [
+INFO  22:26:52,683 - #49 idx
+INFO  22:26:52,683 - #39 ]
+INFO  22:26:52,683 - #8 ;
+INFO  22:26:52,684 - #12 }
+INFO  22:26:52,684 - #49 int
+INFO  22:26:52,684 - #49 getn
+INFO  22:26:52,684 - #9 (
+INFO  22:26:52,684 - #49 int
+INFO  22:26:52,684 - #49 idx
+INFO  22:26:52,684 - #10 )
+INFO  22:26:52,684 - #11 {
+INFO  22:26:52,684 - #4 return
+INFO  22:26:52,685 - #49 neg
+INFO  22:26:52,685 - #38 [
+INFO  22:26:52,685 - #49 idx
+INFO  22:26:52,685 - #39 ]
+INFO  22:26:52,685 - #8 ;
+INFO  22:26:52,685 - #12 }
+INFO  22:26:52,685 - #12 }
+INFO  22:26:52,685 - #12 }
+INFO  22:26:52,685 - #50 record
+INFO  22:26:52,685 - #49 Board
+INFO  22:26:52,686 - #11 {
+INFO  22:26:52,686 - #49 int
+INFO  22:26:52,686 - #49 rows
+INFO  22:26:52,686 - #7 ,
+INFO  22:26:52,686 - #49 columns
+INFO  22:26:52,686 - #8 ;
+INFO  22:26:52,686 - #12 }
+ERROR 22:26:52,687 - 
+Sintaksna greska na liniji 14
+INFO  22:26:52,687 - #49 Table
+INFO  22:26:52,687 - #49 val
+INFO  22:26:52,687 - #7 ,
+INFO  22:26:52,687 - #49 ok
+INFO  22:26:52,687 - #8 ;
+INFO  22:26:52,687 - #49 Board
+INFO  22:26:52,689 - #49 board
+INFO  22:26:52,689 - #8 ;
+INFO  22:26:52,689 - #11 {
+INFO  22:26:52,689 - #13 void
+INFO  22:26:52,689 - #49 f
+INFO  22:26:52,689 - #9 (
+INFO  22:26:52,689 - #49 char
+INFO  22:26:52,689 - #49 ch
+INFO  22:26:52,689 - #7 ,
+INFO  22:26:52,690 - #49 int
+INFO  22:26:52,690 - #49 a
+INFO  22:26:52,690 - #7 ,
+INFO  22:26:52,690 - #49 int
+INFO  22:26:52,690 - #49 arg
+INFO  22:26:52,690 - #10 )
+INFO  22:26:52,690 - #49 int
+INFO  22:26:52,690 - #49 x
+INFO  22:26:52,690 - #8 ;
+INFO  22:26:52,690 - #11 {
+INFO  22:26:52,691 - #49 x
+INFO  22:26:52,691 - #6 =
+INFO  22:26:52,691 - #49 arg
+INFO  22:26:52,691 - #8 ;
+INFO  22:26:52,691 - #12 }
+INFO  22:26:52,691 - #13 void
+INFO  22:26:52,691 - #49 main
+INFO  22:26:52,691 - #9 (
+INFO  22:26:52,691 - #10 )
+INFO  22:26:52,692 - #49 int
+INFO  22:26:52,692 - #49 x
+INFO  22:26:52,692 - #7 ,
+INFO  22:26:52,693 - #49 i
+INFO  22:26:52,693 - #8 ;
+INFO  22:26:52,693 - #49 char
+INFO  22:26:52,693 - #49 c
+INFO  22:26:52,693 - #8 ;
+INFO  22:26:52,693 - #11 {
+INFO  22:26:52,693 - #49 val
+INFO  22:26:52,693 - #6 =
+INFO  22:26:52,693 - #21 new
+INFO  22:26:52,693 - #49 Table
+INFO  22:26:52,693 - #8 ;
+INFO  22:26:52,694 - #49 val
+INFO  22:26:52,694 - #43 .
+INFO  22:26:52,694 - #49 pos
+INFO  22:26:52,694 - #6 =
+INFO  22:26:52,694 - #21 new
+INFO  22:26:52,694 - #49 int
+INFO  22:26:52,694 - #38 [
+INFO  22:26:52,695 - #49 size
+INFO  22:26:52,695 - #39 ]
+INFO  22:26:52,695 - #8 ;
+INFO  22:26:52,695 - #49 val
+INFO  22:26:52,695 - #43 .
+INFO  22:26:52,695 - #49 neg
+INFO  22:26:52,697 - #6 =
+INFO  22:26:52,697 - #21 new
+INFO  22:26:52,697 - #49 int
+INFO  22:26:52,697 - #38 [
+INFO  22:26:52,697 - #49 size
+INFO  22:26:52,697 - #39 ]
+INFO  22:26:52,697 - #8 ;
+INFO  22:26:52,697 - #31 read
+INFO  22:26:52,697 - #9 (
+INFO  22:26:52,698 - #49 x
+INFO  22:26:52,698 - #10 )
+INFO  22:26:52,698 - #8 ;
+INFO  22:26:52,698 - #15 if
+INFO  22:26:52,698 - #9 (
+INFO  22:26:52,698 - #49 x
+INFO  22:26:52,698 - #23 >
+INFO  22:26:52,698 - #47 5
+INFO  22:26:52,700 - #10 )
+INFO  22:26:52,700 - #11 {
+INFO  22:26:52,701 - #30 goto
+INFO  22:26:52,701 - #49 skip
+INFO  22:26:52,701 - #8 ;
+INFO  22:26:52,702 - #12 }
+INFO  22:26:52,702 - #49 i
+INFO  22:26:52,703 - #6 =
+INFO  22:26:52,703 - #47 0
+INFO  22:26:52,703 - #8 ;
+INFO  22:26:52,703 - #51 do
+INFO  22:26:52,703 - #11 {
+INFO  22:26:52,703 - #49 val
+INFO  22:26:52,703 - #43 .
+INFO  22:26:52,703 - #49 putp
+INFO  22:26:52,703 - #9 (
+INFO  22:26:52,703 - #47 0
+INFO  22:26:52,703 - #7 ,
+INFO  22:26:52,704 - #49 i
+INFO  22:26:52,704 - #10 )
+INFO  22:26:52,704 - #8 ;
+INFO  22:26:52,704 - #49 val
+INFO  22:26:52,704 - #43 .
+INFO  22:26:52,704 - #49 putn
+INFO  22:26:52,704 - #9 (
+INFO  22:26:52,704 - #47 0
+INFO  22:26:52,704 - #7 ,
+INFO  22:26:52,705 - #49 i
+INFO  22:26:52,705 - #10 )
+INFO  22:26:52,705 - #8 ;
+INFO  22:26:52,705 - #49 i
+INFO  22:26:52,705 - #19 ++
+INFO  22:26:52,705 - #8 ;
+INFO  22:26:52,706 - #12 }
+INFO  22:26:52,706 - #18 while
+INFO  22:26:52,706 - #9 (
+INFO  22:26:52,706 - #49 i
+INFO  22:26:52,706 - #22 <
+INFO  22:26:52,707 - #49 size
+INFO  22:26:52,707 - #10 )
+INFO  22:26:52,708 - #8 ;
+INFO  22:26:52,708 - #49 skip
+INFO  22:26:52,708 - #40 :
+INFO  22:26:52,708 - #49 f
+INFO  22:26:52,708 - #9 (
+INFO  22:26:52,708 - #49 c
+INFO  22:26:52,708 - #7 ,
+INFO  22:26:52,709 - #49 x
+INFO  22:26:52,709 - #7 ,
+INFO  22:26:52,709 - #49 i
+INFO  22:26:52,709 - #10 )
+INFO  22:26:52,709 - #8 ;
+INFO  22:26:52,709 - #49 board
+INFO  22:26:52,709 - #6 =
+INFO  22:26:52,710 - #21 new
+INFO  22:26:52,710 - #49 Board
+INFO  22:26:52,710 - #8 ;
+INFO  22:26:52,710 - #31 read
+INFO  22:26:52,710 - #9 (
+INFO  22:26:52,710 - #49 board
+INFO  22:26:52,710 - #43 .
+INFO  22:26:52,710 - #49 rows
+INFO  22:26:52,710 - #10 )
+INFO  22:26:52,710 - #8 ;
+INFO  22:26:52,710 - #49 x
+INFO  22:26:52,710 - #6 =
+INFO  22:26:52,710 - #49 board
+INFO  22:26:52,710 - #43 .
+INFO  22:26:52,711 - #49 rows
+INFO  22:26:52,711 - #8 ;
+INFO  22:26:52,711 - #51 do
+INFO  22:26:52,711 - #11 {
+INFO  22:26:52,711 - #15 if
+INFO  22:26:52,711 - #9 (
+INFO  22:26:52,712 - #49 x
+INFO  22:26:52,712 - #24 <=
+INFO  22:26:52,712 - #47 0
+INFO  22:26:52,714 - #10 )
+INFO  22:26:52,714 - #45 break
+INFO  22:26:52,714 - #8 ;
+INFO  22:26:52,714 - #15 if
+INFO  22:26:52,716 - #9 (
+INFO  22:26:52,716 - #47 0
+INFO  22:26:52,716 - #24 <=
+INFO  22:26:52,717 - #49 x
+INFO  22:26:52,717 - #33 &&
+INFO  22:26:52,717 - #49 x
+INFO  22:26:52,717 - #22 <
+INFO  22:26:52,717 - #49 size
+INFO  22:26:52,717 - #10 )
+INFO  22:26:52,717 - #11 {
+INFO  22:26:52,717 - #49 val
+INFO  22:26:52,717 - #43 .
+INFO  22:26:52,717 - #49 putp
+INFO  22:26:52,717 - #9 (
+INFO  22:26:52,718 - #49 val
+INFO  22:26:52,718 - #43 .
+INFO  22:26:52,718 - #49 getp
+INFO  22:26:52,718 - #9 (
+INFO  22:26:52,718 - #49 x
+INFO  22:26:52,718 - #10 )
+INFO  22:26:52,719 - #5 +
+INFO  22:26:52,719 - #47 1
+INFO  22:26:52,721 - #10 )
+INFO  22:26:52,721 - #8 ;
+INFO  22:26:52,721 - #12 }
+INFO  22:26:52,721 - #16 else
+INFO  22:26:52,721 - #15 if
+INFO  22:26:52,721 - #9 (
+INFO  22:26:52,721 - #37 -
+INFO  22:26:52,721 - #49 size
+INFO  22:26:52,722 - #22 <
+INFO  22:26:52,722 - #49 x
+INFO  22:26:52,722 - #33 &&
+INFO  22:26:52,722 - #49 x
+INFO  22:26:52,722 - #22 <
+INFO  22:26:52,722 - #47 0
+INFO  22:26:52,722 - #10 )
+INFO  22:26:52,722 - #11 {
+INFO  22:26:52,723 - #49 val
+INFO  22:26:52,723 - #43 .
+INFO  22:26:52,723 - #49 putn
+INFO  22:26:52,723 - #9 (
+INFO  22:26:52,723 - #49 val
+INFO  22:26:52,723 - #43 .
+INFO  22:26:52,723 - #49 getn
+INFO  22:26:52,723 - #9 (
+INFO  22:26:52,723 - #37 -
+INFO  22:26:52,723 - #49 x
+INFO  22:26:52,723 - #10 )
+INFO  22:26:52,724 - #5 +
+INFO  22:26:52,724 - #47 1
+INFO  22:26:52,724 - #10 )
+INFO  22:26:52,724 - #8 ;
+INFO  22:26:52,725 - #12 }
+INFO  22:26:52,725 - #31 read
+INFO  22:26:52,726 - #9 (
+INFO  22:26:52,726 - #49 x
+INFO  22:26:52,726 - #10 )
+INFO  22:26:52,727 - #8 ;
+INFO  22:26:52,727 - #12 }
+INFO  22:26:52,727 - #18 while
+INFO  22:26:52,727 - #9 (
+INFO  22:26:52,727 - #46 true
+INFO  22:26:52,727 - #10 )
+INFO  22:26:52,728 - #8 ;
+INFO  22:26:52,728 - #3 print
+INFO  22:26:52,728 - #9 (
+INFO  22:26:52,728 - #49 a
+INFO  22:26:52,728 - #38 [
+INFO  22:26:52,728 - #49 x
+INFO  22:26:52,728 - #39 ]
+INFO  22:26:52,728 - #7 ,
+INFO  22:26:52,729 - #47 5
+INFO  22:26:52,729 - #10 )
+INFO  22:26:52,730 - #8 ;
+INFO  22:26:52,730 - #12 }
+INFO  22:26:52,730 - #12 }
+INFO  22:26:52,736 - ProgramWithMethods(
+  GlobalVariableDeclaration(
+    GlobalVariableDeclaration(
+      ConstantDeclaration(
+        EmptyDeclaration(
+        ) [EmptyDeclaration]
+        ConstantDecl(
+          TypeIdent(
+          ) [TypeIdent]
+          SimpleConstDecl(
+            NumberConstant(
+            ) [NumberConstant]
+          ) [SimpleConstDecl]
+          LineConstDeclDerived1(
+          ) [LineConstDeclDerived1]
+        ) [ConstantDecl]
+      ) [ConstantDeclaration]
+      ErrorVarDecl(
+        ErrorLineVariableDecl(
+          GlobalLineVariableDecl(
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+            EmptyGlobalLineVariableDecl(
+            ) [EmptyGlobalLineVariableDecl]
+          ) [GlobalLineVariableDecl]
+        ) [ErrorLineVariableDecl]
+      ) [ErrorVarDecl]
+    ) [GlobalVariableDeclaration]
+    GlobalVariableDecl(
+      SingleVariableDecl(
+        TypeIdent(
+        ) [TypeIdent]
+        EmptyArrayOperator(
+        ) [EmptyArrayOperator]
+      ) [SingleVariableDecl]
+      EmptyGlobalLineVariableDecl(
+      ) [EmptyGlobalLineVariableDecl]
+    ) [GlobalVariableDecl]
+  ) [GlobalVariableDeclaration]
+  MultipleMethodDeclaration(
+    OneMethodDeclaration(
+      SingleMethodDeclaration(
+        MethodReturnTypeDerived2(
+        ) [MethodReturnTypeDerived2]
+        FormalParameters(
+          MultipleFormalParameters(
+            MultipleFormalParameters(
+              OnlyFormalParameter(
+                SingleVariableDecl(
+                  TypeIdent(
+                  ) [TypeIdent]
+                  EmptyArrayOperator(
+                  ) [EmptyArrayOperator]
+                ) [SingleVariableDecl]
+              ) [OnlyFormalParameter]
+              SingleVariableDecl(
+                TypeIdent(
+                ) [TypeIdent]
+                EmptyArrayOperator(
+                ) [EmptyArrayOperator]
+              ) [SingleVariableDecl]
+            ) [MultipleFormalParameters]
+            SingleVariableDecl(
+              TypeIdent(
+              ) [TypeIdent]
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+          ) [MultipleFormalParameters]
+        ) [FormalParameters]
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              TypeIdent(
+              ) [TypeIdent]
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        MultipleStatement(
+          NoStatement(
+          ) [NoStatement]
+          OneStatementRed(
+            DesignStatement(
+              DesignatorStat(
+                DesignatorFullExpresion(
+                  EmptyMultipleDesignator(
+                  ) [EmptyMultipleDesignator]
+                ) [DesignatorFullExpresion]
+                AssignDesignatorOp(
+                  AssignOperation(
+                  ) [AssignOperation]
+                  AddExptOnly(
+                    OneAddExpr(
+                      TermDerived1(
+                        DesignatorFactorExpresion(
+                          DesignatorOnly(
+                            DesignatorFullExpresion(
+                              EmptyMultipleDesignator(
+                              ) [EmptyMultipleDesignator]
+                            ) [DesignatorFullExpresion]
+                          ) [DesignatorOnly]
+                        ) [DesignatorFactorExpresion]
+                      ) [TermDerived1]
+                    ) [OneAddExpr]
+                  ) [AddExptOnly]
+                ) [AssignDesignatorOp]
+              ) [DesignatorStat]
+            ) [DesignStatement]
+          ) [OneStatementRed]
+        ) [MultipleStatement]
+      ) [SingleMethodDeclaration]
+    ) [OneMethodDeclaration]
+    SingleMethodDeclaration(
+      MethodReturnTypeDerived2(
+      ) [MethodReturnTypeDerived2]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              TypeIdent(
+              ) [TypeIdent]
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            LineVariableDecl(
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [LineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            TypeIdent(
+            ) [TypeIdent]
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        MultipleStatement(
+          MultipleStatement(
+            MultipleStatement(
+              MultipleStatement(
+                MultipleStatement(
+                  MultipleStatement(
+                    MultipleStatement(
+                      MultipleStatement(
+                        MultipleStatement(
+                          MultipleStatement(
+                            MultipleStatement(
+                              MultipleStatement(
+                                NoStatement(
+                                ) [NoStatement]
+                                OneStatementRed(
+                                  DesignStatement(
+                                    DesignatorStat(
+                                      DesignatorFullExpresion(
+                                        EmptyMultipleDesignator(
+                                        ) [EmptyMultipleDesignator]
+                                      ) [DesignatorFullExpresion]
+                                      AssignDesignatorOp(
+                                        AssignOperation(
+                                        ) [AssignOperation]
+                                        AddExptOnly(
+                                          OneAddExpr(
+                                            TermDerived1(
+                                              NewTypeFactorExpresion(
+                                                NewTypeNoArray(
+                                                  TypeIdent(
+                                                  ) [TypeIdent]
+                                                ) [NewTypeNoArray]
+                                              ) [NewTypeFactorExpresion]
+                                            ) [TermDerived1]
+                                          ) [OneAddExpr]
+                                        ) [AddExptOnly]
+                                      ) [AssignDesignatorOp]
+                                    ) [DesignatorStat]
+                                  ) [DesignStatement]
+                                ) [OneStatementRed]
+                              ) [MultipleStatement]
+                              OneStatementRed(
+                                DesignStatement(
+                                  DesignatorStat(
+                                    DesignatorFullExpresion(
+                                      DesignatorStructure(
+                                        EmptyMultipleDesignator(
+                                        ) [EmptyMultipleDesignator]
+                                      ) [DesignatorStructure]
+                                    ) [DesignatorFullExpresion]
+                                    AssignDesignatorOp(
+                                      AssignOperation(
+                                      ) [AssignOperation]
+                                      AddExptOnly(
+                                        OneAddExpr(
+                                          TermDerived1(
+                                            NewTypeFactorExpresion(
+                                              NewTypeArray(
+                                                TypeIdent(
+                                                ) [TypeIdent]
+                                                AddExptOnly(
+                                                  OneAddExpr(
+                                                    TermDerived1(
+                                                      DesignatorFactorExpresion(
+                                                        DesignatorOnly(
+                                                          DesignatorFullExpresion(
+                                                            EmptyMultipleDesignator(
+                                                            ) [EmptyMultipleDesignator]
+                                                          ) [DesignatorFullExpresion]
+                                                        ) [DesignatorOnly]
+                                                      ) [DesignatorFactorExpresion]
+                                                    ) [TermDerived1]
+                                                  ) [OneAddExpr]
+                                                ) [AddExptOnly]
+                                              ) [NewTypeArray]
+                                            ) [NewTypeFactorExpresion]
+                                          ) [TermDerived1]
+                                        ) [OneAddExpr]
+                                      ) [AddExptOnly]
+                                    ) [AssignDesignatorOp]
+                                  ) [DesignatorStat]
+                                ) [DesignStatement]
+                              ) [OneStatementRed]
+                            ) [MultipleStatement]
+                            OneStatementRed(
+                              DesignStatement(
+                                DesignatorStat(
+                                  DesignatorFullExpresion(
+                                    DesignatorStructure(
+                                      EmptyMultipleDesignator(
+                                      ) [EmptyMultipleDesignator]
+                                    ) [DesignatorStructure]
+                                  ) [DesignatorFullExpresion]
+                                  AssignDesignatorOp(
+                                    AssignOperation(
+                                    ) [AssignOperation]
+                                    AddExptOnly(
+                                      OneAddExpr(
+                                        TermDerived1(
+                                          NewTypeFactorExpresion(
+                                            NewTypeArray(
+                                              TypeIdent(
+                                              ) [TypeIdent]
+                                              AddExptOnly(
+                                                OneAddExpr(
+                                                  TermDerived1(
+                                                    DesignatorFactorExpresion(
+                                                      DesignatorOnly(
+                                                        DesignatorFullExpresion(
+                                                          EmptyMultipleDesignator(
+                                                          ) [EmptyMultipleDesignator]
+                                                        ) [DesignatorFullExpresion]
+                                                      ) [DesignatorOnly]
+                                                    ) [DesignatorFactorExpresion]
+                                                  ) [TermDerived1]
+                                                ) [OneAddExpr]
+                                              ) [AddExptOnly]
+                                            ) [NewTypeArray]
+                                          ) [NewTypeFactorExpresion]
+                                        ) [TermDerived1]
+                                      ) [OneAddExpr]
+                                    ) [AddExptOnly]
+                                  ) [AssignDesignatorOp]
+                                ) [DesignatorStat]
+                              ) [DesignStatement]
+                            ) [OneStatementRed]
+                          ) [MultipleStatement]
+                          OneStatementRed(
+                            ReadStatement(
+                              DesignatorFullExpresion(
+                                EmptyMultipleDesignator(
+                                ) [EmptyMultipleDesignator]
+                              ) [DesignatorFullExpresion]
+                            ) [ReadStatement]
+                          ) [OneStatementRed]
+                        ) [MultipleStatement]
+                        OneStatementRed(
+                          IfElseStatement(
+                            SingleIfCondition(
+                              SingleCondTerm(
+                                MultipleCondFact(
+                                  AddExptOnly(
+                                    OneAddExpr(
+                                      TermDerived1(
+                                        DesignatorFactorExpresion(
+                                          DesignatorOnly(
+                                            DesignatorFullExpresion(
+                                              EmptyMultipleDesignator(
+                                              ) [EmptyMultipleDesignator]
+                                            ) [DesignatorFullExpresion]
+                                          ) [DesignatorOnly]
+                                        ) [DesignatorFactorExpresion]
+                                      ) [TermDerived1]
+                                    ) [OneAddExpr]
+                                  ) [AddExptOnly]
+                                  GreaterOp(
+                                  ) [GreaterOp]
+                                  AddExptOnly(
+                                    OneAddExpr(
+                                      TermDerived1(
+                                        NumConst(
+                                        ) [NumConst]
+                                      ) [TermDerived1]
+                                    ) [OneAddExpr]
+                                  ) [AddExptOnly]
+                                ) [MultipleCondFact]
+                              ) [SingleCondTerm]
+                            ) [SingleIfCondition]
+                            StatementsRed(
+                              MultipleStatements(
+                                OneStatement(
+                                  OneStatementRed(
+                                    GotoStatement(
+                                      LabelIdent(
+                                      ) [LabelIdent]
+                                    ) [GotoStatement]
+                                  ) [OneStatementRed]
+                                ) [OneStatement]
+                              ) [MultipleStatements]
+                            ) [StatementsRed]
+                            NoElseStatement(
+                            ) [NoElseStatement]
+                          ) [IfElseStatement]
+                        ) [OneStatementRed]
+                      ) [MultipleStatement]
+                      OneStatementRed(
+                        DesignStatement(
+                          DesignatorStat(
+                            DesignatorFullExpresion(
+                              EmptyMultipleDesignator(
+                              ) [EmptyMultipleDesignator]
+                            ) [DesignatorFullExpresion]
+                            AssignDesignatorOp(
+                              AssignOperation(
+                              ) [AssignOperation]
+                              AddExptOnly(
+                                OneAddExpr(
+                                  TermDerived1(
+                                    NumConst(
+                                    ) [NumConst]
+                                  ) [TermDerived1]
+                                ) [OneAddExpr]
+                              ) [AddExptOnly]
+                            ) [AssignDesignatorOp]
+                          ) [DesignatorStat]
+                        ) [DesignStatement]
+                      ) [OneStatementRed]
+                    ) [MultipleStatement]
+                    OneStatementRed(
+                      DoWhileStatement(
+                        StatementsRed(
+                          MultipleStatements(
+                            MoreThenOneStatement(
+                              MoreThenOneStatement(
+                                OneStatement(
+                                  OneStatementRed(
+                                    DesignStatement(
+                                      DesignatorStat(
+                                        DesignatorFullExpresion(
+                                          DesignatorStructure(
+                                            EmptyMultipleDesignator(
+                                            ) [EmptyMultipleDesignator]
+                                          ) [DesignatorStructure]
+                                        ) [DesignatorFullExpresion]
+                                        ParActParsDesignatorOp(
+                                          MultipleActPars(
+                                            OneActPars(
+                                              AddExptOnly(
+                                                OneAddExpr(
+                                                  TermDerived1(
+                                                    NumConst(
+                                                    ) [NumConst]
+                                                  ) [TermDerived1]
+                                                ) [OneAddExpr]
+                                              ) [AddExptOnly]
+                                            ) [OneActPars]
+                                            AddExptOnly(
+                                              OneAddExpr(
+                                                TermDerived1(
+                                                  DesignatorFactorExpresion(
+                                                    DesignatorOnly(
+                                                      DesignatorFullExpresion(
+                                                        EmptyMultipleDesignator(
+                                                        ) [EmptyMultipleDesignator]
+                                                      ) [DesignatorFullExpresion]
+                                                    ) [DesignatorOnly]
+                                                  ) [DesignatorFactorExpresion]
+                                                ) [TermDerived1]
+                                              ) [OneAddExpr]
+                                            ) [AddExptOnly]
+                                          ) [MultipleActPars]
+                                        ) [ParActParsDesignatorOp]
+                                      ) [DesignatorStat]
+                                    ) [DesignStatement]
+                                  ) [OneStatementRed]
+                                ) [OneStatement]
+                                OneStatementRed(
+                                  DesignStatement(
+                                    DesignatorStat(
+                                      DesignatorFullExpresion(
+                                        DesignatorStructure(
+                                          EmptyMultipleDesignator(
+                                          ) [EmptyMultipleDesignator]
+                                        ) [DesignatorStructure]
+                                      ) [DesignatorFullExpresion]
+                                      ParActParsDesignatorOp(
+                                        MultipleActPars(
+                                          OneActPars(
+                                            AddExptOnly(
+                                              OneAddExpr(
+                                                TermDerived1(
+                                                  NumConst(
+                                                  ) [NumConst]
+                                                ) [TermDerived1]
+                                              ) [OneAddExpr]
+                                            ) [AddExptOnly]
+                                          ) [OneActPars]
+                                          AddExptOnly(
+                                            OneAddExpr(
+                                              TermDerived1(
+                                                DesignatorFactorExpresion(
+                                                  DesignatorOnly(
+                                                    DesignatorFullExpresion(
+                                                      EmptyMultipleDesignator(
+                                                      ) [EmptyMultipleDesignator]
+                                                    ) [DesignatorFullExpresion]
+                                                  ) [DesignatorOnly]
+                                                ) [DesignatorFactorExpresion]
+                                              ) [TermDerived1]
+                                            ) [OneAddExpr]
+                                          ) [AddExptOnly]
+                                        ) [MultipleActPars]
+                                      ) [ParActParsDesignatorOp]
+                                    ) [DesignatorStat]
+                                  ) [DesignStatement]
+                                ) [OneStatementRed]
+                              ) [MoreThenOneStatement]
+                              OneStatementRed(
+                                DesignStatement(
+                                  DesignatorStat(
+                                    DesignatorFullExpresion(
+                                      EmptyMultipleDesignator(
+                                      ) [EmptyMultipleDesignator]
+                                    ) [DesignatorFullExpresion]
+                                    DesignatorIncrement(
+                                    ) [DesignatorIncrement]
+                                  ) [DesignatorStat]
+                                ) [DesignStatement]
+                              ) [OneStatementRed]
+                            ) [MoreThenOneStatement]
+                          ) [MultipleStatements]
+                        ) [StatementsRed]
+                        SingleIfCondition(
+                          SingleCondTerm(
+                            MultipleCondFact(
+                              AddExptOnly(
+                                OneAddExpr(
+                                  TermDerived1(
+                                    DesignatorFactorExpresion(
+                                      DesignatorOnly(
+                                        DesignatorFullExpresion(
+                                          EmptyMultipleDesignator(
+                                          ) [EmptyMultipleDesignator]
+                                        ) [DesignatorFullExpresion]
+                                      ) [DesignatorOnly]
+                                    ) [DesignatorFactorExpresion]
+                                  ) [TermDerived1]
+                                ) [OneAddExpr]
+                              ) [AddExptOnly]
+                              LessOp(
+                              ) [LessOp]
+                              AddExptOnly(
+                                OneAddExpr(
+                                  TermDerived1(
+                                    DesignatorFactorExpresion(
+                                      DesignatorOnly(
+                                        DesignatorFullExpresion(
+                                          EmptyMultipleDesignator(
+                                          ) [EmptyMultipleDesignator]
+                                        ) [DesignatorFullExpresion]
+                                      ) [DesignatorOnly]
+                                    ) [DesignatorFactorExpresion]
+                                  ) [TermDerived1]
+                                ) [OneAddExpr]
+                              ) [AddExptOnly]
+                            ) [MultipleCondFact]
+                          ) [SingleCondTerm]
+                        ) [SingleIfCondition]
+                      ) [DoWhileStatement]
+                    ) [OneStatementRed]
+                  ) [MultipleStatement]
+                  ColStatementRed(
+                    LabelIdent(
+                    ) [LabelIdent]
+                    DesignStatement(
+                      DesignatorStat(
+                        DesignatorFullExpresion(
+                          EmptyMultipleDesignator(
+                          ) [EmptyMultipleDesignator]
+                        ) [DesignatorFullExpresion]
+                        ParActParsDesignatorOp(
+                          MultipleActPars(
+                            MultipleActPars(
+                              OneActPars(
+                                AddExptOnly(
+                                  OneAddExpr(
+                                    TermDerived1(
+                                      DesignatorFactorExpresion(
+                                        DesignatorOnly(
+                                          DesignatorFullExpresion(
+                                            EmptyMultipleDesignator(
+                                            ) [EmptyMultipleDesignator]
+                                          ) [DesignatorFullExpresion]
+                                        ) [DesignatorOnly]
+                                      ) [DesignatorFactorExpresion]
+                                    ) [TermDerived1]
+                                  ) [OneAddExpr]
+                                ) [AddExptOnly]
+                              ) [OneActPars]
+                              AddExptOnly(
+                                OneAddExpr(
+                                  TermDerived1(
+                                    DesignatorFactorExpresion(
+                                      DesignatorOnly(
+                                        DesignatorFullExpresion(
+                                          EmptyMultipleDesignator(
+                                          ) [EmptyMultipleDesignator]
+                                        ) [DesignatorFullExpresion]
+                                      ) [DesignatorOnly]
+                                    ) [DesignatorFactorExpresion]
+                                  ) [TermDerived1]
+                                ) [OneAddExpr]
+                              ) [AddExptOnly]
+                            ) [MultipleActPars]
+                            AddExptOnly(
+                              OneAddExpr(
+                                TermDerived1(
+                                  DesignatorFactorExpresion(
+                                    DesignatorOnly(
+                                      DesignatorFullExpresion(
+                                        EmptyMultipleDesignator(
+                                        ) [EmptyMultipleDesignator]
+                                      ) [DesignatorFullExpresion]
+                                    ) [DesignatorOnly]
+                                  ) [DesignatorFactorExpresion]
+                                ) [TermDerived1]
+                              ) [OneAddExpr]
+                            ) [AddExptOnly]
+                          ) [MultipleActPars]
+                        ) [ParActParsDesignatorOp]
+                      ) [DesignatorStat]
+                    ) [DesignStatement]
+                  ) [ColStatementRed]
+                ) [MultipleStatement]
+                OneStatementRed(
+                  DesignStatement(
+                    DesignatorStat(
+                      DesignatorFullExpresion(
+                        EmptyMultipleDesignator(
+                        ) [EmptyMultipleDesignator]
+                      ) [DesignatorFullExpresion]
+                      AssignDesignatorOp(
+                        AssignOperation(
+                        ) [AssignOperation]
+                        AddExptOnly(
+                          OneAddExpr(
+                            TermDerived1(
+                              NewTypeFactorExpresion(
+                                NewTypeNoArray(
+                                  TypeIdent(
+                                  ) [TypeIdent]
+                                ) [NewTypeNoArray]
+                              ) [NewTypeFactorExpresion]
+                            ) [TermDerived1]
+                          ) [OneAddExpr]
+                        ) [AddExptOnly]
+                      ) [AssignDesignatorOp]
+                    ) [DesignatorStat]
+                  ) [DesignStatement]
+                ) [OneStatementRed]
+              ) [MultipleStatement]
+              OneStatementRed(
+                ReadStatement(
+                  DesignatorFullExpresion(
+                    DesignatorStructure(
+                      EmptyMultipleDesignator(
+                      ) [EmptyMultipleDesignator]
+                    ) [DesignatorStructure]
+                  ) [DesignatorFullExpresion]
+                ) [ReadStatement]
+              ) [OneStatementRed]
+            ) [MultipleStatement]
+            OneStatementRed(
+              DesignStatement(
+                DesignatorStat(
+                  DesignatorFullExpresion(
+                    EmptyMultipleDesignator(
+                    ) [EmptyMultipleDesignator]
+                  ) [DesignatorFullExpresion]
+                  AssignDesignatorOp(
+                    AssignOperation(
+                    ) [AssignOperation]
+                    AddExptOnly(
+                      OneAddExpr(
+                        TermDerived1(
+                          DesignatorFactorExpresion(
+                            DesignatorOnly(
+                              DesignatorFullExpresion(
+                                DesignatorStructure(
+                                  EmptyMultipleDesignator(
+                                  ) [EmptyMultipleDesignator]
+                                ) [DesignatorStructure]
+                              ) [DesignatorFullExpresion]
+                            ) [DesignatorOnly]
+                          ) [DesignatorFactorExpresion]
+                        ) [TermDerived1]
+                      ) [OneAddExpr]
+                    ) [AddExptOnly]
+                  ) [AssignDesignatorOp]
+                ) [DesignatorStat]
+              ) [DesignStatement]
+            ) [OneStatementRed]
+          ) [MultipleStatement]
+          OneStatementRed(
+            DoWhileStatement(
+              StatementsRed(
+                MultipleStatements(
+                  MoreThenOneStatement(
+                    MoreThenOneStatement(
+                      OneStatement(
+                        OneStatementRed(
+                          IfElseStatement(
+                            SingleIfCondition(
+                              SingleCondTerm(
+                                MultipleCondFact(
+                                  AddExptOnly(
+                                    OneAddExpr(
+                                      TermDerived1(
+                                        DesignatorFactorExpresion(
+                                          DesignatorOnly(
+                                            DesignatorFullExpresion(
+                                              EmptyMultipleDesignator(
+                                              ) [EmptyMultipleDesignator]
+                                            ) [DesignatorFullExpresion]
+                                          ) [DesignatorOnly]
+                                        ) [DesignatorFactorExpresion]
+                                      ) [TermDerived1]
+                                    ) [OneAddExpr]
+                                  ) [AddExptOnly]
+                                  LessEqualOp(
+                                  ) [LessEqualOp]
+                                  AddExptOnly(
+                                    OneAddExpr(
+                                      TermDerived1(
+                                        NumConst(
+                                        ) [NumConst]
+                                      ) [TermDerived1]
+                                    ) [OneAddExpr]
+                                  ) [AddExptOnly]
+                                ) [MultipleCondFact]
+                              ) [SingleCondTerm]
+                            ) [SingleIfCondition]
+                            OneStatementRed(
+                              BreakStatement(
+                              ) [BreakStatement]
+                            ) [OneStatementRed]
+                            NoElseStatement(
+                            ) [NoElseStatement]
+                          ) [IfElseStatement]
+                        ) [OneStatementRed]
+                      ) [OneStatement]
+                      OneStatementRed(
+                        IfElseStatement(
+                          SingleIfCondition(
+                            MultipleCondTerm(
+                              MultipleCondFact(
+                                AddExptOnly(
+                                  OneAddExpr(
+                                    TermDerived1(
+                                      NumConst(
+                                      ) [NumConst]
+                                    ) [TermDerived1]
+                                  ) [OneAddExpr]
+                                ) [AddExptOnly]
+                                LessEqualOp(
+                                ) [LessEqualOp]
+                                AddExptOnly(
+                                  OneAddExpr(
+                                    TermDerived1(
+                                      DesignatorFactorExpresion(
+                                        DesignatorOnly(
+                                          DesignatorFullExpresion(
+                                            EmptyMultipleDesignator(
+                                            ) [EmptyMultipleDesignator]
+                                          ) [DesignatorFullExpresion]
+                                        ) [DesignatorOnly]
+                                      ) [DesignatorFactorExpresion]
+                                    ) [TermDerived1]
+                                  ) [OneAddExpr]
+                                ) [AddExptOnly]
+                              ) [MultipleCondFact]
+                              SingleCondTerm(
+                                MultipleCondFact(
+                                  AddExptOnly(
+                                    OneAddExpr(
+                                      TermDerived1(
+                                        DesignatorFactorExpresion(
+                                          DesignatorOnly(
+                                            DesignatorFullExpresion(
+                                              EmptyMultipleDesignator(
+                                              ) [EmptyMultipleDesignator]
+                                            ) [DesignatorFullExpresion]
+                                          ) [DesignatorOnly]
+                                        ) [DesignatorFactorExpresion]
+                                      ) [TermDerived1]
+                                    ) [OneAddExpr]
+                                  ) [AddExptOnly]
+                                  LessOp(
+                                  ) [LessOp]
+                                  AddExptOnly(
+                                    OneAddExpr(
+                                      TermDerived1(
+                                        DesignatorFactorExpresion(
+                                          DesignatorOnly(
+                                            DesignatorFullExpresion(
+                                              EmptyMultipleDesignator(
+                                              ) [EmptyMultipleDesignator]
+                                            ) [DesignatorFullExpresion]
+                                          ) [DesignatorOnly]
+                                        ) [DesignatorFactorExpresion]
+                                      ) [TermDerived1]
+                                    ) [OneAddExpr]
+                                  ) [AddExptOnly]
+                                ) [MultipleCondFact]
+                              ) [SingleCondTerm]
+                            ) [MultipleCondTerm]
+                          ) [SingleIfCondition]
+                          StatementsRed(
+                            MultipleStatements(
+                              OneStatement(
+                                OneStatementRed(
+                                  DesignStatement(
+                                    DesignatorStat(
+                                      DesignatorFullExpresion(
+                                        DesignatorStructure(
+                                          EmptyMultipleDesignator(
+                                          ) [EmptyMultipleDesignator]
+                                        ) [DesignatorStructure]
+                                      ) [DesignatorFullExpresion]
+                                      ParActParsDesignatorOp(
+                                        OneActPars(
+                                          AddExptOnly(
+                                            MultipleAddExpr(
+                                              TermDerived1(
+                                                DesignatorFactorExpresion(
+                                                  DesignatorConstrPar(
+                                                    DesignatorFullExpresion(
+                                                      DesignatorStructure(
+                                                        EmptyMultipleDesignator(
+                                                        ) [EmptyMultipleDesignator]
+                                                      ) [DesignatorStructure]
+                                                    ) [DesignatorFullExpresion]
+                                                    OneActPars(
+                                                      AddExptOnly(
+                                                        OneAddExpr(
+                                                          TermDerived1(
+                                                            DesignatorFactorExpresion(
+                                                              DesignatorOnly(
+                                                                DesignatorFullExpresion(
+                                                                  EmptyMultipleDesignator(
+                                                                  ) [EmptyMultipleDesignator]
+                                                                ) [DesignatorFullExpresion]
+                                                              ) [DesignatorOnly]
+                                                            ) [DesignatorFactorExpresion]
+                                                          ) [TermDerived1]
+                                                        ) [OneAddExpr]
+                                                      ) [AddExptOnly]
+                                                    ) [OneActPars]
+                                                  ) [DesignatorConstrPar]
+                                                ) [DesignatorFactorExpresion]
+                                              ) [TermDerived1]
+                                              PlusOp(
+                                              ) [PlusOp]
+                                              TermDerived1(
+                                                NumConst(
+                                                ) [NumConst]
+                                              ) [TermDerived1]
+                                            ) [MultipleAddExpr]
+                                          ) [AddExptOnly]
+                                        ) [OneActPars]
+                                      ) [ParActParsDesignatorOp]
+                                    ) [DesignatorStat]
+                                  ) [DesignStatement]
+                                ) [OneStatementRed]
+                              ) [OneStatement]
+                            ) [MultipleStatements]
+                          ) [StatementsRed]
+                          HaveElseStatement(
+                            OneStatementRed(
+                              IfElseStatement(
+                                SingleIfCondition(
+                                  MultipleCondTerm(
+                                    MultipleCondFact(
+                                      MinusExpr(
+                                        OneAddExpr(
+                                          TermDerived1(
+                                            DesignatorFactorExpresion(
+                                              DesignatorOnly(
+                                                DesignatorFullExpresion(
+                                                  EmptyMultipleDesignator(
+                                                  ) [EmptyMultipleDesignator]
+                                                ) [DesignatorFullExpresion]
+                                              ) [DesignatorOnly]
+                                            ) [DesignatorFactorExpresion]
+                                          ) [TermDerived1]
+                                        ) [OneAddExpr]
+                                      ) [MinusExpr]
+                                      LessOp(
+                                      ) [LessOp]
+                                      AddExptOnly(
+                                        OneAddExpr(
+                                          TermDerived1(
+                                            DesignatorFactorExpresion(
+                                              DesignatorOnly(
+                                                DesignatorFullExpresion(
+                                                  EmptyMultipleDesignator(
+                                                  ) [EmptyMultipleDesignator]
+                                                ) [DesignatorFullExpresion]
+                                              ) [DesignatorOnly]
+                                            ) [DesignatorFactorExpresion]
+                                          ) [TermDerived1]
+                                        ) [OneAddExpr]
+                                      ) [AddExptOnly]
+                                    ) [MultipleCondFact]
+                                    SingleCondTerm(
+                                      MultipleCondFact(
+                                        AddExptOnly(
+                                          OneAddExpr(
+                                            TermDerived1(
+                                              DesignatorFactorExpresion(
+                                                DesignatorOnly(
+                                                  DesignatorFullExpresion(
+                                                    EmptyMultipleDesignator(
+                                                    ) [EmptyMultipleDesignator]
+                                                  ) [DesignatorFullExpresion]
+                                                ) [DesignatorOnly]
+                                              ) [DesignatorFactorExpresion]
+                                            ) [TermDerived1]
+                                          ) [OneAddExpr]
+                                        ) [AddExptOnly]
+                                        LessOp(
+                                        ) [LessOp]
+                                        AddExptOnly(
+                                          OneAddExpr(
+                                            TermDerived1(
+                                              NumConst(
+                                              ) [NumConst]
+                                            ) [TermDerived1]
+                                          ) [OneAddExpr]
+                                        ) [AddExptOnly]
+                                      ) [MultipleCondFact]
+                                    ) [SingleCondTerm]
+                                  ) [MultipleCondTerm]
+                                ) [SingleIfCondition]
+                                StatementsRed(
+                                  MultipleStatements(
+                                    OneStatement(
+                                      OneStatementRed(
+                                        DesignStatement(
+                                          DesignatorStat(
+                                            DesignatorFullExpresion(
+                                              DesignatorStructure(
+                                                EmptyMultipleDesignator(
+                                                ) [EmptyMultipleDesignator]
+                                              ) [DesignatorStructure]
+                                            ) [DesignatorFullExpresion]
+                                            ParActParsDesignatorOp(
+                                              OneActPars(
+                                                AddExptOnly(
+                                                  MultipleAddExpr(
+                                                    TermDerived1(
+                                                      DesignatorFactorExpresion(
+                                                        DesignatorConstrPar(
+                                                          DesignatorFullExpresion(
+                                                            DesignatorStructure(
+                                                              EmptyMultipleDesignator(
+                                                              ) [EmptyMultipleDesignator]
+                                                            ) [DesignatorStructure]
+                                                          ) [DesignatorFullExpresion]
+                                                          OneActPars(
+                                                            MinusExpr(
+                                                              OneAddExpr(
+                                                                TermDerived1(
+                                                                  DesignatorFactorExpresion(
+                                                                    DesignatorOnly(
+                                                                      DesignatorFullExpresion(
+                                                                        EmptyMultipleDesignator(
+                                                                        ) [EmptyMultipleDesignator]
+                                                                      ) [DesignatorFullExpresion]
+                                                                    ) [DesignatorOnly]
+                                                                  ) [DesignatorFactorExpresion]
+                                                                ) [TermDerived1]
+                                                              ) [OneAddExpr]
+                                                            ) [MinusExpr]
+                                                          ) [OneActPars]
+                                                        ) [DesignatorConstrPar]
+                                                      ) [DesignatorFactorExpresion]
+                                                    ) [TermDerived1]
+                                                    PlusOp(
+                                                    ) [PlusOp]
+                                                    TermDerived1(
+                                                      NumConst(
+                                                      ) [NumConst]
+                                                    ) [TermDerived1]
+                                                  ) [MultipleAddExpr]
+                                                ) [AddExptOnly]
+                                              ) [OneActPars]
+                                            ) [ParActParsDesignatorOp]
+                                          ) [DesignatorStat]
+                                        ) [DesignStatement]
+                                      ) [OneStatementRed]
+                                    ) [OneStatement]
+                                  ) [MultipleStatements]
+                                ) [StatementsRed]
+                                NoElseStatement(
+                                ) [NoElseStatement]
+                              ) [IfElseStatement]
+                            ) [OneStatementRed]
+                          ) [HaveElseStatement]
+                        ) [IfElseStatement]
+                      ) [OneStatementRed]
+                    ) [MoreThenOneStatement]
+                    OneStatementRed(
+                      ReadStatement(
+                        DesignatorFullExpresion(
+                          EmptyMultipleDesignator(
+                          ) [EmptyMultipleDesignator]
+                        ) [DesignatorFullExpresion]
+                      ) [ReadStatement]
+                    ) [OneStatementRed]
+                  ) [MoreThenOneStatement]
+                ) [MultipleStatements]
+              ) [StatementsRed]
+              SingleIfCondition(
+                SingleCondTerm(
+                  SingleCondFact(
+                    AddExptOnly(
+                      OneAddExpr(
+                        TermDerived1(
+                          BoolConst(
+                          ) [BoolConst]
+                        ) [TermDerived1]
+                      ) [OneAddExpr]
+                    ) [AddExptOnly]
+                  ) [SingleCondFact]
+                ) [SingleCondTerm]
+              ) [SingleIfCondition]
+            ) [DoWhileStatement]
+          ) [OneStatementRed]
+        ) [MultipleStatement]
+        OneStatementRed(
+          PrintStatement(
+            AddExptOnly(
+              OneAddExpr(
+                TermDerived1(
+                  DesignatorFactorExpresion(
+                    DesignatorOnly(
+                      DesignatorFullExpresion(
+                        DesignatorArray(
+                          EmptyMultipleDesignator(
+                          ) [EmptyMultipleDesignator]
+                          AddExptOnly(
+                            OneAddExpr(
+                              TermDerived1(
+                                DesignatorFactorExpresion(
+                                  DesignatorOnly(
+                                    DesignatorFullExpresion(
+                                      EmptyMultipleDesignator(
+                                      ) [EmptyMultipleDesignator]
+                                    ) [DesignatorFullExpresion]
+                                  ) [DesignatorOnly]
+                                ) [DesignatorFactorExpresion]
+                              ) [TermDerived1]
+                            ) [OneAddExpr]
+                          ) [AddExptOnly]
+                        ) [DesignatorArray]
+                      ) [DesignatorFullExpresion]
+                    ) [DesignatorOnly]
+                  ) [DesignatorFactorExpresion]
+                ) [TermDerived1]
+              ) [OneAddExpr]
+            ) [AddExptOnly]
+            NumConsts(
+              NoNumConsts(
+              ) [NoNumConsts]
+            ) [NumConsts]
+          ) [PrintStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [MultipleMethodDeclaration]
+) [ProgramWithMethods]
+INFO  22:26:52,738 - ===================================
+INFO  22:26:52,742 - Program recognized

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,15 @@ package rs.ac.bg.etf.pp1.ast;
 public class SingleMethodDeclaration extends SingleMethodDecl {
 
     private MethodReturnType MethodReturnType;
+    private String I2;
     private FormParams FormParams;
     private MultipleVarDecl MultipleVarDecl;
     private ListStatement ListStatement;
 
-    public SingleMethodDeclaration (MethodReturnType MethodReturnType, FormParams FormParams, MultipleVarDecl MultipleVarDecl, ListStatement ListStatement) {
+    public SingleMethodDeclaration (MethodReturnType MethodReturnType, String I2, FormParams FormParams, MultipleVarDecl MultipleVarDecl, ListStatement ListStatement) {
         this.MethodReturnType=MethodReturnType;
         if(MethodReturnType!=null) MethodReturnType.setParent(this);
+        this.I2=I2;
         this.FormParams=FormParams;
         if(FormParams!=null) FormParams.setParent(this);
         this.MultipleVarDecl=MultipleVarDecl;
@@ -29,6 +31,14 @@ public class SingleMethodDeclaration extends SingleMethodDecl {
 
     public void setMethodReturnType(MethodReturnType MethodReturnType) {
         this.MethodReturnType=MethodReturnType;
+    }
+
+    public String getI2() {
+        return I2;
+    }
+
+    public void setI2(String I2) {
+        this.I2=I2;
     }
 
     public FormParams getFormParams() {
@@ -91,6 +101,9 @@ public class SingleMethodDeclaration extends SingleMethodDecl {
             buffer.append(MethodReturnType.toString("  "+tab));
         else
             buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(" "+tab+I2);
         buffer.append("\n");
 
         if(FormParams!=null)

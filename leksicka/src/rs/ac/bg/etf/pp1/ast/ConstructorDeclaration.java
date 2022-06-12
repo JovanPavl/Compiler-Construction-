@@ -1,20 +1,30 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ConstructorDeclaration extends ConstructorDecl {
 
+    private String I1;
     private MultipleVarDecl MultipleVarDecl;
     private ListStatement ListStatement;
 
-    public ConstructorDeclaration (MultipleVarDecl MultipleVarDecl, ListStatement ListStatement) {
+    public ConstructorDeclaration (String I1, MultipleVarDecl MultipleVarDecl, ListStatement ListStatement) {
+        this.I1=I1;
         this.MultipleVarDecl=MultipleVarDecl;
         if(MultipleVarDecl!=null) MultipleVarDecl.setParent(this);
         this.ListStatement=ListStatement;
         if(ListStatement!=null) ListStatement.setParent(this);
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public MultipleVarDecl getMultipleVarDecl() {
@@ -58,6 +68,9 @@ public class ConstructorDeclaration extends ConstructorDecl {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ConstructorDeclaration(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         if(MultipleVarDecl!=null)
             buffer.append(MultipleVarDecl.toString("  "+tab));

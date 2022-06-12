@@ -1,17 +1,27 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class DesignatorFullExpresion extends Designator {
 
+    private String I1;
     private MultipleDesignator MultipleDesignator;
 
-    public DesignatorFullExpresion (MultipleDesignator MultipleDesignator) {
+    public DesignatorFullExpresion (String I1, MultipleDesignator MultipleDesignator) {
+        this.I1=I1;
         this.MultipleDesignator=MultipleDesignator;
         if(MultipleDesignator!=null) MultipleDesignator.setParent(this);
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public MultipleDesignator getMultipleDesignator() {
@@ -44,6 +54,9 @@ public class DesignatorFullExpresion extends Designator {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("DesignatorFullExpresion(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         if(MultipleDesignator!=null)
             buffer.append(MultipleDesignator.toString("  "+tab));

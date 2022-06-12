@@ -1,13 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class TypeIdent extends Type {
 
-    public TypeIdent () {
+    private String I1;
+
+    public TypeIdent (String I1) {
+        this.I1=I1;
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public void accept(Visitor visitor) {
@@ -29,6 +40,9 @@ public class TypeIdent extends Type {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("TypeIdent(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         buffer.append(tab);
         buffer.append(") [TypeIdent]");

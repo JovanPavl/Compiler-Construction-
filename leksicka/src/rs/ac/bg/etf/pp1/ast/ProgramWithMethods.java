@@ -1,20 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ProgramWithMethods extends Program {
 
+    private ProgName ProgName;
     private Mdecl Mdecl;
     private ClassMethodDecl ClassMethodDecl;
 
-    public ProgramWithMethods (Mdecl Mdecl, ClassMethodDecl ClassMethodDecl) {
+    public ProgramWithMethods (ProgName ProgName, Mdecl Mdecl, ClassMethodDecl ClassMethodDecl) {
+        this.ProgName=ProgName;
+        if(ProgName!=null) ProgName.setParent(this);
         this.Mdecl=Mdecl;
         if(Mdecl!=null) Mdecl.setParent(this);
         this.ClassMethodDecl=ClassMethodDecl;
         if(ClassMethodDecl!=null) ClassMethodDecl.setParent(this);
+    }
+
+    public ProgName getProgName() {
+        return ProgName;
+    }
+
+    public void setProgName(ProgName ProgName) {
+        this.ProgName=ProgName;
     }
 
     public Mdecl getMdecl() {
@@ -38,17 +49,20 @@ public class ProgramWithMethods extends Program {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(ProgName!=null) ProgName.accept(visitor);
         if(Mdecl!=null) Mdecl.accept(visitor);
         if(ClassMethodDecl!=null) ClassMethodDecl.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(ProgName!=null) ProgName.traverseTopDown(visitor);
         if(Mdecl!=null) Mdecl.traverseTopDown(visitor);
         if(ClassMethodDecl!=null) ClassMethodDecl.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(ProgName!=null) ProgName.traverseBottomUp(visitor);
         if(Mdecl!=null) Mdecl.traverseBottomUp(visitor);
         if(ClassMethodDecl!=null) ClassMethodDecl.traverseBottomUp(visitor);
         accept(visitor);
@@ -58,6 +72,12 @@ public class ProgramWithMethods extends Program {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ProgramWithMethods(\n");
+
+        if(ProgName!=null)
+            buffer.append(ProgName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(Mdecl!=null)
             buffer.append(Mdecl.toString("  "+tab));

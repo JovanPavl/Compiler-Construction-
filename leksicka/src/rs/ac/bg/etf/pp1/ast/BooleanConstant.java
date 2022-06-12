@@ -1,13 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/0/2022 12:21:18
+// 16/4/2022 8:55:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class BooleanConstant extends Consts {
 
-    public BooleanConstant () {
+    private Integer B1;
+
+    public BooleanConstant (Integer B1) {
+        this.B1=B1;
+    }
+
+    public Integer getB1() {
+        return B1;
+    }
+
+    public void setB1(Integer B1) {
+        this.B1=B1;
     }
 
     public void accept(Visitor visitor) {
@@ -29,6 +40,9 @@ public class BooleanConstant extends Consts {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("BooleanConstant(\n");
+
+        buffer.append(" "+tab+B1);
+        buffer.append("\n");
 
         buffer.append(tab);
         buffer.append(") [BooleanConstant]");
