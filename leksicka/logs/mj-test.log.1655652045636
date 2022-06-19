@@ -1,0 +1,90 @@
+INFO  17:04:54,594 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  17:04:55,638 - #2 program
+INFO  17:04:55,638 - #48 test301
+INFO  17:04:55,638 - #11 {
+INFO  17:04:55,653 - #13 void
+INFO  17:04:55,653 - #48 main
+INFO  17:04:55,660 - #9 (
+INFO  17:04:55,660 - #10 )
+INFO  17:04:55,667 - #48 int
+INFO  17:04:55,673 - #48 bodovi
+INFO  17:04:55,673 - #8 ;
+INFO  17:04:55,687 - #11 {
+INFO  17:04:55,694 - #48 bodovi
+INFO  17:04:55,701 - #6 =
+INFO  17:04:55,708 - #51 5
+INFO  17:04:55,722 - #37 -
+INFO  17:04:55,723 - #51 3
+INFO  17:04:55,736 - #8 ;
+INFO  17:04:55,736 - #12 }
+INFO  17:04:55,737 - #12 }
+INFO  17:04:55,742 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  EmptyDeclaration(
+  ) [EmptyDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      MethodReturnTypeDerived2(
+      ) [MethodReturnTypeDerived2]
+     main
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        EmptyVariableDecl(
+        ) [EmptyVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            TypeIdent(
+             int
+            ) [TypeIdent]
+           bodovi
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        NoStatement(
+        ) [NoStatement]
+        OneStatementRed(
+          DesignStatement(
+            DesignatorStat(
+              DesignatorFullExpresion(
+               bodovi
+                EmptyMultipleDesignator(
+                ) [EmptyMultipleDesignator]
+              ) [DesignatorFullExpresion]
+              AssignDesignatorOp(
+                AssignOperation(
+                ) [AssignOperation]
+                AddExptOnly(
+                  MultipleAddExpr(
+                    TermDerived1(
+                      NumConst(
+                       5
+                      ) [NumConst]
+                    ) [TermDerived1]
+                    MinusOp(
+                    ) [MinusOp]
+                    TermDerived1(
+                      NumConst(
+                       3
+                      ) [NumConst]
+                    ) [TermDerived1]
+                  ) [MultipleAddExpr]
+                ) [AddExptOnly]
+              ) [AssignDesignatorOp]
+            ) [DesignatorStat]
+          ) [DesignStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  17:04:55,743 - ===================================
+INFO  17:04:55,759 - ===================================
+INFO  17:04:55,760 - Parsing finished succesfully!

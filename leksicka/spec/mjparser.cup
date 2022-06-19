@@ -214,7 +214,7 @@ CondFact ::= (SingleCondFact)Expr
 			 (MultipleCondFact)Expr Relop Expr;
 AddExpr ::=(OneAddExpr)Term
 			|
-			(MultipleAddExpr)Term Addop Term;
+			(MultipleAddExpr)AddExpr Addop Term;
 Expr ::= (MinusExpr)MINUS AddExpr
 		|
 		(AddExptOnly)AddExpr;

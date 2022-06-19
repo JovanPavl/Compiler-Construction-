@@ -30,18 +30,22 @@ public class SemanticPass extends VisitorAdaptor {
 
 	public void visit(ProgName progName) {
 		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
-		log.debug("Program name recognized " + progName.getLine() + " \n");
 		Tab.openScope();
 	}
 
 	public void visit(DesignatorStructure designatorStructure) {
-		report_info("DesignatorStructure found", designatorStructure);
+//		super.visit(designatorStructure);
+		report_info("DesignatorStructure", designatorStructure);
 	}
 
 	public void visit(DesignatorArray designatorArray) {
-		report_info("DesignatorArray", designatorArray);
+//		super.visit(designatorArray);
+		
 	}
 	
+	public void visit(DesignatorFullExpresion designatorFullExpresion) {
+		
+	}
 	public boolean passed() {
 		return !errorDetected;
 	}

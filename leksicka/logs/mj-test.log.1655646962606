@@ -1,0 +1,210 @@
+INFO  13:48:37,046 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  13:48:37,320 - #2 program
+INFO  13:48:37,320 - #48 p
+INFO  13:48:37,321 - #14 const
+INFO  13:48:37,323 - #48 int
+INFO  13:48:37,323 - #48 size
+INFO  13:48:37,324 - #6 =
+INFO  13:48:37,324 - #51 10
+INFO  13:48:37,324 - #8 ;
+INFO  13:48:37,326 - #41 class
+INFO  13:48:37,328 - #48 Table
+INFO  13:48:37,329 - #11 {
+INFO  13:48:37,330 - #48 int
+INFO  13:48:37,331 - #48 pos
+INFO  13:48:37,332 - #38 [
+INFO  13:48:37,332 - #39 ]
+INFO  13:48:37,332 - #7 ,
+INFO  13:48:37,334 - #48 neg
+INFO  13:48:37,334 - #38 [
+INFO  13:48:37,334 - #39 ]
+INFO  13:48:37,334 - #8 ;
+INFO  13:48:37,335 - #11 {
+INFO  13:48:37,337 - #13 void
+INFO  13:48:37,337 - #48 putp
+INFO  13:48:37,339 - #9 (
+INFO  13:48:37,339 - #48 int
+INFO  13:48:37,339 - #48 a
+INFO  13:48:37,339 - #7 ,
+INFO  13:48:37,341 - #48 int
+INFO  13:48:37,341 - #48 idx
+INFO  13:48:37,341 - #10 )
+INFO  13:48:37,342 - #11 {
+INFO  13:48:37,342 - #48 this
+INFO  13:48:37,344 - #43 .
+INFO  13:48:37,346 - #48 pos
+INFO  13:48:37,347 - #38 [
+INFO  13:48:37,347 - #48 idx
+INFO  13:48:37,347 - #39 ]
+INFO  13:48:37,348 - #6 =
+INFO  13:48:37,348 - #48 a
+INFO  13:48:37,351 - #8 ;
+INFO  13:48:37,352 - #12 }
+INFO  13:48:37,352 - #12 }
+INFO  13:48:37,353 - #12 }
+INFO  13:48:37,353 - #11 {
+INFO  13:48:37,353 - #13 void
+INFO  13:48:37,353 - #48 main
+INFO  13:48:37,354 - #9 (
+INFO  13:48:37,354 - #10 )
+INFO  13:48:37,355 - #11 {
+INFO  13:48:37,355 - #12 }
+INFO  13:48:37,355 - #12 }
+INFO  13:48:37,365 - ProgramWithMethods(
+  ProgName(
+   p
+  ) [ProgName]
+  ClassDecleration(
+    ConstantDeclaration(
+      EmptyDeclaration(
+      ) [EmptyDeclaration]
+      ConstantDecl(
+        TypeIdent(
+         int
+        ) [TypeIdent]
+        SimpleConstDecl(
+         size
+          NumberConstant(
+           10
+          ) [NumberConstant]
+        ) [SimpleConstDecl]
+        LineConstDeclDerived1(
+        ) [LineConstDeclDerived1]
+      ) [ConstantDecl]
+    ) [ConstantDeclaration]
+    ClassDeclDerived1(
+     Table
+      EmptyExtends(
+      ) [EmptyExtends]
+      MultipleVariableDecl(
+        EmptyVariableDecl(
+        ) [EmptyVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            TypeIdent(
+             int
+            ) [TypeIdent]
+           pos
+            ArrayOperator(
+            ) [ArrayOperator]
+          ) [SingleVariableDecl]
+          LineVariableDecl(
+           neg
+            ArrayOperator(
+            ) [ArrayOperator]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [LineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MethodDeclarationOnly(
+        OneMethodDeclaration(
+          SingleMethodDeclaration(
+            MethodReturnTypeDerived2(
+            ) [MethodReturnTypeDerived2]
+           putp
+            FormalParameters(
+              MultipleFormalParameters(
+                OnlyFormalParameter(
+                  SingleVariableDecl(
+                    TypeIdent(
+                     int
+                    ) [TypeIdent]
+                   a
+                    EmptyArrayOperator(
+                    ) [EmptyArrayOperator]
+                  ) [SingleVariableDecl]
+                ) [OnlyFormalParameter]
+                SingleVariableDecl(
+                  TypeIdent(
+                   int
+                  ) [TypeIdent]
+                 idx
+                  EmptyArrayOperator(
+                  ) [EmptyArrayOperator]
+                ) [SingleVariableDecl]
+              ) [MultipleFormalParameters]
+            ) [FormalParameters]
+            EmptyVariableDecl(
+            ) [EmptyVariableDecl]
+            MultipleStatement(
+              NoStatement(
+              ) [NoStatement]
+              OneStatementRed(
+                DesignStatement(
+                  DesignatorStat(
+                    DesignatorFullExpresion(
+                     this
+                      DesignatorArray(
+                        DesignatorStructure(
+                          EmptyMultipleDesignator(
+                          ) [EmptyMultipleDesignator]
+                         pos
+                        ) [DesignatorStructure]
+                        AddExptOnly(
+                          OneAddExpr(
+                            TermDerived1(
+                              DesignatorFactorExpresion(
+                                DesignatorOnly(
+                                  DesignatorFullExpresion(
+                                   idx
+                                    EmptyMultipleDesignator(
+                                    ) [EmptyMultipleDesignator]
+                                  ) [DesignatorFullExpresion]
+                                ) [DesignatorOnly]
+                              ) [DesignatorFactorExpresion]
+                            ) [TermDerived1]
+                          ) [OneAddExpr]
+                        ) [AddExptOnly]
+                      ) [DesignatorArray]
+                    ) [DesignatorFullExpresion]
+                    AssignDesignatorOp(
+                      AssignOperation(
+                      ) [AssignOperation]
+                      AddExptOnly(
+                        OneAddExpr(
+                          TermDerived1(
+                            DesignatorFactorExpresion(
+                              DesignatorOnly(
+                                DesignatorFullExpresion(
+                                 a
+                                  EmptyMultipleDesignator(
+                                  ) [EmptyMultipleDesignator]
+                                ) [DesignatorFullExpresion]
+                              ) [DesignatorOnly]
+                            ) [DesignatorFactorExpresion]
+                          ) [TermDerived1]
+                        ) [OneAddExpr]
+                      ) [AddExptOnly]
+                    ) [AssignDesignatorOp]
+                  ) [DesignatorStat]
+                ) [DesignStatement]
+              ) [OneStatementRed]
+            ) [MultipleStatement]
+          ) [SingleMethodDeclaration]
+        ) [OneMethodDeclaration]
+      ) [MethodDeclarationOnly]
+    ) [ClassDeclDerived1]
+  ) [ClassDecleration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      MethodReturnTypeDerived2(
+      ) [MethodReturnTypeDerived2]
+     main
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      EmptyVariableDecl(
+      ) [EmptyVariableDecl]
+      NoStatement(
+      ) [NoStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  13:48:37,366 - ===================================
+INFO  13:48:37,371 - DesignatorStructure on the line 32
+INFO  13:48:37,372 - DesignatorFullExpresion on the line 6
+INFO  13:48:37,372 - DesignatorArray on the line 32
+INFO  13:48:37,372 - DesignatorFullExpresion on the line 6
+INFO  13:48:37,372 - DesignatorFullExpresion on the line 6
+INFO  13:48:37,372 - ===================================
+INFO  13:48:37,374 - Parsing finished succesfully!

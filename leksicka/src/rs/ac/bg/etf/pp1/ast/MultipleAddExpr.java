@@ -1,31 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/4/2022 8:55:50
+// 19/5/2022 17:40:43
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class MultipleAddExpr extends AddExpr {
 
-    private Term Term;
+    private AddExpr AddExpr;
     private Addop Addop;
-    private Term Term1;
+    private Term Term;
 
-    public MultipleAddExpr (Term Term, Addop Addop, Term Term1) {
-        this.Term=Term;
-        if(Term!=null) Term.setParent(this);
+    public MultipleAddExpr (AddExpr AddExpr, Addop Addop, Term Term) {
+        this.AddExpr=AddExpr;
+        if(AddExpr!=null) AddExpr.setParent(this);
         this.Addop=Addop;
         if(Addop!=null) Addop.setParent(this);
-        this.Term1=Term1;
-        if(Term1!=null) Term1.setParent(this);
-    }
-
-    public Term getTerm() {
-        return Term;
-    }
-
-    public void setTerm(Term Term) {
         this.Term=Term;
+        if(Term!=null) Term.setParent(this);
+    }
+
+    public AddExpr getAddExpr() {
+        return AddExpr;
+    }
+
+    public void setAddExpr(AddExpr AddExpr) {
+        this.AddExpr=AddExpr;
     }
 
     public Addop getAddop() {
@@ -36,12 +36,12 @@ public class MultipleAddExpr extends AddExpr {
         this.Addop=Addop;
     }
 
-    public Term getTerm1() {
-        return Term1;
+    public Term getTerm() {
+        return Term;
     }
 
-    public void setTerm1(Term Term1) {
-        this.Term1=Term1;
+    public void setTerm(Term Term) {
+        this.Term=Term;
     }
 
     public void accept(Visitor visitor) {
@@ -49,22 +49,22 @@ public class MultipleAddExpr extends AddExpr {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Term!=null) Term.accept(visitor);
+        if(AddExpr!=null) AddExpr.accept(visitor);
         if(Addop!=null) Addop.accept(visitor);
-        if(Term1!=null) Term1.accept(visitor);
+        if(Term!=null) Term.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Term!=null) Term.traverseTopDown(visitor);
+        if(AddExpr!=null) AddExpr.traverseTopDown(visitor);
         if(Addop!=null) Addop.traverseTopDown(visitor);
-        if(Term1!=null) Term1.traverseTopDown(visitor);
+        if(Term!=null) Term.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Term!=null) Term.traverseBottomUp(visitor);
+        if(AddExpr!=null) AddExpr.traverseBottomUp(visitor);
         if(Addop!=null) Addop.traverseBottomUp(visitor);
-        if(Term1!=null) Term1.traverseBottomUp(visitor);
+        if(Term!=null) Term.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -73,8 +73,8 @@ public class MultipleAddExpr extends AddExpr {
         buffer.append(tab);
         buffer.append("MultipleAddExpr(\n");
 
-        if(Term!=null)
-            buffer.append(Term.toString("  "+tab));
+        if(AddExpr!=null)
+            buffer.append(AddExpr.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
@@ -85,8 +85,8 @@ public class MultipleAddExpr extends AddExpr {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Term1!=null)
-            buffer.append(Term1.toString("  "+tab));
+        if(Term!=null)
+            buffer.append(Term.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
