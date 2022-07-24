@@ -2,6 +2,7 @@ INDEX VERSION 1.131+C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza
 1145248259.index
 2773676320.index
 114717892.index
+1088895918.index
 1738387778.index
 678260410.index
 3723743845.index

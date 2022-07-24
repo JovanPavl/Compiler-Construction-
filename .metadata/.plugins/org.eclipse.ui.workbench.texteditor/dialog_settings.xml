@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="MultipleDesignator"/>
+		<item key="selection" value="Tab.init"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Tab.init"/>
+			<item value="TabE"/>
+			<item value="Tab"/>
+			<item value="Type"/>
+			<item value="TYPE"/>
+			<item value="GlobalVarDecl"/>
+			<item value="SingleMethodDecl"/>
+			<item value="Mdecl"/>
+			<item value="ClassMethodDecl"/>
 			<item value="MultipleDesignator"/>
-			<item value="DesignatorStructure"/>
-			<item value="[DesignatorStructure]"/>
-			<item value="DesignatorStatement"/>
-			<item value="LPAREN"/>
-			<item value="DesignatorStructire"/>
-			<item value="DesignatorStructuri"/>
-			<item value="Expr"/>
+			<item value="Addop"/>
 			<item value="AddExptOnly"/>
-			<item value="DesignatorFullExpresion"/>
-			<item value="SimpleConstDecl"/>
-			<item value="SimpleConstDeclaration"/>
-			<item value="DesignatorArray"/>
-			<item value="GlobalVariable"/>
-			<item value="pos"/>
+			<item value="assign"/>
+			<item value="TermDerived"/>
+			<item value="MultipleAddExpr"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

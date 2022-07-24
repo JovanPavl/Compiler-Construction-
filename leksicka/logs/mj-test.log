@@ -1,231 +1,237 @@
-INFO  17:42:22,306 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
-INFO  17:42:22,435 - #2 program
-INFO  17:42:22,435 - #48 test301
-INFO  17:42:22,436 - #14 const
-INFO  17:42:22,437 - #48 int
-INFO  17:42:22,437 - #48 nula
-INFO  17:42:22,437 - #6 =
-INFO  17:42:22,438 - #51 0
-INFO  17:42:22,438 - #8 ;
-INFO  17:42:22,439 - #14 const
-INFO  17:42:22,440 - #48 int
-INFO  17:42:22,440 - #48 jedan
-INFO  17:42:22,440 - #6 =
-INFO  17:42:22,440 - #51 1
-INFO  17:42:22,440 - #8 ;
-INFO  17:42:22,440 - #14 const
-INFO  17:42:22,441 - #48 int
-INFO  17:42:22,441 - #48 pet
-INFO  17:42:22,441 - #6 =
-INFO  17:42:22,441 - #51 5
-INFO  17:42:22,441 - #8 ;
-INFO  17:42:22,442 - #48 int
-INFO  17:42:22,443 - #48 niz
-INFO  17:42:22,443 - #38 [
-INFO  17:42:22,443 - #39 ]
-INFO  17:42:22,443 - #8 ;
-INFO  17:42:22,445 - #48 char
-INFO  17:42:22,446 - #48 nizch
-INFO  17:42:22,446 - #38 [
-INFO  17:42:22,446 - #39 ]
-INFO  17:42:22,446 - #8 ;
-INFO  17:42:22,446 - #11 {
-INFO  17:42:22,446 - #13 void
-INFO  17:42:22,446 - #48 main
-INFO  17:42:22,447 - #9 (
-INFO  17:42:22,447 - #10 )
-INFO  17:42:22,448 - #48 int
-INFO  17:42:22,449 - #48 bodovi
-INFO  17:42:22,449 - #8 ;
-INFO  17:42:22,449 - #48 bool
-INFO  17:42:22,450 - #48 bt
-INFO  17:42:22,451 - #8 ;
-INFO  17:42:22,451 - #11 {
-INFO  17:42:22,451 - #48 bodovi
-INFO  17:42:22,452 - #6 =
-INFO  17:42:22,453 - #51 0
-INFO  17:42:22,454 - #8 ;
-INFO  17:42:22,454 - #48 bodovi
-INFO  17:42:22,455 - #19 ++
-INFO  17:42:22,455 - #8 ;
-INFO  17:42:22,456 - #48 bodovi
-INFO  17:42:22,456 - #6 =
-INFO  17:42:22,456 - #48 bodovi
-INFO  17:42:22,456 - #5 +
-INFO  17:42:22,456 - #48 jedan
-INFO  17:42:22,458 - #8 ;
-INFO  17:42:22,458 - #48 bodovi
-INFO  17:42:22,458 - #6 =
-INFO  17:42:22,458 - #48 bodovi
-INFO  17:42:22,458 - #28 *
-INFO  17:42:22,459 - #48 pet
-INFO  17:42:22,460 - #8 ;
-INFO  17:42:22,460 - #48 bodovi
-INFO  17:42:22,461 - #20 --
-INFO  17:42:22,461 - #8 ;
-INFO  17:42:22,462 - #3 print
-INFO  17:42:22,462 - #9 (
-INFO  17:42:22,462 - #48 bodovi
-INFO  17:42:22,462 - #10 )
-INFO  17:42:22,462 - #8 ;
-INFO  17:42:22,463 - #48 niz
-INFO  17:42:22,463 - #6 =
-INFO  17:42:22,463 - #21 new
-INFO  17:42:22,463 - #48 int
-INFO  17:42:22,463 - #38 [
-INFO  17:42:22,463 - #51 3
-INFO  17:42:22,463 - #39 ]
-INFO  17:42:22,463 - #8 ;
-INFO  17:42:22,464 - #48 niz
-INFO  17:42:22,464 - #38 [
-INFO  17:42:22,464 - #48 nula
-INFO  17:42:22,464 - #39 ]
-INFO  17:42:22,464 - #6 =
-INFO  17:42:22,464 - #48 jedan
-INFO  17:42:22,464 - #8 ;
-INFO  17:42:22,464 - #48 niz
-INFO  17:42:22,464 - #38 [
-INFO  17:42:22,465 - #51 1
-INFO  17:42:22,465 - #39 ]
-INFO  17:42:22,465 - #6 =
-INFO  17:42:22,465 - #51 2
-INFO  17:42:22,465 - #8 ;
-INFO  17:42:22,465 - #48 niz
-INFO  17:42:22,465 - #38 [
-INFO  17:42:22,465 - #48 niz
-INFO  17:42:22,465 - #38 [
-INFO  17:42:22,466 - #48 jedan
-INFO  17:42:22,466 - #39 ]
-INFO  17:42:22,466 - #39 ]
-INFO  17:42:22,466 - #6 =
-INFO  17:42:22,466 - #48 niz
-INFO  17:42:22,468 - #38 [
-INFO  17:42:22,468 - #48 niz
-INFO  17:42:22,468 - #38 [
-INFO  17:42:22,468 - #51 0
-INFO  17:42:22,468 - #39 ]
-INFO  17:42:22,468 - #39 ]
-INFO  17:42:22,468 - #28 *
-INFO  17:42:22,468 - #51 3
-INFO  17:42:22,468 - #8 ;
-INFO  17:42:22,468 - #48 bodovi
-INFO  17:42:22,468 - #6 =
-INFO  17:42:22,469 - #48 niz
-INFO  17:42:22,469 - #38 [
-INFO  17:42:22,469 - #51 2
-INFO  17:42:22,469 - #39 ]
-INFO  17:42:22,469 - #29 /
-INFO  17:42:22,469 - #48 niz
-INFO  17:42:22,470 - #38 [
-INFO  17:42:22,470 - #51 0
-INFO  17:42:22,470 - #39 ]
-INFO  17:42:22,470 - #8 ;
-INFO  17:42:22,470 - #3 print
-INFO  17:42:22,470 - #9 (
-INFO  17:42:22,470 - #48 bodovi
-INFO  17:42:22,470 - #10 )
-INFO  17:42:22,471 - #8 ;
-INFO  17:42:22,471 - #3 print
-INFO  17:42:22,471 - #9 (
-INFO  17:42:22,471 - #48 niz
-INFO  17:42:22,471 - #38 [
-INFO  17:42:22,471 - #51 2
-INFO  17:42:22,471 - #39 ]
-INFO  17:42:22,471 - #10 )
-INFO  17:42:22,471 - #8 ;
-INFO  17:42:22,471 - #48 nizch
-INFO  17:42:22,471 - #6 =
-INFO  17:42:22,472 - #21 new
-INFO  17:42:22,472 - #48 char
-INFO  17:42:22,472 - #38 [
-INFO  17:42:22,472 - #51 3
-INFO  17:42:22,472 - #39 ]
-INFO  17:42:22,472 - #8 ;
-INFO  17:42:22,472 - #48 nizch
-INFO  17:42:22,472 - #38 [
-INFO  17:42:22,472 - #51 0
-INFO  17:42:22,472 - #39 ]
-INFO  17:42:22,473 - #6 =
-INFO  17:42:22,473 - #49 a
-INFO  17:42:22,473 - #8 ;
-INFO  17:42:22,473 - #48 nizch
-INFO  17:42:22,473 - #38 [
-INFO  17:42:22,473 - #48 jedan
-INFO  17:42:22,473 - #39 ]
-INFO  17:42:22,473 - #6 =
-INFO  17:42:22,473 - #49 b
-INFO  17:42:22,474 - #8 ;
-INFO  17:42:22,474 - #48 nizch
-INFO  17:42:22,474 - #38 [
-INFO  17:42:22,474 - #48 pet
-INFO  17:42:22,474 - #37 -
-INFO  17:42:22,474 - #51 3
-INFO  17:42:22,475 - #39 ]
-INFO  17:42:22,475 - #6 =
-INFO  17:42:22,475 - #49 c
-INFO  17:42:22,475 - #8 ;
-INFO  17:42:22,475 - #3 print
-INFO  17:42:22,475 - #9 (
-INFO  17:42:22,476 - #48 nizch
-INFO  17:42:22,476 - #38 [
-INFO  17:42:22,476 - #51 1
-INFO  17:42:22,476 - #39 ]
-INFO  17:42:22,476 - #10 )
-INFO  17:42:22,476 - #8 ;
-INFO  17:42:22,476 - #3 print
-INFO  17:42:22,477 - #9 (
-INFO  17:42:22,477 - #48 nizch
-INFO  17:42:22,477 - #38 [
-INFO  17:42:22,477 - #48 jedan
-INFO  17:42:22,477 - #28 *
-INFO  17:42:22,477 - #51 2
-INFO  17:42:22,477 - #39 ]
-INFO  17:42:22,477 - #10 )
-INFO  17:42:22,477 - #8 ;
-INFO  17:42:22,477 - #48 bodovi
-INFO  17:42:22,478 - #6 =
-INFO  17:42:22,478 - #48 bodovi
-INFO  17:42:22,478 - #5 +
-INFO  17:42:22,478 - #9 (
-INFO  17:42:22,478 - #48 pet
-INFO  17:42:22,478 - #28 *
-INFO  17:42:22,478 - #48 jedan
-INFO  17:42:22,478 - #37 -
-INFO  17:42:22,479 - #51 1
-INFO  17:42:22,479 - #10 )
-INFO  17:42:22,479 - #28 *
-INFO  17:42:22,479 - #48 bodovi
-INFO  17:42:22,479 - #37 -
-INFO  17:42:22,479 - #9 (
-INFO  17:42:22,479 - #51 3
-INFO  17:42:22,479 - #36 %
-INFO  17:42:22,480 - #51 2
-INFO  17:42:22,480 - #5 +
-INFO  17:42:22,481 - #51 3
-INFO  17:42:22,481 - #28 *
-INFO  17:42:22,481 - #51 2
-INFO  17:42:22,481 - #37 -
-INFO  17:42:22,481 - #51 3
-INFO  17:42:22,481 - #10 )
-INFO  17:42:22,481 - #8 ;
-INFO  17:42:22,481 - #3 print
-INFO  17:42:22,482 - #9 (
-INFO  17:42:22,482 - #48 bodovi
-INFO  17:42:22,482 - #10 )
-INFO  17:42:22,482 - #8 ;
-INFO  17:42:22,482 - #31 read
-INFO  17:42:22,482 - #9 (
-INFO  17:42:22,482 - #48 bodovi
-INFO  17:42:22,482 - #10 )
-INFO  17:42:22,483 - #8 ;
-INFO  17:42:22,483 - #3 print
-INFO  17:42:22,483 - #9 (
-INFO  17:42:22,483 - #48 bodovi
-INFO  17:42:22,483 - #10 )
-INFO  17:42:22,483 - #8 ;
-INFO  17:42:22,483 - #12 }
-INFO  17:42:22,484 - #12 }
-INFO  17:42:22,507 - ProgramWithMethods(
+INFO  15:17:03,878 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  15:17:03,985 - #2 program
+INFO  15:17:03,985 - #48 test301
+INFO  15:17:03,985 - #14 const
+INFO  15:17:03,986 - #48 int
+INFO  15:17:03,987 - #48 nula
+INFO  15:17:03,987 - #6 =
+INFO  15:17:03,987 - #51 0
+INFO  15:17:03,987 - #8 ;
+INFO  15:17:03,988 - #14 const
+INFO  15:17:03,989 - #48 int
+INFO  15:17:03,989 - #48 jedan
+INFO  15:17:03,989 - #6 =
+INFO  15:17:03,990 - #51 1
+INFO  15:17:03,990 - #8 ;
+INFO  15:17:03,990 - #14 const
+INFO  15:17:03,990 - #48 int
+INFO  15:17:03,990 - #48 tri
+INFO  15:17:03,990 - #6 =
+INFO  15:17:03,990 - #51 3
+INFO  15:17:03,990 - #8 ;
+INFO  15:17:03,992 - #14 const
+INFO  15:17:03,992 - #48 int
+INFO  15:17:03,992 - #48 pet
+INFO  15:17:03,992 - #6 =
+INFO  15:17:03,992 - #51 5
+INFO  15:17:03,992 - #8 ;
+INFO  15:17:03,992 - #48 int
+INFO  15:17:03,992 - #48 niz
+INFO  15:17:03,992 - #38 [
+INFO  15:17:03,992 - #39 ]
+INFO  15:17:03,992 - #8 ;
+INFO  15:17:03,993 - #48 char
+INFO  15:17:03,994 - #48 nizch
+INFO  15:17:03,994 - #38 [
+INFO  15:17:03,994 - #39 ]
+INFO  15:17:03,994 - #8 ;
+INFO  15:17:03,994 - #11 {
+INFO  15:17:03,995 - #13 void
+INFO  15:17:03,995 - #48 main
+INFO  15:17:03,995 - #9 (
+INFO  15:17:03,996 - #10 )
+INFO  15:17:03,996 - #48 int
+INFO  15:17:03,997 - #48 bodovi
+INFO  15:17:03,997 - #8 ;
+INFO  15:17:03,998 - #48 bool
+INFO  15:17:03,999 - #48 bt
+INFO  15:17:03,999 - #8 ;
+INFO  15:17:03,999 - #11 {
+INFO  15:17:03,999 - #48 bodovi
+INFO  15:17:04,000 - #6 =
+INFO  15:17:04,001 - #51 0
+INFO  15:17:04,003 - #8 ;
+INFO  15:17:04,003 - #48 bodovi
+INFO  15:17:04,004 - #19 ++
+INFO  15:17:04,004 - #8 ;
+INFO  15:17:04,005 - #48 bodovi
+INFO  15:17:04,005 - #6 =
+INFO  15:17:04,005 - #48 bodovi
+INFO  15:17:04,005 - #5 +
+INFO  15:17:04,005 - #48 jedan
+INFO  15:17:04,007 - #8 ;
+INFO  15:17:04,007 - #48 bodovi
+INFO  15:17:04,007 - #6 =
+INFO  15:17:04,008 - #48 bodovi
+INFO  15:17:04,008 - #28 *
+INFO  15:17:04,008 - #48 pet
+INFO  15:17:04,010 - #8 ;
+INFO  15:17:04,010 - #48 bodovi
+INFO  15:17:04,010 - #20 --
+INFO  15:17:04,010 - #8 ;
+INFO  15:17:04,011 - #3 print
+INFO  15:17:04,011 - #9 (
+INFO  15:17:04,011 - #48 bodovi
+INFO  15:17:04,011 - #10 )
+INFO  15:17:04,011 - #8 ;
+INFO  15:17:04,012 - #48 niz
+INFO  15:17:04,012 - #6 =
+INFO  15:17:04,012 - #21 new
+INFO  15:17:04,012 - #48 int
+INFO  15:17:04,012 - #38 [
+INFO  15:17:04,012 - #51 3
+INFO  15:17:04,012 - #39 ]
+INFO  15:17:04,012 - #8 ;
+INFO  15:17:04,012 - #48 niz
+INFO  15:17:04,012 - #38 [
+INFO  15:17:04,012 - #48 nula
+INFO  15:17:04,012 - #39 ]
+INFO  15:17:04,013 - #6 =
+INFO  15:17:04,013 - #48 jedan
+INFO  15:17:04,013 - #8 ;
+INFO  15:17:04,013 - #48 niz
+INFO  15:17:04,013 - #38 [
+INFO  15:17:04,013 - #51 1
+INFO  15:17:04,013 - #39 ]
+INFO  15:17:04,013 - #6 =
+INFO  15:17:04,013 - #51 2
+INFO  15:17:04,013 - #8 ;
+INFO  15:17:04,014 - #48 niz
+INFO  15:17:04,014 - #38 [
+INFO  15:17:04,014 - #48 niz
+INFO  15:17:04,014 - #38 [
+INFO  15:17:04,014 - #48 jedan
+INFO  15:17:04,014 - #39 ]
+INFO  15:17:04,014 - #39 ]
+INFO  15:17:04,014 - #6 =
+INFO  15:17:04,014 - #48 niz
+INFO  15:17:04,014 - #38 [
+INFO  15:17:04,014 - #48 niz
+INFO  15:17:04,015 - #38 [
+INFO  15:17:04,015 - #51 0
+INFO  15:17:04,015 - #39 ]
+INFO  15:17:04,015 - #39 ]
+INFO  15:17:04,015 - #28 *
+INFO  15:17:04,015 - #51 3
+INFO  15:17:04,015 - #8 ;
+INFO  15:17:04,015 - #48 bodovi
+INFO  15:17:04,015 - #6 =
+INFO  15:17:04,015 - #48 niz
+INFO  15:17:04,015 - #38 [
+INFO  15:17:04,016 - #51 2
+INFO  15:17:04,016 - #39 ]
+INFO  15:17:04,016 - #29 /
+INFO  15:17:04,016 - #48 niz
+INFO  15:17:04,017 - #38 [
+INFO  15:17:04,017 - #51 0
+INFO  15:17:04,017 - #39 ]
+INFO  15:17:04,017 - #8 ;
+INFO  15:17:04,017 - #3 print
+INFO  15:17:04,017 - #9 (
+INFO  15:17:04,017 - #48 bodovi
+INFO  15:17:04,017 - #10 )
+INFO  15:17:04,018 - #8 ;
+INFO  15:17:04,018 - #3 print
+INFO  15:17:04,018 - #9 (
+INFO  15:17:04,018 - #48 niz
+INFO  15:17:04,018 - #38 [
+INFO  15:17:04,018 - #51 2
+INFO  15:17:04,018 - #39 ]
+INFO  15:17:04,018 - #10 )
+INFO  15:17:04,018 - #8 ;
+INFO  15:17:04,018 - #48 nizch
+INFO  15:17:04,018 - #6 =
+INFO  15:17:04,018 - #21 new
+INFO  15:17:04,019 - #48 char
+INFO  15:17:04,019 - #38 [
+INFO  15:17:04,019 - #51 3
+INFO  15:17:04,019 - #39 ]
+INFO  15:17:04,019 - #8 ;
+INFO  15:17:04,019 - #48 nizch
+INFO  15:17:04,019 - #38 [
+INFO  15:17:04,019 - #51 0
+INFO  15:17:04,019 - #39 ]
+INFO  15:17:04,019 - #6 =
+INFO  15:17:04,019 - #49 a
+INFO  15:17:04,019 - #8 ;
+INFO  15:17:04,019 - #48 nizch
+INFO  15:17:04,019 - #38 [
+INFO  15:17:04,019 - #48 jedan
+INFO  15:17:04,020 - #39 ]
+INFO  15:17:04,020 - #6 =
+INFO  15:17:04,020 - #49 b
+INFO  15:17:04,020 - #8 ;
+INFO  15:17:04,020 - #48 nizch
+INFO  15:17:04,020 - #38 [
+INFO  15:17:04,021 - #48 pet
+INFO  15:17:04,021 - #37 -
+INFO  15:17:04,021 - #51 3
+INFO  15:17:04,022 - #39 ]
+INFO  15:17:04,022 - #6 =
+INFO  15:17:04,022 - #49 c
+INFO  15:17:04,022 - #8 ;
+INFO  15:17:04,023 - #3 print
+INFO  15:17:04,023 - #9 (
+INFO  15:17:04,023 - #48 nizch
+INFO  15:17:04,023 - #38 [
+INFO  15:17:04,023 - #51 1
+INFO  15:17:04,023 - #39 ]
+INFO  15:17:04,023 - #10 )
+INFO  15:17:04,023 - #8 ;
+INFO  15:17:04,023 - #3 print
+INFO  15:17:04,023 - #9 (
+INFO  15:17:04,023 - #48 nizch
+INFO  15:17:04,023 - #38 [
+INFO  15:17:04,023 - #48 jedan
+INFO  15:17:04,024 - #28 *
+INFO  15:17:04,024 - #51 2
+INFO  15:17:04,024 - #39 ]
+INFO  15:17:04,024 - #10 )
+INFO  15:17:04,024 - #8 ;
+INFO  15:17:04,024 - #48 bodovi
+INFO  15:17:04,024 - #6 =
+INFO  15:17:04,024 - #48 bodovi
+INFO  15:17:04,024 - #5 +
+INFO  15:17:04,024 - #9 (
+INFO  15:17:04,024 - #48 pet
+INFO  15:17:04,024 - #28 *
+INFO  15:17:04,025 - #48 jedan
+INFO  15:17:04,025 - #37 -
+INFO  15:17:04,025 - #51 1
+INFO  15:17:04,025 - #10 )
+INFO  15:17:04,025 - #28 *
+INFO  15:17:04,025 - #48 bodovi
+INFO  15:17:04,025 - #37 -
+INFO  15:17:04,025 - #9 (
+INFO  15:17:04,025 - #51 3
+INFO  15:17:04,025 - #36 %
+INFO  15:17:04,025 - #51 2
+INFO  15:17:04,026 - #5 +
+INFO  15:17:04,026 - #51 3
+INFO  15:17:04,026 - #28 *
+INFO  15:17:04,026 - #51 2
+INFO  15:17:04,026 - #37 -
+INFO  15:17:04,026 - #51 3
+INFO  15:17:04,026 - #10 )
+INFO  15:17:04,027 - #8 ;
+INFO  15:17:04,027 - #3 print
+INFO  15:17:04,027 - #9 (
+INFO  15:17:04,027 - #48 bodovi
+INFO  15:17:04,027 - #10 )
+INFO  15:17:04,027 - #8 ;
+INFO  15:17:04,027 - #31 read
+INFO  15:17:04,027 - #9 (
+INFO  15:17:04,027 - #48 bodovi
+INFO  15:17:04,027 - #10 )
+INFO  15:17:04,027 - #8 ;
+INFO  15:17:04,027 - #3 print
+INFO  15:17:04,027 - #9 (
+INFO  15:17:04,027 - #48 bodovi
+INFO  15:17:04,027 - #10 )
+INFO  15:17:04,027 - #8 ;
+INFO  15:17:04,028 - #12 }
+INFO  15:17:04,028 - #12 }
+INFO  15:17:04,043 - ProgramWithMethods(
   ProgName(
    test301
   ) [ProgName]
@@ -234,16 +240,31 @@ INFO  17:42:22,507 - ProgramWithMethods(
       ConstantDeclaration(
         ConstantDeclaration(
           ConstantDeclaration(
-            EmptyDeclaration(
-            ) [EmptyDeclaration]
+            ConstantDeclaration(
+              EmptyDeclaration(
+              ) [EmptyDeclaration]
+              ConstantDecl(
+                Type(
+                 int
+                ) [Type]
+                SimpleConstDecl(
+                 nula
+                  NumberConstant(
+                   0
+                  ) [NumberConstant]
+                ) [SimpleConstDecl]
+                LineConstDeclDerived1(
+                ) [LineConstDeclDerived1]
+              ) [ConstantDecl]
+            ) [ConstantDeclaration]
             ConstantDecl(
-              TypeIdent(
+              Type(
                int
-              ) [TypeIdent]
+              ) [Type]
               SimpleConstDecl(
-               nula
+               jedan
                 NumberConstant(
-                 0
+                 1
                 ) [NumberConstant]
               ) [SimpleConstDecl]
               LineConstDeclDerived1(
@@ -251,13 +272,13 @@ INFO  17:42:22,507 - ProgramWithMethods(
             ) [ConstantDecl]
           ) [ConstantDeclaration]
           ConstantDecl(
-            TypeIdent(
+            Type(
              int
-            ) [TypeIdent]
+            ) [Type]
             SimpleConstDecl(
-             jedan
+             tri
               NumberConstant(
-               1
+               3
               ) [NumberConstant]
             ) [SimpleConstDecl]
             LineConstDeclDerived1(
@@ -265,9 +286,9 @@ INFO  17:42:22,507 - ProgramWithMethods(
           ) [ConstantDecl]
         ) [ConstantDeclaration]
         ConstantDecl(
-          TypeIdent(
+          Type(
            int
-          ) [TypeIdent]
+          ) [Type]
           SimpleConstDecl(
            pet
             NumberConstant(
@@ -280,9 +301,9 @@ INFO  17:42:22,507 - ProgramWithMethods(
       ) [ConstantDeclaration]
       GlobalVariableDecl(
         SingleVariableDecl(
-          TypeIdent(
+          Type(
            int
-          ) [TypeIdent]
+          ) [Type]
          niz
           ArrayOperator(
           ) [ArrayOperator]
@@ -293,9 +314,9 @@ INFO  17:42:22,507 - ProgramWithMethods(
     ) [GlobalVariableDeclaration]
     GlobalVariableDecl(
       SingleVariableDecl(
-        TypeIdent(
+        Type(
          char
-        ) [TypeIdent]
+        ) [Type]
        nizch
         ArrayOperator(
         ) [ArrayOperator]
@@ -317,9 +338,9 @@ INFO  17:42:22,507 - ProgramWithMethods(
           ) [EmptyVariableDecl]
           VariableDecl(
             SingleVariableDecl(
-              TypeIdent(
+              Type(
                int
-              ) [TypeIdent]
+              ) [Type]
              bodovi
               EmptyArrayOperator(
               ) [EmptyArrayOperator]
@@ -330,9 +351,9 @@ INFO  17:42:22,507 - ProgramWithMethods(
         ) [MultipleVariableDecl]
         VariableDecl(
           SingleVariableDecl(
-            TypeIdent(
+            Type(
              bool
-            ) [TypeIdent]
+            ) [Type]
            bt
             EmptyArrayOperator(
             ) [EmptyArrayOperator]
@@ -547,9 +568,9 @@ INFO  17:42:22,507 - ProgramWithMethods(
                                                     TermDerived1(
                                                       NewTypeFactorExpresion(
                                                         NewTypeArray(
-                                                          TypeIdent(
+                                                          Type(
                                                            int
-                                                          ) [TypeIdent]
+                                                          ) [Type]
                                                           AddExptOnly(
                                                             OneAddExpr(
                                                               TermDerived1(
@@ -890,9 +911,9 @@ INFO  17:42:22,507 - ProgramWithMethods(
                                       TermDerived1(
                                         NewTypeFactorExpresion(
                                           NewTypeArray(
-                                            TypeIdent(
+                                            Type(
                                              char
-                                            ) [TypeIdent]
+                                            ) [Type]
                                             AddExptOnly(
                                               OneAddExpr(
                                                 TermDerived1(
@@ -1315,6 +1336,15 @@ INFO  17:42:22,507 - ProgramWithMethods(
     ) [SingleMethodDeclaration]
   ) [OneMethodDeclaration]
 ) [ProgramWithMethods]
-INFO  17:42:22,511 - ===================================
-INFO  17:42:22,531 - ===================================
-INFO  17:42:22,532 - Parsing finished succesfully!
+INFO  15:17:04,046 - ===================================
+INFO  15:17:04,051 - Constant: nula with value 0 declared on the line 5
+INFO  15:17:04,051 - Constant: jedan with value 1 declared on the line 6
+INFO  15:17:04,051 - Constant: tri with value 3 declared on the line 7
+INFO  15:17:04,051 - Constant: pet with value 5 declared on the line 8
+INFO  15:17:04,051 - Variable: niz with type array  1 declared on the line 10
+INFO  15:17:04,051 - Variable: nizch with type array  2 declared on the line 11
+INFO  15:17:04,052 - Variable: bodovi with type  1 declared on the line 15
+INFO  15:17:04,052 - Variable: bt with type  5 declared on the line 16
+INFO  15:17:04,052 - programWithMethods on the line 3
+INFO  15:17:04,052 - ===================================
+INFO  15:17:04,053 - Parsing finished succesfully!

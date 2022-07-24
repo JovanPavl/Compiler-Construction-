@@ -58,7 +58,7 @@ terminal Integer NUMBER;
 
 nonterminal Mdecl;
 
-nonterminal ConstDecl, MethodDecl, SimpleConstDecl, LineConstDecl;
+nonterminal ConstDecl, MethodDecl, LineConstDecl, SimpleConstDecl;
 
 nonterminal VarDecl, SingleVarDecl, LineVarDecl, ArrayOperator, MultipleVarDecl, GlobalVarDecl, GlobalLineVarDecl;
 
@@ -66,7 +66,7 @@ nonterminal ClassDecl, ClassAllMethodDecl, ExtendsOper;
 
 nonterminal ConstructorDecl;
 
-nonterminal SingleMethodDecl, ClassMethodDecl, MultipleFormParams, FormParams, MethodReturnType;
+nonterminal ClassMethodDecl, MultipleFormParams, FormParams, MethodReturnType, MethodSingleParemeter;
 
 nonterminal RecordStructure;
 
@@ -80,10 +80,11 @@ nonterminal ActPars;
 
 nonterminal Assignop, Relop, Addop, Mulop;
 
-nonterminal Consts, Type, Label, MultipleNumConst;
+nonterminal Label, MultipleNumConst;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName;
 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts;
 precedence left ELSE;
 
 Program ::= (ProgramWithMethods) PROG ProgName Mdecl LBRACE ClassMethodDecl RBRACE
@@ -105,7 +106,7 @@ Mdecl ::= (ConstantDeclaration) Mdecl ConstDecl
 
 
 ConstDecl ::= (ConstantDecl)CONST Type SimpleConstDecl LineConstDecl;
-SimpleConstDecl ::= (SimpleConstDecl) IDENT EQUAL Consts;
+SimpleConstDecl ::= (SimpleConstDecl) IDENT:varName EQUAL Consts:constValue;
 LineConstDecl ::= (LineConstantDecl) COMMA SimpleConstDecl LineConstDecl  
 				| 
 			   SEMI; 
@@ -115,7 +116,7 @@ GlobalVarDecl ::= (GlobalVariableDecl)SingleVarDecl GlobalLineVarDecl
 			|
 			(ErrorVarDecl)error GlobalLineVarDecl;
 VarDecl ::= (VariableDecl)SingleVarDecl LineVarDecl;
-SingleVarDecl ::= (SingleVariableDecl) Type IDENT ArrayOperator;
+SingleVarDecl ::= (SingleVariableDecl) Type IDENT:varName ArrayOperator;
 GlobalLineVarDecl ::= (GlobalLineVariableDecl) COMMA IDENT ArrayOperator GlobalLineVarDecl
 			|
 			(EmptyGlobalLineVariableDecl)SEMI
@@ -152,12 +153,14 @@ ConstructorDecl ::= (ConstructorDeclaration) IDENT LPAREN RPAREN MultipleVarDecl
 				
 				
 				
-SingleMethodDecl ::= (SingleMethodDeclaration) MethodReturnType IDENT LPAREN FormParams RPAREN MultipleVarDecl LBRACE ListStatement RBRACE;
+SingleMethodDecl ::= (SingleMethodDeclaration) SingleMethodName LPAREN FormParams RPAREN MultipleVarDecl LBRACE ListStatement RBRACE;
+SingleMethodName ::= (SingleMethodName)MethodReturnType IDENT:methodName
 ClassMethodDecl ::= (MultipleMethodDeclaration) ClassMethodDecl  SingleMethodDecl
 					|(OneMethodDeclaration)SingleMethodDecl; 
-MultipleFormParams ::= (MultipleFormalParameters) MultipleFormParams COMMA SingleVarDecl
+MethodSingleParemeter ::= (MethodSingleParemeter) Type IDENT:varName ArrayOperator;
+MultipleFormParams ::= (MultipleFormalParameters) MultipleFormParams COMMA MethodSingleParemeter
 						|
-						(OnlyFormalParameter)SingleVarDecl;
+						(OnlyFormalParameter)MethodSingleParemeter;
 FormParams ::= (FormalParameters) MultipleFormParams
 				|
 				(NoFormalParameters);
@@ -279,10 +282,10 @@ RecordStructure ::= (RecordStruct)RECORD IDENT LBRACE MultipleVarDecl RBRACE;
 MultipleNumConst ::= (NumConsts) MultipleNumConst COMMA NUMBER
 					|
 					(NoNumConsts);
-Consts ::= (BooleanConstant)BOOL 
+Consts ::= (BooleanConstant)BOOL:value
 			| 
-			(NumberConstant)NUMBER 
+			(NumberConstant)NUMBER:value
 			| 
-			(CharacterConstant)CHAR;
-Type ::= (TypeIdent)IDENT;
+			(CharacterConstant)CHAR:value;
+Type ::= (Type)IDENT:typeName;
 Label ::= (LabelIdent)IDENT;
