@@ -922,3 +922,9 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2022-07-24 18:03:39.591
+!MESSAGE System property http.proxyHost is not set but should be proxy.rcub.bg.ac.rs.
+
+!ENTRY org.eclipse.core.net 1 0 2022-07-24 18:03:39.592
+!MESSAGE System property http.proxyPort is not set but should be 8080.
