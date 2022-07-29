@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/5/2022 17:40:43
+// 24/6/2022 18:49:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class SingleVariableDecl extends SingleVarDecl {
 
     private Type Type;
-    private String I2;
+    private String varName;
     private ArrayOperator ArrayOperator;
 
-    public SingleVariableDecl (Type Type, String I2, ArrayOperator ArrayOperator) {
+    public SingleVariableDecl (Type Type, String varName, ArrayOperator ArrayOperator) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.I2=I2;
+        this.varName=varName;
         this.ArrayOperator=ArrayOperator;
         if(ArrayOperator!=null) ArrayOperator.setParent(this);
     }
@@ -27,12 +27,12 @@ public class SingleVariableDecl extends SingleVarDecl {
         this.Type=Type;
     }
 
-    public String getI2() {
-        return I2;
+    public String getVarName() {
+        return varName;
     }
 
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setVarName(String varName) {
+        this.varName=varName;
     }
 
     public ArrayOperator getArrayOperator() {
@@ -75,7 +75,7 @@ public class SingleVariableDecl extends SingleVarDecl {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+I2);
+        buffer.append(" "+tab+varName);
         buffer.append("\n");
 
         if(ArrayOperator!=null)

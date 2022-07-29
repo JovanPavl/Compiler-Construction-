@@ -11,7 +11,7 @@ import java_cup.runtime.Symbol;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
-import rs.ac.bg.etf.pp1.ast.Program;
+import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 import rs.etf.pp1.symboltable.Tab;
 
@@ -38,7 +38,7 @@ public class MJParserTest {
 	        Symbol s = p.parse();  //pocetak parsiranja
 	        
 	        Program prog = (Program)(s.value); 
-	        Tab.init();
+	        TabE.init();
 			// ispis sintaksnog stabla
 			log.info(prog.toString(""));
 			log.info("===================================");
@@ -50,7 +50,7 @@ public class MJParserTest {
 	//		log.info(" Print count calls = " + v.printCallCount);
 
 			log.info("===================================");
-			Tab.dump();
+			TabE.dump();
 			
 			if(!p.errorDetected && v.passed()){
 				log.info("Parsing finished succesfully!");

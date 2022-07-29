@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/5/2022 17:40:43
+// 24/6/2022 18:49:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -44,7 +44,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Statement Statement) { }
     public void visit(Mdecl Mdecl) { }
     public void visit(VarDecl VarDecl) { }
-    public void visit(Type Type) { }
     public void visit(ClassAllMethodDecl ClassAllMethodDecl) { }
     public void visit(ClassDecl ClassDecl) { }
     public void visit(ConstDecl ConstDecl) { }
@@ -57,7 +56,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MultipleNumConst MultipleNumConst) { }
     public void visit(ClassMethodDecl ClassMethodDecl) { }
     public void visit(LabelIdent LabelIdent) { visit(); }
-    public void visit(TypeIdent TypeIdent) { visit(); }
+    public void visit(Type Type) { visit(); }
     public void visit(CharacterConstant CharacterConstant) { visit(); }
     public void visit(NumberConstant NumberConstant) { visit(); }
     public void visit(BooleanConstant BooleanConstant) { visit(); }
@@ -138,8 +137,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FormalParameters FormalParameters) { visit(); }
     public void visit(OnlyFormalParameter OnlyFormalParameter) { visit(); }
     public void visit(MultipleFormalParameters MultipleFormalParameters) { visit(); }
+    public void visit(MethodSingleParemeter MethodSingleParemeter) { visit(); }
     public void visit(OneMethodDeclaration OneMethodDeclaration) { visit(); }
     public void visit(MultipleMethodDeclaration MultipleMethodDeclaration) { visit(); }
+    public void visit(SingleMethodName SingleMethodName) { visit(); }
     public void visit(SingleMethodDeclaration SingleMethodDeclaration) { visit(); }
     public void visit(ConstructorDeclaration ConstructorDeclaration) { visit(); }
     public void visit(EmptyExtends EmptyExtends) { visit(); }

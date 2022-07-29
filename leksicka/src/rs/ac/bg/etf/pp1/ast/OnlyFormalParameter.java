@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/5/2022 17:40:43
+// 24/6/2022 18:49:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class OnlyFormalParameter extends MultipleFormParams {
 
-    private SingleVarDecl SingleVarDecl;
+    private MethodSingleParemeter MethodSingleParemeter;
 
-    public OnlyFormalParameter (SingleVarDecl SingleVarDecl) {
-        this.SingleVarDecl=SingleVarDecl;
-        if(SingleVarDecl!=null) SingleVarDecl.setParent(this);
+    public OnlyFormalParameter (MethodSingleParemeter MethodSingleParemeter) {
+        this.MethodSingleParemeter=MethodSingleParemeter;
+        if(MethodSingleParemeter!=null) MethodSingleParemeter.setParent(this);
     }
 
-    public SingleVarDecl getSingleVarDecl() {
-        return SingleVarDecl;
+    public MethodSingleParemeter getMethodSingleParemeter() {
+        return MethodSingleParemeter;
     }
 
-    public void setSingleVarDecl(SingleVarDecl SingleVarDecl) {
-        this.SingleVarDecl=SingleVarDecl;
+    public void setMethodSingleParemeter(MethodSingleParemeter MethodSingleParemeter) {
+        this.MethodSingleParemeter=MethodSingleParemeter;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class OnlyFormalParameter extends MultipleFormParams {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(SingleVarDecl!=null) SingleVarDecl.accept(visitor);
+        if(MethodSingleParemeter!=null) MethodSingleParemeter.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(SingleVarDecl!=null) SingleVarDecl.traverseTopDown(visitor);
+        if(MethodSingleParemeter!=null) MethodSingleParemeter.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(SingleVarDecl!=null) SingleVarDecl.traverseBottomUp(visitor);
+        if(MethodSingleParemeter!=null) MethodSingleParemeter.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class OnlyFormalParameter extends MultipleFormParams {
         buffer.append(tab);
         buffer.append("OnlyFormalParameter(\n");
 
-        if(SingleVarDecl!=null)
-            buffer.append(SingleVarDecl.toString("  "+tab));
+        if(MethodSingleParemeter!=null)
+            buffer.append(MethodSingleParemeter.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

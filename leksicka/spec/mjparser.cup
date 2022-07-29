@@ -154,7 +154,7 @@ ConstructorDecl ::= (ConstructorDeclaration) IDENT LPAREN RPAREN MultipleVarDecl
 				
 				
 SingleMethodDecl ::= (SingleMethodDeclaration) SingleMethodName LPAREN FormParams RPAREN MultipleVarDecl LBRACE ListStatement RBRACE;
-SingleMethodName ::= (SingleMethodName)MethodReturnType IDENT:methodName
+SingleMethodName ::= (SingleMethodName)MethodReturnType IDENT:methodName;
 ClassMethodDecl ::= (MultipleMethodDeclaration) ClassMethodDecl  SingleMethodDecl
 					|(OneMethodDeclaration)SingleMethodDecl; 
 MethodSingleParemeter ::= (MethodSingleParemeter) Type IDENT:varName ArrayOperator;
@@ -166,10 +166,7 @@ FormParams ::= (FormalParameters) MultipleFormParams
 				(NoFormalParameters);
 MethodReturnType ::= Type
 					|
-					VOID;
-					
-								
-								
+					VOID;		
 ListStatement ::= (MultipleStatement) ListStatement Statement
 					|
 				  (NoStatement) ;

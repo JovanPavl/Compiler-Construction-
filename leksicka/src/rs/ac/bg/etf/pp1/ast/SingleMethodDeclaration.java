@@ -1,22 +1,20 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/5/2022 17:40:43
+// 24/6/2022 18:49:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class SingleMethodDeclaration extends SingleMethodDecl {
 
-    private MethodReturnType MethodReturnType;
-    private String I2;
+    private SingleMethodName SingleMethodName;
     private FormParams FormParams;
     private MultipleVarDecl MultipleVarDecl;
     private ListStatement ListStatement;
 
-    public SingleMethodDeclaration (MethodReturnType MethodReturnType, String I2, FormParams FormParams, MultipleVarDecl MultipleVarDecl, ListStatement ListStatement) {
-        this.MethodReturnType=MethodReturnType;
-        if(MethodReturnType!=null) MethodReturnType.setParent(this);
-        this.I2=I2;
+    public SingleMethodDeclaration (SingleMethodName SingleMethodName, FormParams FormParams, MultipleVarDecl MultipleVarDecl, ListStatement ListStatement) {
+        this.SingleMethodName=SingleMethodName;
+        if(SingleMethodName!=null) SingleMethodName.setParent(this);
         this.FormParams=FormParams;
         if(FormParams!=null) FormParams.setParent(this);
         this.MultipleVarDecl=MultipleVarDecl;
@@ -25,20 +23,12 @@ public class SingleMethodDeclaration extends SingleMethodDecl {
         if(ListStatement!=null) ListStatement.setParent(this);
     }
 
-    public MethodReturnType getMethodReturnType() {
-        return MethodReturnType;
+    public SingleMethodName getSingleMethodName() {
+        return SingleMethodName;
     }
 
-    public void setMethodReturnType(MethodReturnType MethodReturnType) {
-        this.MethodReturnType=MethodReturnType;
-    }
-
-    public String getI2() {
-        return I2;
-    }
-
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setSingleMethodName(SingleMethodName SingleMethodName) {
+        this.SingleMethodName=SingleMethodName;
     }
 
     public FormParams getFormParams() {
@@ -70,7 +60,7 @@ public class SingleMethodDeclaration extends SingleMethodDecl {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(MethodReturnType!=null) MethodReturnType.accept(visitor);
+        if(SingleMethodName!=null) SingleMethodName.accept(visitor);
         if(FormParams!=null) FormParams.accept(visitor);
         if(MultipleVarDecl!=null) MultipleVarDecl.accept(visitor);
         if(ListStatement!=null) ListStatement.accept(visitor);
@@ -78,14 +68,14 @@ public class SingleMethodDeclaration extends SingleMethodDecl {
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(MethodReturnType!=null) MethodReturnType.traverseTopDown(visitor);
+        if(SingleMethodName!=null) SingleMethodName.traverseTopDown(visitor);
         if(FormParams!=null) FormParams.traverseTopDown(visitor);
         if(MultipleVarDecl!=null) MultipleVarDecl.traverseTopDown(visitor);
         if(ListStatement!=null) ListStatement.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(MethodReturnType!=null) MethodReturnType.traverseBottomUp(visitor);
+        if(SingleMethodName!=null) SingleMethodName.traverseBottomUp(visitor);
         if(FormParams!=null) FormParams.traverseBottomUp(visitor);
         if(MultipleVarDecl!=null) MultipleVarDecl.traverseBottomUp(visitor);
         if(ListStatement!=null) ListStatement.traverseBottomUp(visitor);
@@ -97,13 +87,10 @@ public class SingleMethodDeclaration extends SingleMethodDecl {
         buffer.append(tab);
         buffer.append("SingleMethodDeclaration(\n");
 
-        if(MethodReturnType!=null)
-            buffer.append(MethodReturnType.toString("  "+tab));
+        if(SingleMethodName!=null)
+            buffer.append(SingleMethodName.toString("  "+tab));
         else
             buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        buffer.append(" "+tab+I2);
         buffer.append("\n");
 
         if(FormParams!=null)

@@ -120,11 +120,11 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		
 		ArrayOperator arr = singleVariableDecl.getArrayOperator();
-		Struct varType = currType;
+		Struct varType = new Struct(Struct.Array, currType);
 		String infoArr = "array ";
 		
 		if(arr instanceof EmptyArrayOperator) {
-			varType = new Struct(Struct.Array, currType);
+			varType = currType;
 			infoArr = "";
 		}
 		

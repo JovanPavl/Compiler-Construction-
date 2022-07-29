@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/5/2022 17:40:43
+// 24/6/2022 18:49:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,21 +9,21 @@ public class SimpleConstDecl implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private String I1;
+    private String varName;
     private Consts Consts;
 
-    public SimpleConstDecl (String I1, Consts Consts) {
-        this.I1=I1;
+    public SimpleConstDecl (String varName, Consts Consts) {
+        this.varName=varName;
         this.Consts=Consts;
         if(Consts!=null) Consts.setParent(this);
     }
 
-    public String getI1() {
-        return I1;
+    public String getVarName() {
+        return varName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setVarName(String varName) {
+        this.varName=varName;
     }
 
     public Consts getConsts() {
@@ -73,7 +73,7 @@ public class SimpleConstDecl implements SyntaxNode {
         buffer.append(tab);
         buffer.append("SimpleConstDecl(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+varName);
         buffer.append("\n");
 
         if(Consts!=null)
