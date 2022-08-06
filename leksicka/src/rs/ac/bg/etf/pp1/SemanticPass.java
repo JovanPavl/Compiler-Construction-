@@ -11,7 +11,7 @@ import rs.etf.pp1.symboltable.concepts.*;
 public class SemanticPass extends VisitorAdaptor {
 	Logger log = Logger.getLogger(getClass());
 
-	int numberOfVariables, tmpValue;
+	int numberOfVariables, tmpValue, ask_method = 0;
 	Obj currMethod = null;
 	Struct currType = null;
 	
@@ -145,11 +145,151 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(DesignatorArray designatorArray) {
 
 	}
+	
+	public void visit(SingleMethodDeclaration singleMethodDecleration) {
+		singleMethodDecleration.obj = currMethod;
+		TabE.chainLocalSymbols(currMethod);
+		TabE.closeScope();
+		currMethod = null;
+		ask_method = 0;
+		
+	}
+	public void visit(SingleMethodName singleMethodName) {
+		if(TabE.currentScope.findSymbol(singleMethodName.getMethodName()) != null) {
+			report_error("Error: " + singleMethodName.getMethodName() + " is defined before", singleMethodName);
+			return;
+		}
+		
+		Struct retType = null;
+		MethodReturnType rtype = singleMethodName.getMethodReturnType();
+		if(rtype instanceof VoidType) {
+			retType = TabE.noType;
+		}else {
+			retType = ((ReturnType)rtype).getType().struct;
+		}
+		
+		currMethod = TabE.insert(Obj.Meth, singleMethodName.getMethodName(), retType);
+		//check if it's in the class?
+		ask_method = 1;
+		
+		TabE.openScope();
+		
 
-	public void visit(DesignatorFullExpresion designatorFullExpresion) {
-
+		//something with code generation done here
+		
+		report_info("Method " + singleMethodName.getMethodName() + " with type " + retType.getKind(), singleMethodName);
+		
 	}
 
+	public void visit(PrintStatement printStatement) {
+		int tmp = printStatement.getExpr().struct.getKind();
+		if(tmp == Struct.Bool || tmp == Struct.Int || tmp == Struct.Char)
+			return ;
+		report_error("Parameter of print statement is not char, bool or int", printStatement);
+	}
+	
+	public void visit(MinusExpr minusExpr) {
+		minusExpr.struct = minusExpr.getAddExpr().struct;
+		if(minusExpr.struct.getKind() != Struct.Int) {
+			report_error("Expression with minus sign must be type of int", minusExpr);
+		}
+	}
+	
+	public void visit(AddExptOnly addExptOnly) {
+		addExptOnly.struct = addExptOnly.getAddExpr().struct;
+	}
+	
+	public void visit(OneAddExpr oneAddExpr) {
+		oneAddExpr.struct = oneAddExpr.getTerm().struct;
+	}
+	
+	public void visit(MultipleAddExpr multipleAddExpr) {
+		multipleAddExpr.struct = multipleAddExpr.getTerm().struct;
+		if(multipleAddExpr.struct.getKind() != Struct.Int) {
+			report_error("Expression with addop must be type of int", multipleAddExpr);
+		}
+	}
+	
+	public void visit(OneTerm oneTerm) {
+		oneTerm.struct = oneTerm.getFactor().struct;
+	}
+	
+	public void visit(MultipleTerm multipleTerm) {
+		Term tmpTerm = multipleTerm.getTerm();
+		if(tmpTerm.struct.getKind() != Struct.Int) {
+			report_error("Term with mulop must be type of int", tmpTerm);
+		}
+		
+		Factor factor = multipleTerm.getFactor();
+		if(factor.struct.getKind() != Struct.Int) {
+			report_error("Factor with mulop must be type of int", factor);
+		}
+		multipleTerm.struct = multipleTerm.getFactor().struct;
+	}
+	
+	public void visit(CharConst charConst) {
+		charConst.struct = new Struct(Struct.Char);
+	}
+	
+	public void visit(BoolConst boolConst) {
+		boolConst.struct = new Struct(Struct.Bool);
+	}
+	
+	public void visit(NumConst numConst) {
+		numConst.struct = new Struct(Struct.Int);
+	}
+	
+	public void visit(ParenExpresion parenExpresion) {
+		parenExpresion.struct = parenExpresion.getExpr().struct;
+	}
+	
+	public void visit(DesignatorFactorExpresion designatorFactorExpresion) {
+		designatorFactorExpresion.struct = designatorFactorExpresion.getDesignatorFactor().obj.getType();
+	}
+	
+	public void visit(NewTypeFactorExpresion newTypeFactorExpresion) {
+		newTypeFactorExpresion.struct = newTypeFactorExpresion.getNewTypeFactor().struct;
+	}
+	
+	public void visit(NewTypeArray newTypeArray) {
+		if(newTypeArray.getExpr().struct.getKind() != Struct.Int) {
+			report_error("When creating new array expresion need to be type int", newTypeArray.getExpr());
+		}
+		newTypeArray.struct = new Struct(Struct.Array, new Struct(Struct.Int));
+	}
+	
+	public void visit(DesignatorOnly designatorOnly) {
+		designatorOnly.obj = designatorOnly.getDesignator().obj;
+	}
+
+	
+	public void visit (DesignatorFullExpresion designatorFullExpresion) {
+		designatorFullExpresion.obj = TabE.find(designatorFullExpresion.getDesignatorName());
+		if(designatorFullExpresion.obj.equals(TabE.noObj)) {
+			report_error("Undeclared identifier " + designatorFullExpresion.getDesignatorName(), designatorFullExpresion);
+			return ;
+		}
+		
+		MultipleDesignator multipleDesignator = designatorFullExpresion.getMultipleDesignator();
+		
+		if(multipleDesignator instanceof DesignatorArray) {
+			Expr expr = ((DesignatorArray)multipleDesignator).getExpr();
+			if(expr.struct.getKind() != Struct.Int) {
+				report_error("Expr that is array index should be type of int actual:" + expr.struct.getKind(), expr);
+				return;
+			}
+			
+			if(designatorFullExpresion.obj.getType().getKind() != Struct.Array) {
+				report_error(designatorFullExpresion.getDesignatorName() + " is not array!", designatorFullExpresion);
+				return;
+			}
+			
+			designatorFullExpresion.obj = new Obj(Obj.Elem, designatorFullExpresion.getDesignatorName(), designatorFullExpresion.obj.getType().getElemType());
+			
+			report_info("Array operator used ", designatorFullExpresion);
+		}
+	}
+	
 	public boolean passed() {
 		return !errorDetected;
 	}

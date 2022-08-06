@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/6/2022 18:49:22
+// 5/7/2022 22:26:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class TermDerived1 extends Term {
+public class ReturnType extends MethodReturnType {
 
-    private Factor Factor;
+    private Type Type;
 
-    public TermDerived1 (Factor Factor) {
-        this.Factor=Factor;
-        if(Factor!=null) Factor.setParent(this);
+    public ReturnType (Type Type) {
+        this.Type=Type;
+        if(Type!=null) Type.setParent(this);
     }
 
-    public Factor getFactor() {
-        return Factor;
+    public Type getType() {
+        return Type;
     }
 
-    public void setFactor(Factor Factor) {
-        this.Factor=Factor;
+    public void setType(Type Type) {
+        this.Type=Type;
     }
 
     public void accept(Visitor visitor) {
@@ -27,32 +27,32 @@ public class TermDerived1 extends Term {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Factor!=null) Factor.accept(visitor);
+        if(Type!=null) Type.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Factor!=null) Factor.traverseTopDown(visitor);
+        if(Type!=null) Type.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Factor!=null) Factor.traverseBottomUp(visitor);
+        if(Type!=null) Type.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("TermDerived1(\n");
+        buffer.append("ReturnType(\n");
 
-        if(Factor!=null)
-            buffer.append(Factor.toString("  "+tab));
+        if(Type!=null)
+            buffer.append(Type.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [TermDerived1]");
+        buffer.append(") [ReturnType]");
         return buffer.toString();
     }
 }

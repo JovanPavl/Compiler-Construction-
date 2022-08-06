@@ -13,6 +13,7 @@ program test301
 	void main()	
 		int bodovi;
 		bool bt;
+		int nula;
 	{
 		bodovi = 0;
 		bodovi++;

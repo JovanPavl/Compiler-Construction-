@@ -1,236 +1,239 @@
-INFO  12:46:00,858 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
-INFO  12:46:01,006 - #2 program
-INFO  12:46:01,007 - #48 test301
-INFO  12:46:01,007 - #14 const
-INFO  12:46:01,010 - #48 int
-INFO  12:46:01,010 - #48 nula
-INFO  12:46:01,011 - #6 =
-INFO  12:46:01,012 - #51 0
-INFO  12:46:01,012 - #8 ;
-INFO  12:46:01,013 - #14 const
-INFO  12:46:01,015 - #48 int
-INFO  12:46:01,015 - #48 jedan
-INFO  12:46:01,015 - #6 =
-INFO  12:46:01,015 - #51 1
-INFO  12:46:01,015 - #8 ;
-INFO  12:46:01,016 - #14 const
-INFO  12:46:01,016 - #48 int
-INFO  12:46:01,016 - #48 pet
-INFO  12:46:01,016 - #6 =
-INFO  12:46:01,016 - #51 5
-INFO  12:46:01,017 - #8 ;
-INFO  12:46:01,021 - #48 int
-INFO  12:46:01,021 - #48 niz
-INFO  12:46:01,021 - #38 [
-INFO  12:46:01,021 - #39 ]
-INFO  12:46:01,021 - #8 ;
-INFO  12:46:01,023 - #48 char
-INFO  12:46:01,025 - #48 nizch
-INFO  12:46:01,025 - #38 [
-INFO  12:46:01,025 - #39 ]
-INFO  12:46:01,025 - #8 ;
-INFO  12:46:01,025 - #48 bool
-INFO  12:46:01,026 - #48 smor
-INFO  12:46:01,026 - #38 [
-INFO  12:46:01,026 - #39 ]
-INFO  12:46:01,026 - #8 ;
-INFO  12:46:01,026 - #11 {
-INFO  12:46:01,026 - #13 void
-INFO  12:46:01,027 - #48 main
-INFO  12:46:01,028 - #9 (
-INFO  12:46:01,029 - #10 )
-INFO  12:46:01,031 - #48 int
-INFO  12:46:01,032 - #48 bodovi
-INFO  12:46:01,032 - #8 ;
-INFO  12:46:01,033 - #48 bool
-INFO  12:46:01,035 - #48 bt
-INFO  12:46:01,035 - #8 ;
-INFO  12:46:01,035 - #11 {
-INFO  12:46:01,035 - #48 bodovi
-INFO  12:46:01,036 - #6 =
-INFO  12:46:01,038 - #51 0
-INFO  12:46:01,040 - #8 ;
-INFO  12:46:01,042 - #48 bodovi
-INFO  12:46:01,042 - #19 ++
-INFO  12:46:01,042 - #8 ;
-INFO  12:46:01,044 - #48 bodovi
-INFO  12:46:01,044 - #6 =
-INFO  12:46:01,044 - #48 bodovi
-INFO  12:46:01,044 - #5 +
-INFO  12:46:01,045 - #48 jedan
-INFO  12:46:01,047 - #8 ;
-INFO  12:46:01,048 - #48 bodovi
-INFO  12:46:01,048 - #6 =
-INFO  12:46:01,048 - #48 bodovi
-INFO  12:46:01,048 - #28 *
-INFO  12:46:01,048 - #48 pet
-INFO  12:46:01,050 - #8 ;
-INFO  12:46:01,051 - #48 bodovi
-INFO  12:46:01,051 - #20 --
-INFO  12:46:01,051 - #8 ;
-INFO  12:46:01,052 - #3 print
-INFO  12:46:01,052 - #9 (
-INFO  12:46:01,052 - #48 bodovi
-INFO  12:46:01,053 - #10 )
-INFO  12:46:01,054 - #8 ;
-INFO  12:46:01,054 - #48 niz
-INFO  12:46:01,054 - #6 =
-INFO  12:46:01,054 - #21 new
-INFO  12:46:01,054 - #48 int
-INFO  12:46:01,054 - #38 [
-INFO  12:46:01,055 - #51 3
-INFO  12:46:01,055 - #39 ]
-INFO  12:46:01,055 - #8 ;
-INFO  12:46:01,056 - #48 niz
-INFO  12:46:01,056 - #38 [
-INFO  12:46:01,056 - #48 nula
-INFO  12:46:01,056 - #39 ]
-INFO  12:46:01,057 - #6 =
-INFO  12:46:01,057 - #48 jedan
-INFO  12:46:01,057 - #8 ;
-INFO  12:46:01,057 - #48 niz
-INFO  12:46:01,057 - #38 [
-INFO  12:46:01,058 - #51 1
-INFO  12:46:01,058 - #39 ]
-INFO  12:46:01,058 - #6 =
-INFO  12:46:01,058 - #51 2
-INFO  12:46:01,059 - #8 ;
-INFO  12:46:01,059 - #48 niz
-INFO  12:46:01,059 - #38 [
-INFO  12:46:01,059 - #48 niz
-INFO  12:46:01,059 - #38 [
-INFO  12:46:01,059 - #48 jedan
-INFO  12:46:01,059 - #39 ]
-INFO  12:46:01,059 - #39 ]
-INFO  12:46:01,060 - #6 =
-INFO  12:46:01,060 - #48 niz
-INFO  12:46:01,060 - #38 [
-INFO  12:46:01,060 - #48 niz
-INFO  12:46:01,060 - #38 [
-INFO  12:46:01,060 - #51 0
-INFO  12:46:01,060 - #39 ]
-INFO  12:46:01,060 - #39 ]
-INFO  12:46:01,061 - #28 *
-INFO  12:46:01,061 - #51 3
-INFO  12:46:01,061 - #8 ;
-INFO  12:46:01,061 - #48 bodovi
-INFO  12:46:01,061 - #6 =
-INFO  12:46:01,061 - #48 niz
-INFO  12:46:01,062 - #38 [
-INFO  12:46:01,062 - #51 2
-INFO  12:46:01,062 - #39 ]
-INFO  12:46:01,062 - #29 /
-INFO  12:46:01,062 - #48 niz
-INFO  12:46:01,064 - #38 [
-INFO  12:46:01,064 - #51 0
-INFO  12:46:01,064 - #39 ]
-INFO  12:46:01,064 - #8 ;
-INFO  12:46:01,065 - #3 print
-INFO  12:46:01,065 - #9 (
-INFO  12:46:01,065 - #48 bodovi
-INFO  12:46:01,065 - #10 )
-INFO  12:46:01,066 - #8 ;
-INFO  12:46:01,066 - #3 print
-INFO  12:46:01,066 - #9 (
-INFO  12:46:01,066 - #48 niz
-INFO  12:46:01,066 - #38 [
-INFO  12:46:01,066 - #51 2
-INFO  12:46:01,066 - #39 ]
-INFO  12:46:01,067 - #10 )
-INFO  12:46:01,067 - #8 ;
-INFO  12:46:01,067 - #48 nizch
-INFO  12:46:01,067 - #6 =
-INFO  12:46:01,067 - #21 new
-INFO  12:46:01,067 - #48 char
-INFO  12:46:01,067 - #38 [
-INFO  12:46:01,068 - #51 3
-INFO  12:46:01,068 - #39 ]
-INFO  12:46:01,068 - #8 ;
-INFO  12:46:01,068 - #48 nizch
-INFO  12:46:01,068 - #38 [
-INFO  12:46:01,068 - #51 0
-INFO  12:46:01,068 - #39 ]
-INFO  12:46:01,069 - #6 =
-INFO  12:46:01,069 - #49 a
-INFO  12:46:01,069 - #8 ;
-INFO  12:46:01,069 - #48 nizch
-INFO  12:46:01,070 - #38 [
-INFO  12:46:01,070 - #48 jedan
-INFO  12:46:01,070 - #39 ]
-INFO  12:46:01,070 - #6 =
-INFO  12:46:01,070 - #49 b
-INFO  12:46:01,070 - #8 ;
-INFO  12:46:01,070 - #48 nizch
-INFO  12:46:01,070 - #38 [
-INFO  12:46:01,070 - #48 pet
-INFO  12:46:01,073 - #37 -
-INFO  12:46:01,073 - #51 3
-INFO  12:46:01,075 - #39 ]
-INFO  12:46:01,075 - #6 =
-INFO  12:46:01,075 - #49 c
-INFO  12:46:01,075 - #8 ;
-INFO  12:46:01,075 - #3 print
-INFO  12:46:01,075 - #9 (
-INFO  12:46:01,075 - #48 nizch
-INFO  12:46:01,076 - #38 [
-INFO  12:46:01,076 - #51 1
-INFO  12:46:01,076 - #39 ]
-INFO  12:46:01,076 - #10 )
-INFO  12:46:01,076 - #8 ;
-INFO  12:46:01,076 - #3 print
-INFO  12:46:01,076 - #9 (
-INFO  12:46:01,076 - #48 nizch
-INFO  12:46:01,076 - #38 [
-INFO  12:46:01,077 - #48 jedan
-INFO  12:46:01,077 - #28 *
-INFO  12:46:01,077 - #51 2
-INFO  12:46:01,077 - #39 ]
-INFO  12:46:01,077 - #10 )
-INFO  12:46:01,077 - #8 ;
-INFO  12:46:01,078 - #48 bodovi
-INFO  12:46:01,078 - #6 =
-INFO  12:46:01,078 - #48 bodovi
-INFO  12:46:01,078 - #5 +
-INFO  12:46:01,078 - #9 (
-INFO  12:46:01,078 - #48 pet
-INFO  12:46:01,078 - #28 *
-INFO  12:46:01,079 - #48 jedan
-INFO  12:46:01,079 - #37 -
-INFO  12:46:01,079 - #51 1
-INFO  12:46:01,079 - #10 )
-INFO  12:46:01,079 - #28 *
-INFO  12:46:01,079 - #48 bodovi
-INFO  12:46:01,079 - #37 -
-INFO  12:46:01,079 - #9 (
-INFO  12:46:01,080 - #51 3
-INFO  12:46:01,080 - #36 %
-INFO  12:46:01,080 - #51 2
-INFO  12:46:01,081 - #5 +
-INFO  12:46:01,081 - #51 3
-INFO  12:46:01,081 - #28 *
-INFO  12:46:01,081 - #51 2
-INFO  12:46:01,081 - #37 -
-INFO  12:46:01,082 - #51 3
-INFO  12:46:01,082 - #10 )
-INFO  12:46:01,082 - #8 ;
-INFO  12:46:01,082 - #3 print
-INFO  12:46:01,082 - #9 (
-INFO  12:46:01,082 - #48 bodovi
-INFO  12:46:01,082 - #10 )
-INFO  12:46:01,082 - #8 ;
-INFO  12:46:01,082 - #31 read
-INFO  12:46:01,082 - #9 (
-INFO  12:46:01,083 - #48 bodovi
-INFO  12:46:01,083 - #10 )
-INFO  12:46:01,083 - #8 ;
-INFO  12:46:01,083 - #3 print
-INFO  12:46:01,083 - #9 (
-INFO  12:46:01,083 - #48 bodovi
-INFO  12:46:01,083 - #10 )
-INFO  12:46:01,083 - #8 ;
-INFO  12:46:01,083 - #12 }
-INFO  12:46:01,084 - #12 }
-INFO  12:46:01,104 - ProgramWithMethods(
+INFO  10:22:24,581 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  10:22:24,691 - #2 program
+INFO  10:22:24,691 - #48 test301
+INFO  10:22:24,691 - #14 const
+INFO  10:22:24,693 - #48 int
+INFO  10:22:24,693 - #48 nula
+INFO  10:22:24,695 - #6 =
+INFO  10:22:24,695 - #51 0
+INFO  10:22:24,695 - #8 ;
+INFO  10:22:24,697 - #14 const
+INFO  10:22:24,698 - #48 int
+INFO  10:22:24,698 - #48 jedan
+INFO  10:22:24,699 - #6 =
+INFO  10:22:24,699 - #51 1
+INFO  10:22:24,699 - #8 ;
+INFO  10:22:24,699 - #14 const
+INFO  10:22:24,699 - #48 int
+INFO  10:22:24,699 - #48 pet
+INFO  10:22:24,700 - #6 =
+INFO  10:22:24,700 - #51 5
+INFO  10:22:24,700 - #8 ;
+INFO  10:22:24,701 - #48 int
+INFO  10:22:24,701 - #48 niz
+INFO  10:22:24,701 - #38 [
+INFO  10:22:24,701 - #39 ]
+INFO  10:22:24,701 - #8 ;
+INFO  10:22:24,703 - #48 char
+INFO  10:22:24,704 - #48 nizch
+INFO  10:22:24,704 - #38 [
+INFO  10:22:24,704 - #39 ]
+INFO  10:22:24,704 - #8 ;
+INFO  10:22:24,705 - #48 bool
+INFO  10:22:24,705 - #48 smor
+INFO  10:22:24,705 - #38 [
+INFO  10:22:24,705 - #39 ]
+INFO  10:22:24,705 - #8 ;
+INFO  10:22:24,705 - #11 {
+INFO  10:22:24,705 - #13 void
+INFO  10:22:24,705 - #48 main
+INFO  10:22:24,706 - #9 (
+INFO  10:22:24,708 - #10 )
+INFO  10:22:24,709 - #48 int
+INFO  10:22:24,710 - #48 bodovi
+INFO  10:22:24,710 - #8 ;
+INFO  10:22:24,711 - #48 bool
+INFO  10:22:24,712 - #48 bt
+INFO  10:22:24,712 - #8 ;
+INFO  10:22:24,713 - #48 int
+INFO  10:22:24,713 - #48 nula
+INFO  10:22:24,713 - #8 ;
+INFO  10:22:24,713 - #11 {
+INFO  10:22:24,713 - #48 bodovi
+INFO  10:22:24,714 - #6 =
+INFO  10:22:24,715 - #51 0
+INFO  10:22:24,717 - #8 ;
+INFO  10:22:24,718 - #48 bodovi
+INFO  10:22:24,718 - #19 ++
+INFO  10:22:24,719 - #8 ;
+INFO  10:22:24,720 - #48 bodovi
+INFO  10:22:24,720 - #6 =
+INFO  10:22:24,720 - #48 bodovi
+INFO  10:22:24,720 - #5 +
+INFO  10:22:24,721 - #48 jedan
+INFO  10:22:24,723 - #8 ;
+INFO  10:22:24,723 - #48 bodovi
+INFO  10:22:24,723 - #6 =
+INFO  10:22:24,724 - #48 bodovi
+INFO  10:22:24,724 - #28 *
+INFO  10:22:24,724 - #48 pet
+INFO  10:22:24,726 - #8 ;
+INFO  10:22:24,726 - #48 bodovi
+INFO  10:22:24,727 - #20 --
+INFO  10:22:24,727 - #8 ;
+INFO  10:22:24,728 - #3 print
+INFO  10:22:24,728 - #9 (
+INFO  10:22:24,728 - #48 bodovi
+INFO  10:22:24,728 - #10 )
+INFO  10:22:24,729 - #8 ;
+INFO  10:22:24,730 - #48 niz
+INFO  10:22:24,730 - #6 =
+INFO  10:22:24,730 - #21 new
+INFO  10:22:24,730 - #48 int
+INFO  10:22:24,730 - #38 [
+INFO  10:22:24,730 - #51 3
+INFO  10:22:24,730 - #39 ]
+INFO  10:22:24,730 - #8 ;
+INFO  10:22:24,731 - #48 niz
+INFO  10:22:24,731 - #38 [
+INFO  10:22:24,731 - #48 nula
+INFO  10:22:24,731 - #39 ]
+INFO  10:22:24,731 - #6 =
+INFO  10:22:24,732 - #48 jedan
+INFO  10:22:24,732 - #8 ;
+INFO  10:22:24,732 - #48 niz
+INFO  10:22:24,732 - #38 [
+INFO  10:22:24,732 - #51 1
+INFO  10:22:24,732 - #39 ]
+INFO  10:22:24,733 - #6 =
+INFO  10:22:24,733 - #51 2
+INFO  10:22:24,733 - #8 ;
+INFO  10:22:24,733 - #48 niz
+INFO  10:22:24,734 - #38 [
+INFO  10:22:24,735 - #48 niz
+INFO  10:22:24,735 - #38 [
+INFO  10:22:24,735 - #48 jedan
+INFO  10:22:24,735 - #39 ]
+INFO  10:22:24,735 - #39 ]
+INFO  10:22:24,735 - #6 =
+INFO  10:22:24,735 - #48 niz
+INFO  10:22:24,735 - #38 [
+INFO  10:22:24,735 - #48 niz
+INFO  10:22:24,735 - #38 [
+INFO  10:22:24,736 - #51 0
+INFO  10:22:24,736 - #39 ]
+INFO  10:22:24,736 - #39 ]
+INFO  10:22:24,736 - #28 *
+INFO  10:22:24,736 - #51 3
+INFO  10:22:24,736 - #8 ;
+INFO  10:22:24,736 - #48 bodovi
+INFO  10:22:24,736 - #6 =
+INFO  10:22:24,736 - #48 niz
+INFO  10:22:24,737 - #38 [
+INFO  10:22:24,737 - #51 2
+INFO  10:22:24,737 - #39 ]
+INFO  10:22:24,737 - #29 /
+INFO  10:22:24,737 - #48 niz
+INFO  10:22:24,738 - #38 [
+INFO  10:22:24,738 - #51 0
+INFO  10:22:24,738 - #39 ]
+INFO  10:22:24,739 - #8 ;
+INFO  10:22:24,739 - #3 print
+INFO  10:22:24,739 - #9 (
+INFO  10:22:24,739 - #48 bodovi
+INFO  10:22:24,739 - #10 )
+INFO  10:22:24,739 - #8 ;
+INFO  10:22:24,739 - #3 print
+INFO  10:22:24,739 - #9 (
+INFO  10:22:24,739 - #48 niz
+INFO  10:22:24,739 - #38 [
+INFO  10:22:24,739 - #51 2
+INFO  10:22:24,739 - #39 ]
+INFO  10:22:24,739 - #10 )
+INFO  10:22:24,740 - #8 ;
+INFO  10:22:24,740 - #48 nizch
+INFO  10:22:24,740 - #6 =
+INFO  10:22:24,740 - #21 new
+INFO  10:22:24,740 - #48 char
+INFO  10:22:24,740 - #38 [
+INFO  10:22:24,740 - #51 3
+INFO  10:22:24,740 - #39 ]
+INFO  10:22:24,740 - #8 ;
+INFO  10:22:24,740 - #48 nizch
+INFO  10:22:24,740 - #38 [
+INFO  10:22:24,740 - #51 0
+INFO  10:22:24,740 - #39 ]
+INFO  10:22:24,740 - #6 =
+INFO  10:22:24,741 - #49 a
+INFO  10:22:24,741 - #8 ;
+INFO  10:22:24,741 - #48 nizch
+INFO  10:22:24,741 - #38 [
+INFO  10:22:24,741 - #48 jedan
+INFO  10:22:24,741 - #39 ]
+INFO  10:22:24,741 - #6 =
+INFO  10:22:24,741 - #49 b
+INFO  10:22:24,741 - #8 ;
+INFO  10:22:24,742 - #48 nizch
+INFO  10:22:24,742 - #38 [
+INFO  10:22:24,742 - #48 pet
+INFO  10:22:24,742 - #37 -
+INFO  10:22:24,742 - #51 3
+INFO  10:22:24,745 - #39 ]
+INFO  10:22:24,745 - #6 =
+INFO  10:22:24,746 - #49 c
+INFO  10:22:24,746 - #8 ;
+INFO  10:22:24,746 - #3 print
+INFO  10:22:24,746 - #9 (
+INFO  10:22:24,746 - #48 nizch
+INFO  10:22:24,746 - #38 [
+INFO  10:22:24,746 - #51 1
+INFO  10:22:24,746 - #39 ]
+INFO  10:22:24,746 - #10 )
+INFO  10:22:24,747 - #8 ;
+INFO  10:22:24,747 - #3 print
+INFO  10:22:24,747 - #9 (
+INFO  10:22:24,747 - #48 nizch
+INFO  10:22:24,747 - #38 [
+INFO  10:22:24,747 - #48 jedan
+INFO  10:22:24,747 - #28 *
+INFO  10:22:24,747 - #51 2
+INFO  10:22:24,747 - #39 ]
+INFO  10:22:24,747 - #10 )
+INFO  10:22:24,748 - #8 ;
+INFO  10:22:24,748 - #48 bodovi
+INFO  10:22:24,748 - #6 =
+INFO  10:22:24,748 - #48 bodovi
+INFO  10:22:24,748 - #5 +
+INFO  10:22:24,748 - #9 (
+INFO  10:22:24,749 - #48 pet
+INFO  10:22:24,749 - #28 *
+INFO  10:22:24,749 - #48 jedan
+INFO  10:22:24,749 - #37 -
+INFO  10:22:24,749 - #51 1
+INFO  10:22:24,749 - #10 )
+INFO  10:22:24,749 - #28 *
+INFO  10:22:24,749 - #48 bodovi
+INFO  10:22:24,749 - #37 -
+INFO  10:22:24,749 - #9 (
+INFO  10:22:24,749 - #51 3
+INFO  10:22:24,750 - #36 %
+INFO  10:22:24,750 - #51 2
+INFO  10:22:24,751 - #5 +
+INFO  10:22:24,751 - #51 3
+INFO  10:22:24,751 - #28 *
+INFO  10:22:24,751 - #51 2
+INFO  10:22:24,751 - #37 -
+INFO  10:22:24,751 - #51 3
+INFO  10:22:24,751 - #10 )
+INFO  10:22:24,751 - #8 ;
+INFO  10:22:24,752 - #3 print
+INFO  10:22:24,752 - #9 (
+INFO  10:22:24,752 - #48 bodovi
+INFO  10:22:24,752 - #10 )
+INFO  10:22:24,752 - #8 ;
+INFO  10:22:24,752 - #31 read
+INFO  10:22:24,752 - #9 (
+INFO  10:22:24,752 - #48 bodovi
+INFO  10:22:24,752 - #10 )
+INFO  10:22:24,752 - #8 ;
+INFO  10:22:24,753 - #3 print
+INFO  10:22:24,753 - #9 (
+INFO  10:22:24,753 - #48 bodovi
+INFO  10:22:24,753 - #10 )
+INFO  10:22:24,753 - #8 ;
+INFO  10:22:24,753 - #12 }
+INFO  10:22:24,753 - #12 }
+INFO  10:22:24,773 - ProgramWithMethods(
   ProgName(
    test301
   ) [ProgName]
@@ -326,22 +329,36 @@ INFO  12:46:01,104 - ProgramWithMethods(
   OneMethodDeclaration(
     SingleMethodDeclaration(
       SingleMethodName(
-        MethodReturnTypeDerived2(
-        ) [MethodReturnTypeDerived2]
+        VoidType(
+        ) [VoidType]
        main
       ) [SingleMethodName]
       NoFormalParameters(
       ) [NoFormalParameters]
       MultipleVariableDecl(
         MultipleVariableDecl(
-          EmptyVariableDecl(
-          ) [EmptyVariableDecl]
+          MultipleVariableDecl(
+            EmptyVariableDecl(
+            ) [EmptyVariableDecl]
+            VariableDecl(
+              SingleVariableDecl(
+                Type(
+                 int
+                ) [Type]
+               bodovi
+                EmptyArrayOperator(
+                ) [EmptyArrayOperator]
+              ) [SingleVariableDecl]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [VariableDecl]
+          ) [MultipleVariableDecl]
           VariableDecl(
             SingleVariableDecl(
               Type(
-               int
+               bool
               ) [Type]
-             bodovi
+             bt
               EmptyArrayOperator(
               ) [EmptyArrayOperator]
             ) [SingleVariableDecl]
@@ -352,9 +369,9 @@ INFO  12:46:01,104 - ProgramWithMethods(
         VariableDecl(
           SingleVariableDecl(
             Type(
-             bool
+             int
             ) [Type]
-           bt
+           nula
             EmptyArrayOperator(
             ) [EmptyArrayOperator]
           ) [SingleVariableDecl]
@@ -400,11 +417,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                             ) [AssignOperation]
                                                             AddExptOnly(
                                                               OneAddExpr(
-                                                                TermDerived1(
+                                                                OneTerm(
                                                                   NumConst(
                                                                    0
                                                                   ) [NumConst]
-                                                                ) [TermDerived1]
+                                                                ) [OneTerm]
                                                               ) [OneAddExpr]
                                                             ) [AddExptOnly]
                                                           ) [AssignDesignatorOp]
@@ -440,7 +457,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                         AddExptOnly(
                                                           MultipleAddExpr(
                                                             OneAddExpr(
-                                                              TermDerived1(
+                                                              OneTerm(
                                                                 DesignatorFactorExpresion(
                                                                   DesignatorOnly(
                                                                     DesignatorFullExpresion(
@@ -450,11 +467,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                                     ) [DesignatorFullExpresion]
                                                                   ) [DesignatorOnly]
                                                                 ) [DesignatorFactorExpresion]
-                                                              ) [TermDerived1]
+                                                              ) [OneTerm]
                                                             ) [OneAddExpr]
                                                             PlusOp(
                                                             ) [PlusOp]
-                                                            TermDerived1(
+                                                            OneTerm(
                                                               DesignatorFactorExpresion(
                                                                 DesignatorOnly(
                                                                   DesignatorFullExpresion(
@@ -464,7 +481,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                                   ) [DesignatorFullExpresion]
                                                                 ) [DesignatorOnly]
                                                               ) [DesignatorFactorExpresion]
-                                                            ) [TermDerived1]
+                                                            ) [OneTerm]
                                                           ) [MultipleAddExpr]
                                                         ) [AddExptOnly]
                                                       ) [AssignDesignatorOp]
@@ -485,8 +502,8 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                       ) [AssignOperation]
                                                       AddExptOnly(
                                                         OneAddExpr(
-                                                          TermDerived2(
-                                                            TermDerived1(
+                                                          MultipleTerm(
+                                                            OneTerm(
                                                               DesignatorFactorExpresion(
                                                                 DesignatorOnly(
                                                                   DesignatorFullExpresion(
@@ -496,7 +513,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                                   ) [DesignatorFullExpresion]
                                                                 ) [DesignatorOnly]
                                                               ) [DesignatorFactorExpresion]
-                                                            ) [TermDerived1]
+                                                            ) [OneTerm]
                                                             MulOperation(
                                                             ) [MulOperation]
                                                             DesignatorFactorExpresion(
@@ -508,7 +525,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                                 ) [DesignatorFullExpresion]
                                                               ) [DesignatorOnly]
                                                             ) [DesignatorFactorExpresion]
-                                                          ) [TermDerived2]
+                                                          ) [MultipleTerm]
                                                         ) [OneAddExpr]
                                                       ) [AddExptOnly]
                                                     ) [AssignDesignatorOp]
@@ -534,7 +551,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                             PrintStatement(
                                               AddExptOnly(
                                                 OneAddExpr(
-                                                  TermDerived1(
+                                                  OneTerm(
                                                     DesignatorFactorExpresion(
                                                       DesignatorOnly(
                                                         DesignatorFullExpresion(
@@ -544,7 +561,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                         ) [DesignatorFullExpresion]
                                                       ) [DesignatorOnly]
                                                     ) [DesignatorFactorExpresion]
-                                                  ) [TermDerived1]
+                                                  ) [OneTerm]
                                                 ) [OneAddExpr]
                                               ) [AddExptOnly]
                                               NoNumConsts(
@@ -565,7 +582,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                 ) [AssignOperation]
                                                 AddExptOnly(
                                                   OneAddExpr(
-                                                    TermDerived1(
+                                                    OneTerm(
                                                       NewTypeFactorExpresion(
                                                         NewTypeArray(
                                                           Type(
@@ -573,16 +590,16 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                           ) [Type]
                                                           AddExptOnly(
                                                             OneAddExpr(
-                                                              TermDerived1(
+                                                              OneTerm(
                                                                 NumConst(
                                                                  3
                                                                 ) [NumConst]
-                                                              ) [TermDerived1]
+                                                              ) [OneTerm]
                                                             ) [OneAddExpr]
                                                           ) [AddExptOnly]
                                                         ) [NewTypeArray]
                                                       ) [NewTypeFactorExpresion]
-                                                    ) [TermDerived1]
+                                                    ) [OneTerm]
                                                   ) [OneAddExpr]
                                                 ) [AddExptOnly]
                                               ) [AssignDesignatorOp]
@@ -600,7 +617,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                 ) [EmptyMultipleDesignator]
                                                 AddExptOnly(
                                                   OneAddExpr(
-                                                    TermDerived1(
+                                                    OneTerm(
                                                       DesignatorFactorExpresion(
                                                         DesignatorOnly(
                                                           DesignatorFullExpresion(
@@ -610,7 +627,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                           ) [DesignatorFullExpresion]
                                                         ) [DesignatorOnly]
                                                       ) [DesignatorFactorExpresion]
-                                                    ) [TermDerived1]
+                                                    ) [OneTerm]
                                                   ) [OneAddExpr]
                                                 ) [AddExptOnly]
                                               ) [DesignatorArray]
@@ -620,7 +637,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                               ) [AssignOperation]
                                               AddExptOnly(
                                                 OneAddExpr(
-                                                  TermDerived1(
+                                                  OneTerm(
                                                     DesignatorFactorExpresion(
                                                       DesignatorOnly(
                                                         DesignatorFullExpresion(
@@ -630,7 +647,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                         ) [DesignatorFullExpresion]
                                                       ) [DesignatorOnly]
                                                     ) [DesignatorFactorExpresion]
-                                                  ) [TermDerived1]
+                                                  ) [OneTerm]
                                                 ) [OneAddExpr]
                                               ) [AddExptOnly]
                                             ) [AssignDesignatorOp]
@@ -648,11 +665,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                               ) [EmptyMultipleDesignator]
                                               AddExptOnly(
                                                 OneAddExpr(
-                                                  TermDerived1(
+                                                  OneTerm(
                                                     NumConst(
                                                      1
                                                     ) [NumConst]
-                                                  ) [TermDerived1]
+                                                  ) [OneTerm]
                                                 ) [OneAddExpr]
                                               ) [AddExptOnly]
                                             ) [DesignatorArray]
@@ -662,11 +679,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                             ) [AssignOperation]
                                             AddExptOnly(
                                               OneAddExpr(
-                                                TermDerived1(
+                                                OneTerm(
                                                   NumConst(
                                                    2
                                                   ) [NumConst]
-                                                ) [TermDerived1]
+                                                ) [OneTerm]
                                               ) [OneAddExpr]
                                             ) [AddExptOnly]
                                           ) [AssignDesignatorOp]
@@ -684,7 +701,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                             ) [EmptyMultipleDesignator]
                                             AddExptOnly(
                                               OneAddExpr(
-                                                TermDerived1(
+                                                OneTerm(
                                                   DesignatorFactorExpresion(
                                                     DesignatorOnly(
                                                       DesignatorFullExpresion(
@@ -694,7 +711,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                           ) [EmptyMultipleDesignator]
                                                           AddExptOnly(
                                                             OneAddExpr(
-                                                              TermDerived1(
+                                                              OneTerm(
                                                                 DesignatorFactorExpresion(
                                                                   DesignatorOnly(
                                                                     DesignatorFullExpresion(
@@ -704,14 +721,14 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                                     ) [DesignatorFullExpresion]
                                                                   ) [DesignatorOnly]
                                                                 ) [DesignatorFactorExpresion]
-                                                              ) [TermDerived1]
+                                                              ) [OneTerm]
                                                             ) [OneAddExpr]
                                                           ) [AddExptOnly]
                                                         ) [DesignatorArray]
                                                       ) [DesignatorFullExpresion]
                                                     ) [DesignatorOnly]
                                                   ) [DesignatorFactorExpresion]
-                                                ) [TermDerived1]
+                                                ) [OneTerm]
                                               ) [OneAddExpr]
                                             ) [AddExptOnly]
                                           ) [DesignatorArray]
@@ -721,8 +738,8 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                           ) [AssignOperation]
                                           AddExptOnly(
                                             OneAddExpr(
-                                              TermDerived2(
-                                                TermDerived1(
+                                              MultipleTerm(
+                                                OneTerm(
                                                   DesignatorFactorExpresion(
                                                     DesignatorOnly(
                                                       DesignatorFullExpresion(
@@ -732,7 +749,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                           ) [EmptyMultipleDesignator]
                                                           AddExptOnly(
                                                             OneAddExpr(
-                                                              TermDerived1(
+                                                              OneTerm(
                                                                 DesignatorFactorExpresion(
                                                                   DesignatorOnly(
                                                                     DesignatorFullExpresion(
@@ -742,31 +759,31 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                                         ) [EmptyMultipleDesignator]
                                                                         AddExptOnly(
                                                                           OneAddExpr(
-                                                                            TermDerived1(
+                                                                            OneTerm(
                                                                               NumConst(
                                                                                0
                                                                               ) [NumConst]
-                                                                            ) [TermDerived1]
+                                                                            ) [OneTerm]
                                                                           ) [OneAddExpr]
                                                                         ) [AddExptOnly]
                                                                       ) [DesignatorArray]
                                                                     ) [DesignatorFullExpresion]
                                                                   ) [DesignatorOnly]
                                                                 ) [DesignatorFactorExpresion]
-                                                              ) [TermDerived1]
+                                                              ) [OneTerm]
                                                             ) [OneAddExpr]
                                                           ) [AddExptOnly]
                                                         ) [DesignatorArray]
                                                       ) [DesignatorFullExpresion]
                                                     ) [DesignatorOnly]
                                                   ) [DesignatorFactorExpresion]
-                                                ) [TermDerived1]
+                                                ) [OneTerm]
                                                 MulOperation(
                                                 ) [MulOperation]
                                                 NumConst(
                                                  3
                                                 ) [NumConst]
-                                              ) [TermDerived2]
+                                              ) [MultipleTerm]
                                             ) [OneAddExpr]
                                           ) [AddExptOnly]
                                         ) [AssignDesignatorOp]
@@ -787,8 +804,8 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                         ) [AssignOperation]
                                         AddExptOnly(
                                           OneAddExpr(
-                                            TermDerived2(
-                                              TermDerived1(
+                                            MultipleTerm(
+                                              OneTerm(
                                                 DesignatorFactorExpresion(
                                                   DesignatorOnly(
                                                     DesignatorFullExpresion(
@@ -798,18 +815,18 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                         ) [EmptyMultipleDesignator]
                                                         AddExptOnly(
                                                           OneAddExpr(
-                                                            TermDerived1(
+                                                            OneTerm(
                                                               NumConst(
                                                                2
                                                               ) [NumConst]
-                                                            ) [TermDerived1]
+                                                            ) [OneTerm]
                                                           ) [OneAddExpr]
                                                         ) [AddExptOnly]
                                                       ) [DesignatorArray]
                                                     ) [DesignatorFullExpresion]
                                                   ) [DesignatorOnly]
                                                 ) [DesignatorFactorExpresion]
-                                              ) [TermDerived1]
+                                              ) [OneTerm]
                                               DivOperation(
                                               ) [DivOperation]
                                               DesignatorFactorExpresion(
@@ -821,18 +838,18 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                       ) [EmptyMultipleDesignator]
                                                       AddExptOnly(
                                                         OneAddExpr(
-                                                          TermDerived1(
+                                                          OneTerm(
                                                             NumConst(
                                                              0
                                                             ) [NumConst]
-                                                          ) [TermDerived1]
+                                                          ) [OneTerm]
                                                         ) [OneAddExpr]
                                                       ) [AddExptOnly]
                                                     ) [DesignatorArray]
                                                   ) [DesignatorFullExpresion]
                                                 ) [DesignatorOnly]
                                               ) [DesignatorFactorExpresion]
-                                            ) [TermDerived2]
+                                            ) [MultipleTerm]
                                           ) [OneAddExpr]
                                         ) [AddExptOnly]
                                       ) [AssignDesignatorOp]
@@ -844,7 +861,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                 PrintStatement(
                                   AddExptOnly(
                                     OneAddExpr(
-                                      TermDerived1(
+                                      OneTerm(
                                         DesignatorFactorExpresion(
                                           DesignatorOnly(
                                             DesignatorFullExpresion(
@@ -854,7 +871,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                             ) [DesignatorFullExpresion]
                                           ) [DesignatorOnly]
                                         ) [DesignatorFactorExpresion]
-                                      ) [TermDerived1]
+                                      ) [OneTerm]
                                     ) [OneAddExpr]
                                   ) [AddExptOnly]
                                   NoNumConsts(
@@ -866,7 +883,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                               PrintStatement(
                                 AddExptOnly(
                                   OneAddExpr(
-                                    TermDerived1(
+                                    OneTerm(
                                       DesignatorFactorExpresion(
                                         DesignatorOnly(
                                           DesignatorFullExpresion(
@@ -876,18 +893,18 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                               ) [EmptyMultipleDesignator]
                                               AddExptOnly(
                                                 OneAddExpr(
-                                                  TermDerived1(
+                                                  OneTerm(
                                                     NumConst(
                                                      2
                                                     ) [NumConst]
-                                                  ) [TermDerived1]
+                                                  ) [OneTerm]
                                                 ) [OneAddExpr]
                                               ) [AddExptOnly]
                                             ) [DesignatorArray]
                                           ) [DesignatorFullExpresion]
                                         ) [DesignatorOnly]
                                       ) [DesignatorFactorExpresion]
-                                    ) [TermDerived1]
+                                    ) [OneTerm]
                                   ) [OneAddExpr]
                                 ) [AddExptOnly]
                                 NoNumConsts(
@@ -908,7 +925,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                   ) [AssignOperation]
                                   AddExptOnly(
                                     OneAddExpr(
-                                      TermDerived1(
+                                      OneTerm(
                                         NewTypeFactorExpresion(
                                           NewTypeArray(
                                             Type(
@@ -916,16 +933,16 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                             ) [Type]
                                             AddExptOnly(
                                               OneAddExpr(
-                                                TermDerived1(
+                                                OneTerm(
                                                   NumConst(
                                                    3
                                                   ) [NumConst]
-                                                ) [TermDerived1]
+                                                ) [OneTerm]
                                               ) [OneAddExpr]
                                             ) [AddExptOnly]
                                           ) [NewTypeArray]
                                         ) [NewTypeFactorExpresion]
-                                      ) [TermDerived1]
+                                      ) [OneTerm]
                                     ) [OneAddExpr]
                                   ) [AddExptOnly]
                                 ) [AssignDesignatorOp]
@@ -943,11 +960,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                   ) [EmptyMultipleDesignator]
                                   AddExptOnly(
                                     OneAddExpr(
-                                      TermDerived1(
+                                      OneTerm(
                                         NumConst(
                                          0
                                         ) [NumConst]
-                                      ) [TermDerived1]
+                                      ) [OneTerm]
                                     ) [OneAddExpr]
                                   ) [AddExptOnly]
                                 ) [DesignatorArray]
@@ -957,11 +974,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                 ) [AssignOperation]
                                 AddExptOnly(
                                   OneAddExpr(
-                                    TermDerived1(
+                                    OneTerm(
                                       CharConst(
                                        a
                                       ) [CharConst]
-                                    ) [TermDerived1]
+                                    ) [OneTerm]
                                   ) [OneAddExpr]
                                 ) [AddExptOnly]
                               ) [AssignDesignatorOp]
@@ -979,7 +996,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                 ) [EmptyMultipleDesignator]
                                 AddExptOnly(
                                   OneAddExpr(
-                                    TermDerived1(
+                                    OneTerm(
                                       DesignatorFactorExpresion(
                                         DesignatorOnly(
                                           DesignatorFullExpresion(
@@ -989,7 +1006,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                           ) [DesignatorFullExpresion]
                                         ) [DesignatorOnly]
                                       ) [DesignatorFactorExpresion]
-                                    ) [TermDerived1]
+                                    ) [OneTerm]
                                   ) [OneAddExpr]
                                 ) [AddExptOnly]
                               ) [DesignatorArray]
@@ -999,11 +1016,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                               ) [AssignOperation]
                               AddExptOnly(
                                 OneAddExpr(
-                                  TermDerived1(
+                                  OneTerm(
                                     CharConst(
                                      b
                                     ) [CharConst]
-                                  ) [TermDerived1]
+                                  ) [OneTerm]
                                 ) [OneAddExpr]
                               ) [AddExptOnly]
                             ) [AssignDesignatorOp]
@@ -1022,7 +1039,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                               AddExptOnly(
                                 MultipleAddExpr(
                                   OneAddExpr(
-                                    TermDerived1(
+                                    OneTerm(
                                       DesignatorFactorExpresion(
                                         DesignatorOnly(
                                           DesignatorFullExpresion(
@@ -1032,15 +1049,15 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                           ) [DesignatorFullExpresion]
                                         ) [DesignatorOnly]
                                       ) [DesignatorFactorExpresion]
-                                    ) [TermDerived1]
+                                    ) [OneTerm]
                                   ) [OneAddExpr]
                                   MinusOp(
                                   ) [MinusOp]
-                                  TermDerived1(
+                                  OneTerm(
                                     NumConst(
                                      3
                                     ) [NumConst]
-                                  ) [TermDerived1]
+                                  ) [OneTerm]
                                 ) [MultipleAddExpr]
                               ) [AddExptOnly]
                             ) [DesignatorArray]
@@ -1050,11 +1067,11 @@ INFO  12:46:01,104 - ProgramWithMethods(
                             ) [AssignOperation]
                             AddExptOnly(
                               OneAddExpr(
-                                TermDerived1(
+                                OneTerm(
                                   CharConst(
                                    c
                                   ) [CharConst]
-                                ) [TermDerived1]
+                                ) [OneTerm]
                               ) [OneAddExpr]
                             ) [AddExptOnly]
                           ) [AssignDesignatorOp]
@@ -1066,7 +1083,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                     PrintStatement(
                       AddExptOnly(
                         OneAddExpr(
-                          TermDerived1(
+                          OneTerm(
                             DesignatorFactorExpresion(
                               DesignatorOnly(
                                 DesignatorFullExpresion(
@@ -1076,18 +1093,18 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                     ) [EmptyMultipleDesignator]
                                     AddExptOnly(
                                       OneAddExpr(
-                                        TermDerived1(
+                                        OneTerm(
                                           NumConst(
                                            1
                                           ) [NumConst]
-                                        ) [TermDerived1]
+                                        ) [OneTerm]
                                       ) [OneAddExpr]
                                     ) [AddExptOnly]
                                   ) [DesignatorArray]
                                 ) [DesignatorFullExpresion]
                               ) [DesignatorOnly]
                             ) [DesignatorFactorExpresion]
-                          ) [TermDerived1]
+                          ) [OneTerm]
                         ) [OneAddExpr]
                       ) [AddExptOnly]
                       NoNumConsts(
@@ -1099,7 +1116,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                   PrintStatement(
                     AddExptOnly(
                       OneAddExpr(
-                        TermDerived1(
+                        OneTerm(
                           DesignatorFactorExpresion(
                             DesignatorOnly(
                               DesignatorFullExpresion(
@@ -1109,8 +1126,8 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                   ) [EmptyMultipleDesignator]
                                   AddExptOnly(
                                     OneAddExpr(
-                                      TermDerived2(
-                                        TermDerived1(
+                                      MultipleTerm(
+                                        OneTerm(
                                           DesignatorFactorExpresion(
                                             DesignatorOnly(
                                               DesignatorFullExpresion(
@@ -1120,20 +1137,20 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                               ) [DesignatorFullExpresion]
                                             ) [DesignatorOnly]
                                           ) [DesignatorFactorExpresion]
-                                        ) [TermDerived1]
+                                        ) [OneTerm]
                                         MulOperation(
                                         ) [MulOperation]
                                         NumConst(
                                          2
                                         ) [NumConst]
-                                      ) [TermDerived2]
+                                      ) [MultipleTerm]
                                     ) [OneAddExpr]
                                   ) [AddExptOnly]
                                 ) [DesignatorArray]
                               ) [DesignatorFullExpresion]
                             ) [DesignatorOnly]
                           ) [DesignatorFactorExpresion]
-                        ) [TermDerived1]
+                        ) [OneTerm]
                       ) [OneAddExpr]
                     ) [AddExptOnly]
                     NoNumConsts(
@@ -1156,7 +1173,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                         MultipleAddExpr(
                           MultipleAddExpr(
                             OneAddExpr(
-                              TermDerived1(
+                              OneTerm(
                                 DesignatorFactorExpresion(
                                   DesignatorOnly(
                                     DesignatorFullExpresion(
@@ -1166,18 +1183,18 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                     ) [DesignatorFullExpresion]
                                   ) [DesignatorOnly]
                                 ) [DesignatorFactorExpresion]
-                              ) [TermDerived1]
+                              ) [OneTerm]
                             ) [OneAddExpr]
                             PlusOp(
                             ) [PlusOp]
-                            TermDerived2(
-                              TermDerived1(
+                            MultipleTerm(
+                              OneTerm(
                                 ParenExpresion(
                                   AddExptOnly(
                                     MultipleAddExpr(
                                       OneAddExpr(
-                                        TermDerived2(
-                                          TermDerived1(
+                                        MultipleTerm(
+                                          OneTerm(
                                             DesignatorFactorExpresion(
                                               DesignatorOnly(
                                                 DesignatorFullExpresion(
@@ -1187,7 +1204,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                                 ) [DesignatorFullExpresion]
                                               ) [DesignatorOnly]
                                             ) [DesignatorFactorExpresion]
-                                          ) [TermDerived1]
+                                          ) [OneTerm]
                                           MulOperation(
                                           ) [MulOperation]
                                           DesignatorFactorExpresion(
@@ -1199,19 +1216,19 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                               ) [DesignatorFullExpresion]
                                             ) [DesignatorOnly]
                                           ) [DesignatorFactorExpresion]
-                                        ) [TermDerived2]
+                                        ) [MultipleTerm]
                                       ) [OneAddExpr]
                                       MinusOp(
                                       ) [MinusOp]
-                                      TermDerived1(
+                                      OneTerm(
                                         NumConst(
                                          1
                                         ) [NumConst]
-                                      ) [TermDerived1]
+                                      ) [OneTerm]
                                     ) [MultipleAddExpr]
                                   ) [AddExptOnly]
                                 ) [ParenExpresion]
-                              ) [TermDerived1]
+                              ) [OneTerm]
                               MulOperation(
                               ) [MulOperation]
                               DesignatorFactorExpresion(
@@ -1223,55 +1240,55 @@ INFO  12:46:01,104 - ProgramWithMethods(
                                   ) [DesignatorFullExpresion]
                                 ) [DesignatorOnly]
                               ) [DesignatorFactorExpresion]
-                            ) [TermDerived2]
+                            ) [MultipleTerm]
                           ) [MultipleAddExpr]
                           MinusOp(
                           ) [MinusOp]
-                          TermDerived1(
+                          OneTerm(
                             ParenExpresion(
                               AddExptOnly(
                                 MultipleAddExpr(
                                   MultipleAddExpr(
                                     OneAddExpr(
-                                      TermDerived2(
-                                        TermDerived1(
+                                      MultipleTerm(
+                                        OneTerm(
                                           NumConst(
                                            3
                                           ) [NumConst]
-                                        ) [TermDerived1]
+                                        ) [OneTerm]
                                         ModulOperation(
                                         ) [ModulOperation]
                                         NumConst(
                                          2
                                         ) [NumConst]
-                                      ) [TermDerived2]
+                                      ) [MultipleTerm]
                                     ) [OneAddExpr]
                                     PlusOp(
                                     ) [PlusOp]
-                                    TermDerived2(
-                                      TermDerived1(
+                                    MultipleTerm(
+                                      OneTerm(
                                         NumConst(
                                          3
                                         ) [NumConst]
-                                      ) [TermDerived1]
+                                      ) [OneTerm]
                                       MulOperation(
                                       ) [MulOperation]
                                       NumConst(
                                        2
                                       ) [NumConst]
-                                    ) [TermDerived2]
+                                    ) [MultipleTerm]
                                   ) [MultipleAddExpr]
                                   MinusOp(
                                   ) [MinusOp]
-                                  TermDerived1(
+                                  OneTerm(
                                     NumConst(
                                      3
                                     ) [NumConst]
-                                  ) [TermDerived1]
+                                  ) [OneTerm]
                                 ) [MultipleAddExpr]
                               ) [AddExptOnly]
                             ) [ParenExpresion]
-                          ) [TermDerived1]
+                          ) [OneTerm]
                         ) [MultipleAddExpr]
                       ) [AddExptOnly]
                     ) [AssignDesignatorOp]
@@ -1283,7 +1300,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
               PrintStatement(
                 AddExptOnly(
                   OneAddExpr(
-                    TermDerived1(
+                    OneTerm(
                       DesignatorFactorExpresion(
                         DesignatorOnly(
                           DesignatorFullExpresion(
@@ -1293,7 +1310,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                           ) [DesignatorFullExpresion]
                         ) [DesignatorOnly]
                       ) [DesignatorFactorExpresion]
-                    ) [TermDerived1]
+                    ) [OneTerm]
                   ) [OneAddExpr]
                 ) [AddExptOnly]
                 NoNumConsts(
@@ -1315,7 +1332,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
           PrintStatement(
             AddExptOnly(
               OneAddExpr(
-                TermDerived1(
+                OneTerm(
                   DesignatorFactorExpresion(
                     DesignatorOnly(
                       DesignatorFullExpresion(
@@ -1325,7 +1342,7 @@ INFO  12:46:01,104 - ProgramWithMethods(
                       ) [DesignatorFullExpresion]
                     ) [DesignatorOnly]
                   ) [DesignatorFactorExpresion]
-                ) [TermDerived1]
+                ) [OneTerm]
               ) [OneAddExpr]
             ) [AddExptOnly]
             NoNumConsts(
@@ -1336,15 +1353,31 @@ INFO  12:46:01,104 - ProgramWithMethods(
     ) [SingleMethodDeclaration]
   ) [OneMethodDeclaration]
 ) [ProgramWithMethods]
-INFO  12:46:01,108 - ===================================
-INFO  12:46:01,113 - Constant: nula with value 0 declared on the line 5
-INFO  12:46:01,113 - Constant: jedan with value 1 declared on the line 6
-INFO  12:46:01,113 - Constant: pet with value 5 declared on the line 7
-INFO  12:46:01,113 - Variable: niz with type array  1 declared on the line 9
-INFO  12:46:01,114 - Variable: nizch with type array  2 declared on the line 10
-INFO  12:46:01,114 - Variable: smor with type array  5 declared on the line 11
-INFO  12:46:01,114 - Variable: bodovi with type  1 declared on the line 14
-INFO  12:46:01,114 - Variable: bt with type  5 declared on the line 15
-INFO  12:46:01,115 - programWithMethods on the line 3
-INFO  12:46:01,115 - ===================================
-INFO  12:46:01,116 - Parsing finished succesfully!
+INFO  10:22:24,776 - ===================================
+INFO  10:22:24,780 - Constant: nula with value 0 declared on the line 5
+INFO  10:22:24,781 - Constant: jedan with value 1 declared on the line 6
+INFO  10:22:24,781 - Constant: pet with value 5 declared on the line 7
+INFO  10:22:24,781 - Variable: niz with type array  1 declared on the line 9
+INFO  10:22:24,781 - Variable: nizch with type array  2 declared on the line 10
+INFO  10:22:24,781 - Variable: smor with type array  5 declared on the line 11
+INFO  10:22:24,781 - Method main with type 0 on the line 13
+INFO  10:22:24,781 - Variable: bodovi with type  1 declared on the line 14
+INFO  10:22:24,781 - Variable: bt with type  5 declared on the line 15
+INFO  10:22:24,781 - Variable: nula with type  1 declared on the line 16
+INFO  10:22:24,782 - Array operator used  on the line 27
+INFO  10:22:24,782 - Array operator used  on the line 28
+INFO  10:22:24,782 - Array operator used  on the line 29
+INFO  10:22:24,782 - Array operator used  on the line 29
+INFO  10:22:24,782 - Array operator used  on the line 29
+INFO  10:22:24,783 - Array operator used  on the line 29
+INFO  10:22:24,783 - Array operator used  on the line 30
+INFO  10:22:24,783 - Array operator used  on the line 30
+INFO  10:22:24,783 - Array operator used  on the line 32
+INFO  10:22:24,783 - Array operator used  on the line 36
+INFO  10:22:24,783 - Array operator used  on the line 37
+INFO  10:22:24,783 - Array operator used  on the line 38
+INFO  10:22:24,784 - Array operator used  on the line 39
+INFO  10:22:24,784 - Array operator used  on the line 40
+INFO  10:22:24,784 - programWithMethods on the line 3
+INFO  10:22:24,784 - ===================================
+INFO  10:22:24,785 - Parsing finished succesfully!

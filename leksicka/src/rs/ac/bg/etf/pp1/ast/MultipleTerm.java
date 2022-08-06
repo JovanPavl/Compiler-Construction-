@@ -1,17 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/6/2022 18:49:22
+// 5/7/2022 22:26:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class TermDerived2 extends Term {
+public class MultipleTerm extends Term {
 
     private Term Term;
     private Mulop Mulop;
     private Factor Factor;
 
-    public TermDerived2 (Term Term, Mulop Mulop, Factor Factor) {
+    public MultipleTerm (Term Term, Mulop Mulop, Factor Factor) {
         this.Term=Term;
         if(Term!=null) Term.setParent(this);
         this.Mulop=Mulop;
@@ -71,7 +71,7 @@ public class TermDerived2 extends Term {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("TermDerived2(\n");
+        buffer.append("MultipleTerm(\n");
 
         if(Term!=null)
             buffer.append(Term.toString("  "+tab));
@@ -92,7 +92,7 @@ public class TermDerived2 extends Term {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [TermDerived2]");
+        buffer.append(") [MultipleTerm]");
         return buffer.toString();
     }
 }

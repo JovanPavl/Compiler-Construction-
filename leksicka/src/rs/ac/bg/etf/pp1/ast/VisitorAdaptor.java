@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/6/2022 18:49:22
+// 5/7/2022 22:26:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -21,15 +21,15 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondTerm CondTerm) { }
     public void visit(GlobalVarDecl GlobalVarDecl) { }
     public void visit(RecordStructure RecordStructure) { }
-    public void visit(Designator Designator) { }
     public void visit(NewTypeFactor NewTypeFactor) { }
+    public void visit(Designator Designator) { }
     public void visit(StatementsWithoutBraces StatementsWithoutBraces) { }
     public void visit(Term Term) { }
     public void visit(Condition Condition) { }
     public void visit(Statements Statements) { }
     public void visit(MultipleDesignator MultipleDesignator) { }
-    public void visit(DesignatorPostOperation DesignatorPostOperation) { }
     public void visit(MultipleVarDecl MultipleVarDecl) { }
+    public void visit(DesignatorPostOperation DesignatorPostOperation) { }
     public void visit(FormParams FormParams) { }
     public void visit(Label Label) { }
     public void visit(ElseStatement ElseStatement) { }
@@ -98,8 +98,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(BoolConst BoolConst) { visit(); }
     public void visit(NumConst NumConst) { visit(); }
     public void visit(CharConst CharConst) { visit(); }
-    public void visit(TermDerived2 TermDerived2) { visit(); }
-    public void visit(TermDerived1 TermDerived1) { visit(); }
+    public void visit(MultipleTerm MultipleTerm) { visit(); }
+    public void visit(OneTerm OneTerm) { visit(); }
     public void visit(AddExptOnly AddExptOnly) { visit(); }
     public void visit(MinusExpr MinusExpr) { visit(); }
     public void visit(MultipleAddExpr MultipleAddExpr) { visit(); }
@@ -131,8 +131,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(IfElseStatement IfElseStatement) { visit(); }
     public void visit(NoStatement NoStatement) { visit(); }
     public void visit(MultipleStatement MultipleStatement) { visit(); }
-    public void visit(MethodReturnTypeDerived2 MethodReturnTypeDerived2) { visit(); }
-    public void visit(MethodReturnTypeDerived1 MethodReturnTypeDerived1) { visit(); }
+    public void visit(VoidType VoidType) { visit(); }
+    public void visit(ReturnType ReturnType) { visit(); }
     public void visit(NoFormalParameters NoFormalParameters) { visit(); }
     public void visit(FormalParameters FormalParameters) { visit(); }
     public void visit(OnlyFormalParameter OnlyFormalParameter) { visit(); }

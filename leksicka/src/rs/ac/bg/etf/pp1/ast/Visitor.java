@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/6/2022 18:49:22
+// 5/7/2022 22:26:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -21,15 +21,15 @@ public interface Visitor {
     public void visit(CondTerm CondTerm);
     public void visit(GlobalVarDecl GlobalVarDecl);
     public void visit(RecordStructure RecordStructure);
-    public void visit(Designator Designator);
     public void visit(NewTypeFactor NewTypeFactor);
+    public void visit(Designator Designator);
     public void visit(StatementsWithoutBraces StatementsWithoutBraces);
     public void visit(Term Term);
     public void visit(Condition Condition);
     public void visit(Statements Statements);
     public void visit(MultipleDesignator MultipleDesignator);
-    public void visit(DesignatorPostOperation DesignatorPostOperation);
     public void visit(MultipleVarDecl MultipleVarDecl);
+    public void visit(DesignatorPostOperation DesignatorPostOperation);
     public void visit(FormParams FormParams);
     public void visit(Label Label);
     public void visit(ElseStatement ElseStatement);
@@ -98,8 +98,8 @@ public interface Visitor {
     public void visit(BoolConst BoolConst);
     public void visit(NumConst NumConst);
     public void visit(CharConst CharConst);
-    public void visit(TermDerived2 TermDerived2);
-    public void visit(TermDerived1 TermDerived1);
+    public void visit(MultipleTerm MultipleTerm);
+    public void visit(OneTerm OneTerm);
     public void visit(AddExptOnly AddExptOnly);
     public void visit(MinusExpr MinusExpr);
     public void visit(MultipleAddExpr MultipleAddExpr);
@@ -131,8 +131,8 @@ public interface Visitor {
     public void visit(IfElseStatement IfElseStatement);
     public void visit(NoStatement NoStatement);
     public void visit(MultipleStatement MultipleStatement);
-    public void visit(MethodReturnTypeDerived2 MethodReturnTypeDerived2);
-    public void visit(MethodReturnTypeDerived1 MethodReturnTypeDerived1);
+    public void visit(VoidType VoidType);
+    public void visit(ReturnType ReturnType);
     public void visit(NoFormalParameters NoFormalParameters);
     public void visit(FormalParameters FormalParameters);
     public void visit(OnlyFormalParameter OnlyFormalParameter);

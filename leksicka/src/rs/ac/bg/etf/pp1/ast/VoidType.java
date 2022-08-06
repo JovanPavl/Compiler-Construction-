@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/6/2022 18:49:22
+// 5/7/2022 22:26:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MethodReturnTypeDerived2 extends MethodReturnType {
+public class VoidType extends MethodReturnType {
 
-    public MethodReturnTypeDerived2 () {
+    public VoidType () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class MethodReturnTypeDerived2 extends MethodReturnType {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("MethodReturnTypeDerived2(\n");
+        buffer.append("VoidType(\n");
 
         buffer.append(tab);
-        buffer.append(") [MethodReturnTypeDerived2]");
+        buffer.append(") [VoidType]");
         return buffer.toString();
     }
 }

@@ -95,13 +95,6 @@ nonterminal Condition Condition;
 nonterminal CondTerm CondTerm;
 nonterminal CondFact CondFact;
 
-nonterminal Expr Expr;
-nonterminal AddExpr AddExpr;
-nonterminal Term Term;
-nonterminal Factor Factor;
-nonterminal DesignatorFactor DesignatorFactor;
-nonterminal NewTypeFactor NewTypeFactor;
-nonterminal Designator Designator;
 nonterminal MultipleDesignator MultipleDesignator;
 nonterminal ListStatement ListStatement;
 nonterminal DesignatorStatement DesignatorStatement;
@@ -117,9 +110,9 @@ nonterminal Mulop Mulop;
 nonterminal Label Label;
 nonterminal MultipleNumConst MultipleNumConst;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName, Designator, DesignatorFactor;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor;
 precedence left ELSE;
 
 Program ::= (ProgramWithMethods) PROG ProgName:P1 Mdecl:M2 LBRACE ClassMethodDecl:C3 RBRACE {: RESULT=new ProgramWithMethods(P1, M2, C3); RESULT.setLine(P1left); :}
@@ -199,9 +192,9 @@ MultipleFormParams ::= (MultipleFormalParameters) MultipleFormParams:M1 COMMA Me
 FormParams ::= (FormalParameters) MultipleFormParams:M1 {: RESULT=new FormalParameters(M1); RESULT.setLine(M1left); :}
 				|
 				(NoFormalParameters) {: RESULT=new NoFormalParameters(); :};
-MethodReturnType ::= Type:T1 {: RESULT=new MethodReturnTypeDerived1(T1); RESULT.setLine(T1left); :}
+MethodReturnType ::= (ReturnType)Type:T1 {: RESULT=new ReturnType(T1); RESULT.setLine(T1left); :}
 					|
-					VOID {: RESULT=new MethodReturnTypeDerived2(); :};		
+					(VoidType)VOID {: RESULT=new VoidType(); :};		
 ListStatement ::= (MultipleStatement) ListStatement:L1 Statement:S2 {: RESULT=new MultipleStatement(L1, S2); RESULT.setLine(L1left); :}
 					|
 				  (NoStatement) {: RESULT=new NoStatement(); :} ;
@@ -223,7 +216,7 @@ SingleStatement ::=	(IfElseStatement)IF LPAREN Condition:C1 RPAREN Statement:S2 
 					|
 					(ReadStatement) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatement(D1); RESULT.setLine(D1left); :}
 					|
-					(PrintStatement) PRINT LPAREN Expr:E1 MultipleNumConst:M2 RPAREN SEMI {: RESULT=new PrintStatement(E1, M2); RESULT.setLine(E1left); :};
+					(PrintStatement) PRINT LPAREN Expr:printExpression MultipleNumConst:M1 RPAREN SEMI {: RESULT=new PrintStatement(printExpression, M1); RESULT.setLine(printExpressionleft); :};
 ElseStatement ::= (NoElseStatement) {: RESULT=new NoElseStatement(); :}
 				|
 				  (HaveElseStatement) ELSE Statement:S1 {: RESULT=new HaveElseStatement(S1); RESULT.setLine(S1left); :}; 
@@ -253,9 +246,9 @@ AddExpr ::=(OneAddExpr)Term:T1 {: RESULT=new OneAddExpr(T1); RESULT.setLine(T1le
 Expr ::= (MinusExpr)MINUS AddExpr:A1 {: RESULT=new MinusExpr(A1); RESULT.setLine(A1left); :}
 		|
 		(AddExptOnly)AddExpr:A1 {: RESULT=new AddExptOnly(A1); RESULT.setLine(A1left); :};
-Term ::= Factor:F1 {: RESULT=new TermDerived1(F1); RESULT.setLine(F1left); :} 
+Term ::= (OneTerm)Factor:F1 {: RESULT=new OneTerm(F1); RESULT.setLine(F1left); :} 
 		|
-		 Term:T1 Mulop:M2 Factor:F3 {: RESULT=new TermDerived2(T1, M2, F3); RESULT.setLine(T1left); :};
+		 (MultipleTerm)Term:T1 Mulop:M2 Factor:F3 {: RESULT=new MultipleTerm(T1, M2, F3); RESULT.setLine(T1left); :};
 Factor ::= (CharConst) CHAR:C1 {: RESULT=new CharConst(C1); RESULT.setLine(C1left); :}
 			|
 			(NumConst) NUMBER:N1 {: RESULT=new NumConst(N1); RESULT.setLine(N1left); :}
@@ -276,7 +269,7 @@ NewTypeFactor ::= (NewTypeNoArray)NEW Type:T1 {: RESULT=new NewTypeNoArray(T1); 
 				 |
 				  (NewTypeArray) NEW Type:T1 LBRACKET Expr:E2 RBRACKET {: RESULT=new NewTypeArray(T1, E2); RESULT.setLine(T1left); :};
 				  
-Designator ::= (DesignatorFullExpresion) IDENT:I1 MultipleDesignator:M2 {: RESULT=new DesignatorFullExpresion(I1, M2); RESULT.setLine(I1left); :};
+Designator ::= (DesignatorFullExpresion) IDENT:designatorName MultipleDesignator:M1 {: RESULT=new DesignatorFullExpresion(designatorName, M1); RESULT.setLine(designatorNameleft); :};
 MultipleDesignator ::= (EmptyMultipleDesignator) {: RESULT=new EmptyMultipleDesignator(); :} 
 						|
 						(DesignatorArray)MultipleDesignator:M1 LBRACKET Expr:E2 RBRACKET {: RESULT=new DesignatorArray(M1, E2); RESULT.setLine(M1left); :}

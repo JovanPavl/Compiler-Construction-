@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/6/2022 18:49:22
+// 5/7/2022 22:26:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MethodReturnTypeDerived1 extends MethodReturnType {
+public class OneTerm extends Term {
 
-    private Type Type;
+    private Factor Factor;
 
-    public MethodReturnTypeDerived1 (Type Type) {
-        this.Type=Type;
-        if(Type!=null) Type.setParent(this);
+    public OneTerm (Factor Factor) {
+        this.Factor=Factor;
+        if(Factor!=null) Factor.setParent(this);
     }
 
-    public Type getType() {
-        return Type;
+    public Factor getFactor() {
+        return Factor;
     }
 
-    public void setType(Type Type) {
-        this.Type=Type;
+    public void setFactor(Factor Factor) {
+        this.Factor=Factor;
     }
 
     public void accept(Visitor visitor) {
@@ -27,32 +27,32 @@ public class MethodReturnTypeDerived1 extends MethodReturnType {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Type!=null) Type.accept(visitor);
+        if(Factor!=null) Factor.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Type!=null) Type.traverseTopDown(visitor);
+        if(Factor!=null) Factor.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Type!=null) Type.traverseBottomUp(visitor);
+        if(Factor!=null) Factor.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("MethodReturnTypeDerived1(\n");
+        buffer.append("OneTerm(\n");
 
-        if(Type!=null)
-            buffer.append(Type.toString("  "+tab));
+        if(Factor!=null)
+            buffer.append(Factor.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [MethodReturnTypeDerived1]");
+        buffer.append(") [OneTerm]");
         return buffer.toString();
     }
 }

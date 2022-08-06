@@ -74,7 +74,7 @@ nonterminal Statement, SingleStatement, Statements, StatementsWithoutBraces;
 
 nonterminal ElseStatement, Condition, CondTerm, CondFact;
 
-nonterminal Expr, AddExpr, Term, Factor, DesignatorFactor, NewTypeFactor, Designator, MultipleDesignator, ListStatement, DesignatorStatement, DesignatorPostOperation;
+nonterminal MultipleDesignator, ListStatement, DesignatorStatement, DesignatorPostOperation;
 
 nonterminal ActPars;
 
@@ -82,9 +82,9 @@ nonterminal Assignop, Relop, Addop, Mulop;
 
 nonterminal Label, MultipleNumConst;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName, Designator, DesignatorFactor;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor;
 precedence left ELSE;
 
 Program ::= (ProgramWithMethods) PROG ProgName Mdecl LBRACE ClassMethodDecl RBRACE
@@ -164,9 +164,9 @@ MultipleFormParams ::= (MultipleFormalParameters) MultipleFormParams COMMA Metho
 FormParams ::= (FormalParameters) MultipleFormParams
 				|
 				(NoFormalParameters);
-MethodReturnType ::= Type
+MethodReturnType ::= (ReturnType)Type
 					|
-					VOID;		
+					(VoidType)VOID;		
 ListStatement ::= (MultipleStatement) ListStatement Statement
 					|
 				  (NoStatement) ;
@@ -188,7 +188,7 @@ SingleStatement ::=	(IfElseStatement)IF LPAREN Condition RPAREN Statement ElseSt
 					|
 					(ReadStatement) READ LPAREN Designator RPAREN SEMI
 					|
-					(PrintStatement) PRINT LPAREN Expr MultipleNumConst RPAREN SEMI;
+					(PrintStatement) PRINT LPAREN Expr:printExpression MultipleNumConst RPAREN SEMI;
 ElseStatement ::= (NoElseStatement)
 				|
 				  (HaveElseStatement) ELSE Statement; 
@@ -218,9 +218,9 @@ AddExpr ::=(OneAddExpr)Term
 Expr ::= (MinusExpr)MINUS AddExpr
 		|
 		(AddExptOnly)AddExpr;
-Term ::= Factor 
+Term ::= (OneTerm)Factor 
 		|
-		 Term Mulop Factor;
+		 (MultipleTerm)Term Mulop Factor;
 Factor ::= (CharConst) CHAR
 			|
 			(NumConst) NUMBER
@@ -241,7 +241,7 @@ NewTypeFactor ::= (NewTypeNoArray)NEW Type
 				 |
 				  (NewTypeArray) NEW Type LBRACKET Expr RBRACKET;
 				  
-Designator ::= (DesignatorFullExpresion) IDENT MultipleDesignator;
+Designator ::= (DesignatorFullExpresion) IDENT:designatorName MultipleDesignator;
 MultipleDesignator ::= (EmptyMultipleDesignator) 
 						|
 						(DesignatorArray)MultipleDesignator LBRACKET Expr RBRACKET
