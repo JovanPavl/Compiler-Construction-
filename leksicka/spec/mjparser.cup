@@ -56,6 +56,7 @@ terminal Character CHAR;
 terminal Integer BOOL;
 terminal Integer NUMBER;
 
+nonterminal DoWhileHeader, DoWhileEnd;
 nonterminal Mdecl;
 
 nonterminal ConstDecl, MethodDecl, LineConstDecl, SimpleConstDecl;
@@ -184,11 +185,13 @@ SingleStatement ::=	(IfElseStatement)IF LPAREN Condition RPAREN Statement ElseSt
 					|
 					(ReturnStatementExpr) RETURN Expr SEMI
 					|
-					(DoWhileStatement) DO Statement WHILE LPAREN Condition RPAREN SEMI
+					(DoWhileStatement) DoWhileHeader Statement DoWhileEnd WHILE LPAREN Condition RPAREN SEMI
 					|
 					(ReadStatement) READ LPAREN Designator RPAREN SEMI
 					|
 					(PrintStatement) PRINT LPAREN Expr:printExpression MultipleNumConst RPAREN SEMI;
+DoWhileHeader ::= (DoWhileHeader) DO;
+DoWhileEnd ::= (DoWhileEnd) WHILE;
 ElseStatement ::= (NoElseStatement)
 				|
 				  (HaveElseStatement) ELSE Statement; 

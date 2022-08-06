@@ -11,7 +11,7 @@ import rs.etf.pp1.symboltable.concepts.*;
 public class SemanticPass extends VisitorAdaptor {
 	Logger log = Logger.getLogger(getClass());
 
-	int numberOfVariables, tmpValue, ask_method = 0;
+	int numberOfVariables, tmpValue, ask_method = 0,  while_depth = 0;
 	Obj currMethod = null;
 	Struct currType = null;
 	
@@ -32,6 +32,21 @@ public class SemanticPass extends VisitorAdaptor {
 		if (line != 0)
 			msg.append(" on the line ").append(line);
 		log.info(msg.toString());
+	}
+	
+	public boolean checkCompatibility(Struct lside, Struct rside) {
+		if(lside.getKind() == Struct.Array) {
+			if(rside.equals(TabE.find("null").getType())) {
+				return true;
+			}
+			if(rside.getKind() == Struct.Array) {
+				return rside.getElemType() == lside.getElemType();
+			}
+			return false;
+		}
+		
+		//if there are no arrays, check same type
+		return rside.getKind() == lside.getKind();
 	}
 
 	public void visit(ProgName progName) {
@@ -290,6 +305,97 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
+	public void visit(DesignatorStat designatorStat) {
+		Designator tmpDesignator = designatorStat.getDesignator();
+		DesignatorPostOperation tmpdPostOp = designatorStat.getDesignatorPostOperation();
+		
+		if(tmpdPostOp instanceof AssignDesignatorOp) {
+			if(tmpDesignator.obj.getKind() != Obj.Elem && tmpDesignator.obj.getKind() != Obj.Var) {
+				report_error("Designator in assignop must be variable or element of array", designatorStat);
+				return ;
+			}
+			if(!checkCompatibility(tmpDesignator.obj.getType(), ((AssignDesignatorOp) tmpdPostOp).getExpr().struct)) {
+				report_error("Left and right side of assign operation are not compatible ", designatorStat);
+				return ;
+			}
+		}
+		
+		if(tmpdPostOp instanceof DesignatorIncrement) {
+			if(tmpDesignator.obj.getKind() != Obj.Elem && tmpDesignator.obj.getKind() != Obj.Var) {
+				report_error("Designator in increment must be variable or element of array", designatorStat);
+				return ;
+			}
+		}
+		
+		if(tmpdPostOp instanceof DesignatorDecrement) {
+			if(tmpDesignator.obj.getKind() != Obj.Elem && tmpDesignator.obj.getKind() != Obj.Var) {
+				report_error("Designator in decrement must be variable or element of array", designatorStat);
+				return ;
+			}
+		}
+	}
+	
+	public void visit(DoWhileHeader doWhileHeader) {
+		while_depth++;
+	}
+	
+	public void visit(DoWhileEnd doWhileEnd) {
+		while_depth--;
+	}
+	
+	public void visit(GotoStatement gotoStatement) {
+		//not needed 
+	}
+	
+	public void visit(BreakStatement breakStatement) {
+		if(while_depth == 0) {
+			report_error("Break statement is not in any while loop!", breakStatement);
+			return ;
+		}
+	}
+	
+	public void visit(ContinueStatement contStatement) {
+		if(while_depth == 0) {
+			report_error("Continue statement is not in any while loop", contStatement);
+			return ;
+		}
+	}
+	
+	public void visit(ReadStatement readStatement) {
+		if(readStatement.getDesignator().obj.getKind() != Obj.Var && readStatement.getDesignator().obj.getKind() != Obj.Elem) {
+			report_error("Parameter of read statement should be variable or array element!", readStatement);
+			return ;
+		}
+		if(readStatement.getDesignator().obj.getType().getKind() != Struct.Int && 
+				readStatement.getDesignator().obj.getType().getKind() != Struct.Char &&
+				readStatement.getDesignator().obj.getType().getKind() != Struct.Bool) {
+			report_error("Parameter of read statement should be type int, char or bool", readStatement);
+		}
+	}
+	
+	public void visit(ReturnStatementNoExpr returnStatementNoExpr) {
+		if(ask_method == 0) {
+			report_error("Return statement is not in method!", returnStatementNoExpr);
+			return ;
+		}
+		
+		if(currMethod.getType().getKind() != Struct.None) {
+			report_error("Current method is not void and should return value", returnStatementNoExpr);
+		}
+	}
+	
+	public void visit(AssignDesignatorOp assignDesignatorOp) {
+		if(ask_method == 0) {
+			report_error("Return statement is not in method!", assignDesignatorOp);
+			return ;
+		}
+		Expr exprTmp = assignDesignatorOp.getExpr();
+		
+		if(exprTmp.struct.getKind() != currMethod.getType().getKind()) {
+			report_error("Return statement type is not same as method type! ", assignDesignatorOp);
+			return ;
+		}
+	}
 	public boolean passed() {
 		return !errorDetected;
 	}

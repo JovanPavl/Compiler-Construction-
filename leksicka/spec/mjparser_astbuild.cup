@@ -56,6 +56,8 @@ terminal Character CHAR;
 terminal Integer BOOL;
 terminal Integer NUMBER;
 
+nonterminal DoWhileHeader DoWhileHeader;
+nonterminal DoWhileEnd DoWhileEnd;
 nonterminal Mdecl Mdecl;
 
 nonterminal ConstDecl ConstDecl;
@@ -212,11 +214,13 @@ SingleStatement ::=	(IfElseStatement)IF LPAREN Condition:C1 RPAREN Statement:S2 
 					|
 					(ReturnStatementExpr) RETURN Expr:E1 SEMI {: RESULT=new ReturnStatementExpr(E1); RESULT.setLine(E1left); :}
 					|
-					(DoWhileStatement) DO Statement:S1 WHILE LPAREN Condition:C2 RPAREN SEMI {: RESULT=new DoWhileStatement(S1, C2); RESULT.setLine(S1left); :}
+					(DoWhileStatement) DoWhileHeader:D1 Statement:S2 DoWhileEnd:D3 WHILE LPAREN Condition:C4 RPAREN SEMI {: RESULT=new DoWhileStatement(D1, S2, D3, C4); RESULT.setLine(D1left); :}
 					|
 					(ReadStatement) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatement(D1); RESULT.setLine(D1left); :}
 					|
 					(PrintStatement) PRINT LPAREN Expr:printExpression MultipleNumConst:M1 RPAREN SEMI {: RESULT=new PrintStatement(printExpression, M1); RESULT.setLine(printExpressionleft); :};
+DoWhileHeader ::= (DoWhileHeader) DO {: RESULT=new DoWhileHeader(); :};
+DoWhileEnd ::= (DoWhileEnd) WHILE {: RESULT=new DoWhileEnd(); :};
 ElseStatement ::= (NoElseStatement) {: RESULT=new NoElseStatement(); :}
 				|
 				  (HaveElseStatement) ELSE Statement:S1 {: RESULT=new HaveElseStatement(S1); RESULT.setLine(S1left); :}; 
