@@ -73,7 +73,7 @@ nonterminal RecordStructure;
 
 nonterminal Statement, SingleStatement, Statements, StatementsWithoutBraces;
 
-nonterminal ElseStatement, Condition, CondTerm, CondFact;
+nonterminal ElseStatement;
 
 nonterminal MultipleDesignator, ListStatement, DesignatorStatement, DesignatorPostOperation;
 
@@ -86,6 +86,7 @@ nonterminal Label, MultipleNumConst;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName, Designator, DesignatorFactor;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTerm, CondFact;
 precedence left ELSE;
 
 Program ::= (ProgramWithMethods) PROG ProgName Mdecl LBRACE ClassMethodDecl RBRACE
@@ -214,7 +215,7 @@ CondTerm ::= (SingleCondTerm) CondFact
 			(MultipleCondTerm)CondFact AND CondTerm;
 CondFact ::= (SingleCondFact)Expr 
 			|
-			 (MultipleCondFact)Expr Relop Expr;
+			 (MultipleCondFact)Expr:expr1 Relop Expr:expr2;
 AddExpr ::=(OneAddExpr)Term
 			|
 			(MultipleAddExpr)AddExpr Addop Term;

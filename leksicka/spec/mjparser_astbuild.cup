@@ -93,9 +93,6 @@ nonterminal Statements Statements;
 nonterminal StatementsWithoutBraces StatementsWithoutBraces;
 
 nonterminal ElseStatement ElseStatement;
-nonterminal Condition Condition;
-nonterminal CondTerm CondTerm;
-nonterminal CondFact CondFact;
 
 nonterminal MultipleDesignator MultipleDesignator;
 nonterminal ListStatement ListStatement;
@@ -115,6 +112,7 @@ nonterminal MultipleNumConst MultipleNumConst;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName, Designator, DesignatorFactor;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTerm, CondFact;
 precedence left ELSE;
 
 Program ::= (ProgramWithMethods) PROG ProgName:P1 Mdecl:M2 LBRACE ClassMethodDecl:C3 RBRACE {: RESULT=new ProgramWithMethods(P1, M2, C3); RESULT.setLine(P1left); :}
@@ -243,7 +241,7 @@ CondTerm ::= (SingleCondTerm) CondFact:C1 {: RESULT=new SingleCondTerm(C1); RESU
 			(MultipleCondTerm)CondFact:C1 AND CondTerm:C2 {: RESULT=new MultipleCondTerm(C1, C2); RESULT.setLine(C1left); :};
 CondFact ::= (SingleCondFact)Expr:E1 {: RESULT=new SingleCondFact(E1); RESULT.setLine(E1left); :} 
 			|
-			 (MultipleCondFact)Expr:E1 Relop:R2 Expr:E3 {: RESULT=new MultipleCondFact(E1, R2, E3); RESULT.setLine(E1left); :};
+			 (MultipleCondFact)Expr:expr1 Relop:R1 Expr:expr2 {: RESULT=new MultipleCondFact(expr1, R1, expr2); RESULT.setLine(expr1left); :};
 AddExpr ::=(OneAddExpr)Term:T1 {: RESULT=new OneAddExpr(T1); RESULT.setLine(T1left); :}
 			|
 			(MultipleAddExpr)AddExpr:A1 Addop:A2 Term:T3 {: RESULT=new MultipleAddExpr(A1, A2, T3); RESULT.setLine(A1left); :};

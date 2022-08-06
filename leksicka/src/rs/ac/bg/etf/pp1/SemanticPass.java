@@ -40,7 +40,7 @@ public class SemanticPass extends VisitorAdaptor {
 				return true;
 			}
 			if(rside.getKind() == Struct.Array) {
-				return rside.getElemType() == lside.getElemType();
+				return rside.getElemType().getKind() == lside.getElemType().getKind();
 			}
 			return false;
 		}
@@ -270,7 +270,7 @@ public class SemanticPass extends VisitorAdaptor {
 		if(newTypeArray.getExpr().struct.getKind() != Struct.Int) {
 			report_error("When creating new array expresion need to be type int", newTypeArray.getExpr());
 		}
-		newTypeArray.struct = new Struct(Struct.Array, new Struct(Struct.Int));
+		newTypeArray.struct = new Struct(Struct.Array, newTypeArray.getType().struct);
 	}
 	
 	public void visit(DesignatorOnly designatorOnly) {
@@ -315,7 +315,10 @@ public class SemanticPass extends VisitorAdaptor {
 				return ;
 			}
 			if(!checkCompatibility(tmpDesignator.obj.getType(), ((AssignDesignatorOp) tmpdPostOp).getExpr().struct)) {
-				report_error("Left and right side of assign operation are not compatible ", designatorStat);
+				report_error("Left and right side of assign operation are not compatible " + tmpDesignator.obj.getType().getKind() + " " + 
+						((AssignDesignatorOp) tmpdPostOp).getExpr().struct.getKind() + " " + tmpDesignator.obj.getType().getElemType().getKind() + " " +
+						((AssignDesignatorOp) tmpdPostOp).getExpr().struct.getElemType().getKind()
+				, designatorStat);
 				return ;
 			}
 		}
@@ -384,7 +387,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
-	public void visit(AssignDesignatorOp assignDesignatorOp) {
+/*	public void visit(AssignDesignatorOp assignDesignatorOp) {
 		if(ask_method == 0) {
 			report_error("Return statement is not in method!", assignDesignatorOp);
 			return ;
@@ -395,6 +398,68 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error("Return statement type is not same as method type! ", assignDesignatorOp);
 			return ;
 		}
+	}*/
+	
+	public void visit(SingleIfCondition singleIfCondition) {
+		singleIfCondition.struct = singleIfCondition.getCondTerm().struct;
+		if(singleIfCondition.struct.getKind() != Struct.Bool) {
+			report_error("Condition must be bool type!", singleIfCondition);
+			return ;
+		}
+	}
+	
+	public void visit(MultipleIfCondition multipleIfCondition) {
+		multipleIfCondition.struct = multipleIfCondition.getCondTerm().struct;
+		if(multipleIfCondition.struct.getKind() != Struct.Bool) {
+			report_error("Condition must be bool type!", multipleIfCondition);
+			return ;
+		}
+	}
+	
+	public void visit(SingleCondTerm singleCondTerm) {
+		singleCondTerm.struct = singleCondTerm.getCondFact().struct;
+		if(singleCondTerm.struct.getKind() != Struct.Bool) {
+			report_error("Condition Term must be bool type!", singleCondTerm);
+			return ;
+		}
+	}
+	
+	public void visit(MultipleCondTerm multipleCondTerm) {
+		multipleCondTerm.struct = multipleCondTerm.getCondFact().struct;
+		if(multipleCondTerm.struct.getKind() != Struct.Bool){
+			report_error("Condition term must be bool type!", multipleCondTerm);
+			return ;
+		}
+	}
+	
+	public void visit(SingleCondFact singleCondFact) {
+		singleCondFact.struct = singleCondFact.getExpr().struct;
+		if(singleCondFact.struct.getKind() != Struct.Bool) {
+			report_error("Condition factor must be bool type!", singleCondFact);
+			return ;
+		}
+	}
+	
+	public void visit(MultipleCondFact multipleCondFact) {
+		Expr expr = multipleCondFact.getExpr();
+		Expr expr1 = multipleCondFact.getExpr1();
+		Relop relop = multipleCondFact.getRelop();
+		
+		if(!this.checkCompatibility(expr.struct, expr1.struct)) {
+			report_error("Expresions don't have comatible type", multipleCondFact);
+			return ;
+		}
+		
+		if(expr.struct.getKind() == Struct.Array) {
+			if(relop instanceof IsEqualOp || relop instanceof NotEqualOp) {
+				return;
+			}else {
+				report_error("Arrays can be compared only using == and != operators", multipleCondFact);
+				return ;
+			}
+		}
+		
+		
 	}
 	public boolean passed() {
 		return !errorDetected;
