@@ -10,6 +10,7 @@ public class CodeGenerator extends VisitorAdaptor{
 	
 	private int mainPc, tmpCnt = 0;
 	private Obj currentMethod;
+	private int debug = 0;
 	
 	public int getMainPc() {
 		return mainPc;
@@ -62,32 +63,19 @@ public class CodeGenerator extends VisitorAdaptor{
 		Code.loadConst(boolConst.getB1());
 	}
 	
-/*	public void visit(SimpleConstDecl simpleConstDecl) {
-		Obj globalVar = TabE.find(simpleConstDecl.getVarName());
-		globalVar.setAdr(tmpCnt++);
-		globalVar.setLevel(0);
-		//posto je iz nekog razloga glup moram rucno :) 
-		
-		Code.dataSize++;
-		Consts constValue = simpleConstDecl.getConsts();
-		
-		if(constValue instanceof NumberConstant) {
-			Code.loadConst(((NumberConstant)constValue).getValue());
-		}
-		
-		if(constValue instanceof BooleanConstant) {
-			Code.loadConst(((BooleanConstant)constValue).getValue());
-		}
-		
-		if(constValue instanceof CharacterConstant) {
-			Code.loadConst(((CharacterConstant)constValue).getValue());
-		}
-		
-		Code.store(globalVar);
-	}*/
-	
 	public void visit(DesignatorFullExpresion designatorFullExpresion) {
-		Code.load(designatorFullExpresion.obj);
+		//TODO solve bug when left side of assigment is obj, no need to set it on stack
+		//correct inc and dec then 
+		MultipleDesignator multiDes = designatorFullExpresion.getMultipleDesignator();
+		
+		//here index goes before address so need to pop it and push it back
+		if(multiDes instanceof DesignatorArray) {
+			Code.load(designatorFullExpresion.obj);
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+		}else {
+			Code.load(designatorFullExpresion.obj);
+		}
 	}
 	
 	public void visit(DesignatorStat designatorStat) {
@@ -97,6 +85,62 @@ public class CodeGenerator extends VisitorAdaptor{
 		if(tmpdPostOp instanceof AssignDesignatorOp) {
 			//constant should already be on the stack
 			Code.store(tmpDesignator.obj);
+		}
+		
+		if(tmpdPostOp instanceof DesignatorIncrement) {
+			Code.loadConst(1);	//designator should already be on the stack
+			Code.put(Code.add);
+			Code.store(tmpDesignator.obj);
+		}
+		
+		if(tmpdPostOp instanceof DesignatorDecrement) {
+			Code.loadConst(1);	//designator should already be on the stack
+			Code.put(Code.sub);
+			Code.store(tmpDesignator.obj);
+		}
+	}
+	
+	public void visit(GlobalVariableDecl globalVariableDecl) {
+		Code.dataSize++;				//increase number of global variables
+	}
+	
+	public void visit(MultipleAddExpr multipleAddExpr) {
+		if(multipleAddExpr.getAddop() instanceof PlusOp) {
+			Code.put(Code.add);
+		}else {
+			Code.put(Code.sub);
+		}
+	}
+	
+	public void visit(MultipleTerm multipleTerm) {
+		Mulop mop = multipleTerm.getMulop();
+		
+		if(mop instanceof MulOperation) {
+			Code.put(Code.mul);
+		}
+		
+		if(mop instanceof DivOperation) {
+			Code.put(Code.div);
+		}
+		
+		if(mop instanceof ModulOperation) {
+			Code.put(Code.rem);
+		}
+	}
+	
+	public void visit(MinusExpr minusExpr) {
+		Code.put(Code.neg);
+	}
+	
+	public void visit(NewTypeArray newTypeArray) {
+		Type arrType = newTypeArray.getType();
+		
+		Code.put(Code.newarray);						//hopefully address is also pushed to the stack 
+		
+		if(arrType.struct.getKind() == Struct.Int) {
+			Code.put(1);
+		}else {
+			Code.put(0);
 		}
 	}
 }

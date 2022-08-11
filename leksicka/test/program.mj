@@ -5,14 +5,26 @@ program test301
 	const int nula = 0;
 	const int jedan = 1;
 	const int pet = 5;
-
+	int my;
+	int your;
+	
+	int niz[];
+	char nizch[];
+	bool smor[];
 {
 	void main()	
 		int bodovi;
 		bool bt;
 		int nula;
 	{
-		bodovi = 1;
-		print(bodovi);
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi); 
+		
+		niz = new int[3];
+		niz[1] = 11;
 	}
 }

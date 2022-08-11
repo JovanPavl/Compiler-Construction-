@@ -1,0 +1,320 @@
+INFO  13:02:48,416 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  13:02:48,569 - #2 program
+INFO  13:02:48,569 - #48 test301
+INFO  13:02:48,569 - #14 const
+INFO  13:02:48,572 - #48 int
+INFO  13:02:48,572 - #48 nula
+INFO  13:02:48,573 - #6 =
+INFO  13:02:48,574 - #51 0
+INFO  13:02:48,574 - #8 ;
+INFO  13:02:48,575 - #14 const
+INFO  13:02:48,577 - #48 int
+INFO  13:02:48,577 - #48 jedan
+INFO  13:02:48,578 - #6 =
+INFO  13:02:48,578 - #51 1
+INFO  13:02:48,578 - #8 ;
+INFO  13:02:48,578 - #14 const
+INFO  13:02:48,578 - #48 int
+INFO  13:02:48,578 - #48 pet
+INFO  13:02:48,579 - #6 =
+INFO  13:02:48,579 - #51 5
+INFO  13:02:48,579 - #8 ;
+INFO  13:02:48,583 - #48 int
+INFO  13:02:48,583 - #48 my
+INFO  13:02:48,584 - #8 ;
+INFO  13:02:48,586 - #11 {
+INFO  13:02:48,588 - #13 void
+INFO  13:02:48,588 - #48 main
+INFO  13:02:48,589 - #9 (
+INFO  13:02:48,591 - #10 )
+INFO  13:02:48,592 - #48 int
+INFO  13:02:48,593 - #48 bodovi
+INFO  13:02:48,593 - #8 ;
+INFO  13:02:48,593 - #48 bool
+INFO  13:02:48,595 - #48 bt
+INFO  13:02:48,595 - #8 ;
+INFO  13:02:48,595 - #48 int
+INFO  13:02:48,595 - #48 nula
+INFO  13:02:48,595 - #8 ;
+INFO  13:02:48,596 - #11 {
+INFO  13:02:48,596 - #48 my
+INFO  13:02:48,597 - #6 =
+INFO  13:02:48,599 - #51 4
+INFO  13:02:48,600 - #8 ;
+INFO  13:02:48,602 - #48 bodovi
+INFO  13:02:48,603 - #6 =
+INFO  13:02:48,603 - #51 1
+INFO  13:02:48,603 - #8 ;
+INFO  13:02:48,603 - #3 print
+INFO  13:02:48,603 - #9 (
+INFO  13:02:48,603 - #48 bodovi
+INFO  13:02:48,604 - #10 )
+INFO  13:02:48,605 - #8 ;
+INFO  13:02:48,605 - #3 print
+INFO  13:02:48,606 - #9 (
+INFO  13:02:48,606 - #48 my
+INFO  13:02:48,606 - #10 )
+INFO  13:02:48,606 - #8 ;
+INFO  13:02:48,607 - #3 print
+INFO  13:02:48,607 - #9 (
+INFO  13:02:48,607 - #48 my
+INFO  13:02:48,607 - #10 )
+INFO  13:02:48,607 - #8 ;
+INFO  13:02:48,607 - #12 }
+INFO  13:02:48,607 - #12 }
+INFO  13:02:48,620 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  GlobalVariableDeclaration(
+    ConstantDeclaration(
+      ConstantDeclaration(
+        ConstantDeclaration(
+          EmptyDeclaration(
+          ) [EmptyDeclaration]
+          ConstantDecl(
+            Type(
+             int
+            ) [Type]
+            SimpleConstDecl(
+             nula
+              NumberConstant(
+               0
+              ) [NumberConstant]
+            ) [SimpleConstDecl]
+            LineConstDeclDerived1(
+            ) [LineConstDeclDerived1]
+          ) [ConstantDecl]
+        ) [ConstantDeclaration]
+        ConstantDecl(
+          Type(
+           int
+          ) [Type]
+          SimpleConstDecl(
+           jedan
+            NumberConstant(
+             1
+            ) [NumberConstant]
+          ) [SimpleConstDecl]
+          LineConstDeclDerived1(
+          ) [LineConstDeclDerived1]
+        ) [ConstantDecl]
+      ) [ConstantDeclaration]
+      ConstantDecl(
+        Type(
+         int
+        ) [Type]
+        SimpleConstDecl(
+         pet
+          NumberConstant(
+           5
+          ) [NumberConstant]
+        ) [SimpleConstDecl]
+        LineConstDeclDerived1(
+        ) [LineConstDeclDerived1]
+      ) [ConstantDecl]
+    ) [ConstantDeclaration]
+    GlobalVariableDecl(
+      SingleVariableDecl(
+        Type(
+         int
+        ) [Type]
+       my
+        EmptyArrayOperator(
+        ) [EmptyArrayOperator]
+      ) [SingleVariableDecl]
+      EmptyGlobalLineVariableDecl(
+      ) [EmptyGlobalLineVariableDecl]
+    ) [GlobalVariableDecl]
+  ) [GlobalVariableDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          MultipleVariableDecl(
+            EmptyVariableDecl(
+            ) [EmptyVariableDecl]
+            VariableDecl(
+              SingleVariableDecl(
+                Type(
+                 int
+                ) [Type]
+               bodovi
+                EmptyArrayOperator(
+                ) [EmptyArrayOperator]
+              ) [SingleVariableDecl]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [VariableDecl]
+          ) [MultipleVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               bool
+              ) [Type]
+             bt
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             int
+            ) [Type]
+           nula
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        MultipleStatement(
+          MultipleStatement(
+            MultipleStatement(
+              MultipleStatement(
+                NoStatement(
+                ) [NoStatement]
+                OneStatementRed(
+                  DesignStatement(
+                    DesignatorStat(
+                      DesignatorFullExpresion(
+                       my
+                        EmptyMultipleDesignator(
+                        ) [EmptyMultipleDesignator]
+                      ) [DesignatorFullExpresion]
+                      AssignDesignatorOp(
+                        AssignOperation(
+                        ) [AssignOperation]
+                        AddExptOnly(
+                          OneAddExpr(
+                            OneTerm(
+                              NumConst(
+                               4
+                              ) [NumConst]
+                            ) [OneTerm]
+                          ) [OneAddExpr]
+                        ) [AddExptOnly]
+                      ) [AssignDesignatorOp]
+                    ) [DesignatorStat]
+                  ) [DesignStatement]
+                ) [OneStatementRed]
+              ) [MultipleStatement]
+              OneStatementRed(
+                DesignStatement(
+                  DesignatorStat(
+                    DesignatorFullExpresion(
+                     bodovi
+                      EmptyMultipleDesignator(
+                      ) [EmptyMultipleDesignator]
+                    ) [DesignatorFullExpresion]
+                    AssignDesignatorOp(
+                      AssignOperation(
+                      ) [AssignOperation]
+                      AddExptOnly(
+                        OneAddExpr(
+                          OneTerm(
+                            NumConst(
+                             1
+                            ) [NumConst]
+                          ) [OneTerm]
+                        ) [OneAddExpr]
+                      ) [AddExptOnly]
+                    ) [AssignDesignatorOp]
+                  ) [DesignatorStat]
+                ) [DesignStatement]
+              ) [OneStatementRed]
+            ) [MultipleStatement]
+            OneStatementRed(
+              PrintStatement(
+                AddExptOnly(
+                  OneAddExpr(
+                    OneTerm(
+                      DesignatorFactorExpresion(
+                        DesignatorOnly(
+                          DesignatorFullExpresion(
+                           bodovi
+                            EmptyMultipleDesignator(
+                            ) [EmptyMultipleDesignator]
+                          ) [DesignatorFullExpresion]
+                        ) [DesignatorOnly]
+                      ) [DesignatorFactorExpresion]
+                    ) [OneTerm]
+                  ) [OneAddExpr]
+                ) [AddExptOnly]
+                NoNumConsts(
+                ) [NoNumConsts]
+              ) [PrintStatement]
+            ) [OneStatementRed]
+          ) [MultipleStatement]
+          OneStatementRed(
+            PrintStatement(
+              AddExptOnly(
+                OneAddExpr(
+                  OneTerm(
+                    DesignatorFactorExpresion(
+                      DesignatorOnly(
+                        DesignatorFullExpresion(
+                         my
+                          EmptyMultipleDesignator(
+                          ) [EmptyMultipleDesignator]
+                        ) [DesignatorFullExpresion]
+                      ) [DesignatorOnly]
+                    ) [DesignatorFactorExpresion]
+                  ) [OneTerm]
+                ) [OneAddExpr]
+              ) [AddExptOnly]
+              NoNumConsts(
+              ) [NoNumConsts]
+            ) [PrintStatement]
+          ) [OneStatementRed]
+        ) [MultipleStatement]
+        OneStatementRed(
+          PrintStatement(
+            AddExptOnly(
+              OneAddExpr(
+                OneTerm(
+                  DesignatorFactorExpresion(
+                    DesignatorOnly(
+                      DesignatorFullExpresion(
+                       my
+                        EmptyMultipleDesignator(
+                        ) [EmptyMultipleDesignator]
+                      ) [DesignatorFullExpresion]
+                    ) [DesignatorOnly]
+                  ) [DesignatorFactorExpresion]
+                ) [OneTerm]
+              ) [OneAddExpr]
+            ) [AddExptOnly]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  13:02:48,622 - ===================================
+INFO  13:02:48,632 - Constant: nula with value 0 declared on the line 5
+INFO  13:02:48,632 - Constant: jedan with value 1 declared on the line 6
+INFO  13:02:48,632 - Constant: pet with value 5 declared on the line 7
+INFO  13:02:48,632 - Variable: my with type  1 declared on the line 8
+INFO  13:02:48,633 - Method main with type 0 on the line 11
+INFO  13:02:48,633 - Variable: bodovi with type  1 declared on the line 12
+INFO  13:02:48,633 - Variable: bt with type  5 declared on the line 13
+INFO  13:02:48,633 - Variable: nula with type  1 declared on the line 14
+INFO  13:02:48,637 - programWithMethods on the line 3
+INFO  13:02:48,637 - ===================================
+INFO  13:02:48,644 - Parsing finished succesfully!
