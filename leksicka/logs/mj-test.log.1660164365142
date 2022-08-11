@@ -1,0 +1,158 @@
+INFO  22:45:03,922 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  22:45:05,427 - #2 program
+INFO  22:45:05,427 - #48 test301
+INFO  22:45:05,427 - #14 const
+INFO  22:45:05,453 - #48 int
+INFO  22:45:05,453 - #48 nula
+INFO  22:45:05,467 - #6 =
+INFO  22:45:05,467 - #51 0
+INFO  22:45:05,468 - #8 ;
+INFO  22:45:05,484 - #14 const
+INFO  22:45:05,497 - #48 int
+INFO  22:45:05,497 - #48 jedan
+INFO  22:45:05,498 - #6 =
+INFO  22:45:05,498 - #51 1
+INFO  22:45:05,498 - #8 ;
+INFO  22:45:05,498 - #14 const
+INFO  22:45:05,498 - #48 int
+INFO  22:45:05,498 - #48 pet
+INFO  22:45:05,499 - #6 =
+INFO  22:45:05,499 - #51 5
+INFO  22:45:05,499 - #8 ;
+INFO  22:45:05,499 - #11 {
+INFO  22:45:05,499 - #13 void
+INFO  22:45:05,499 - #48 main
+INFO  22:45:05,512 - #9 (
+INFO  22:45:05,522 - #10 )
+INFO  22:45:05,533 - #48 int
+INFO  22:45:05,546 - #48 bodovi
+INFO  22:45:05,547 - #8 ;
+INFO  22:45:05,574 - #48 bool
+INFO  22:45:05,587 - #48 bt
+INFO  22:45:05,587 - #8 ;
+INFO  22:45:05,587 - #48 int
+INFO  22:45:05,587 - #48 nula
+INFO  22:45:05,588 - #8 ;
+INFO  22:45:05,588 - #11 {
+INFO  22:45:05,588 - #12 }
+INFO  22:45:05,602 - #12 }
+INFO  22:45:05,636 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstantDeclaration(
+    ConstantDeclaration(
+      ConstantDeclaration(
+        EmptyDeclaration(
+        ) [EmptyDeclaration]
+        ConstantDecl(
+          Type(
+           int
+          ) [Type]
+          SimpleConstDecl(
+           nula
+            NumberConstant(
+             0
+            ) [NumberConstant]
+          ) [SimpleConstDecl]
+          LineConstDeclDerived1(
+          ) [LineConstDeclDerived1]
+        ) [ConstantDecl]
+      ) [ConstantDeclaration]
+      ConstantDecl(
+        Type(
+         int
+        ) [Type]
+        SimpleConstDecl(
+         jedan
+          NumberConstant(
+           1
+          ) [NumberConstant]
+        ) [SimpleConstDecl]
+        LineConstDeclDerived1(
+        ) [LineConstDeclDerived1]
+      ) [ConstantDecl]
+    ) [ConstantDeclaration]
+    ConstantDecl(
+      Type(
+       int
+      ) [Type]
+      SimpleConstDecl(
+       pet
+        NumberConstant(
+         5
+        ) [NumberConstant]
+      ) [SimpleConstDecl]
+      LineConstDeclDerived1(
+      ) [LineConstDeclDerived1]
+    ) [ConstantDecl]
+  ) [ConstantDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          MultipleVariableDecl(
+            EmptyVariableDecl(
+            ) [EmptyVariableDecl]
+            VariableDecl(
+              SingleVariableDecl(
+                Type(
+                 int
+                ) [Type]
+               bodovi
+                EmptyArrayOperator(
+                ) [EmptyArrayOperator]
+              ) [SingleVariableDecl]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [VariableDecl]
+          ) [MultipleVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               bool
+              ) [Type]
+             bt
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             int
+            ) [Type]
+           nula
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      NoStatement(
+      ) [NoStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  22:45:05,637 - ===================================
+INFO  22:45:05,675 - Constant: nula with value 0 declared on the line 5
+INFO  22:45:05,676 - Constant: jedan with value 1 declared on the line 6
+INFO  22:45:05,676 - Constant: pet with value 5 declared on the line 7
+INFO  22:45:05,676 - Method main with type 0 on the line 10
+INFO  22:45:05,676 - Variable: bodovi with type  1 declared on the line 11
+INFO  22:45:05,676 - Variable: bt with type  5 declared on the line 12
+INFO  22:45:05,676 - Variable: nula with type  1 declared on the line 13
+INFO  22:45:05,677 - programWithMethods on the line 3
+INFO  22:45:05,677 - ===================================
+INFO  22:45:05,691 - Parsing finished succesfully!

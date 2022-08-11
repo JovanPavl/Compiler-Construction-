@@ -11,7 +11,7 @@ import rs.etf.pp1.symboltable.concepts.*;
 public class SemanticPass extends VisitorAdaptor {
 	Logger log = Logger.getLogger(getClass());
 
-	int numberOfVariables, tmpValue, ask_method = 0,  while_depth = 0;
+	int numberOfVariables, tmpValue, ask_method = 0,  while_depth = 0, global_adr = 0;
 	Obj currMethod = null;
 	Struct currType = null;
 	
@@ -119,9 +119,16 @@ public class SemanticPass extends VisitorAdaptor {
 			}
 		}
 		Obj newConst = TabE.insert(Obj.Con, simpleConstDecl.getVarName(), currType);
-		newConst.setAdr(tmpValue);
+		
+		newConst.setLevel(0);			
+		
+		newConst.setAdr(tmpValue);				//maybe will be changed
 		
 		report_info("Constant: " + simpleConstDecl.getVarName() + " with value " + tmpValue + " declared", simpleConstDecl);
+		
+		Obj use = TabE.find(simpleConstDecl.getVarName());
+		
+		System.out.println("Zaaa " + simpleConstDecl.getVarName() + " " + use.getAdr() + " " + use.getLevel());
 	}
 
 	public void visit(SingleVariableDecl singleVariableDecl) {
@@ -167,7 +174,8 @@ public class SemanticPass extends VisitorAdaptor {
 		TabE.closeScope();
 		currMethod = null;
 		ask_method = 0;
-		
+		Obj use = TabE.find("pet");
+		System.out.println("Ohoho " + "pet" + " " + use.getAdr() + " " + use.getLevel());
 	}
 	public void visit(SingleMethodName singleMethodName) {
 		if(TabE.currentScope.findSymbol(singleMethodName.getMethodName()) != null) {
@@ -183,7 +191,7 @@ public class SemanticPass extends VisitorAdaptor {
 			retType = ((ReturnType)rtype).getType().struct;
 		}
 		
-		currMethod = TabE.insert(Obj.Meth, singleMethodName.getMethodName(), retType);
+		singleMethodName.obj = currMethod = TabE.insert(Obj.Meth, singleMethodName.getMethodName(), retType);
 		//check if it's in the class?
 		ask_method = 1;
 		
@@ -445,7 +453,7 @@ public class SemanticPass extends VisitorAdaptor {
 		Expr expr1 = multipleCondFact.getExpr1();
 		Relop relop = multipleCondFact.getRelop();
 		
-		if(!this.checkCompatibility(expr.struct, expr1.struct)) {
+		if(!this.checkCompatibility(expr.struct, expr1.struct)){
 			report_error("Expresions don't have comatible type", multipleCondFact);
 			return ;
 		}
