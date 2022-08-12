@@ -36,6 +36,12 @@ public class CodeGenerator extends VisitorAdaptor{
 		}
 	}
 	
+	public void visit(ReadStatement readStatement) {
+		//if it's array we are fine, but if it's read statement no need to load designator
+		Designator tmpDesignator = readStatement.getDesignator();
+		Code.put(Code.read);
+		Code.store(tmpDesignator.obj);
+	}
 	public void visit (SingleMethodName singleMethodName) {
 		singleMethodName.obj.setAdr(Code.pc);
 		
@@ -68,11 +74,13 @@ public class CodeGenerator extends VisitorAdaptor{
 		MultipleDesignator multiDes = designatorFullExpresion.getMultipleDesignator();
 		
 		if(multiDes instanceof DesignatorArray) {
-//			Code.put(Code.getstatic);
-//			Code.put2(2);
 			Code.load(assignedObjs.get(designatorFullExpresion.getDesignatorName()));
 			Code.put(Code.dup_x1);
 			Code.put(Code.pop);
+		}
+		
+		if(parent instanceof ReadStatement) {
+			return ;
 		}
 		
 		if(parent instanceof DesignatorStat) {

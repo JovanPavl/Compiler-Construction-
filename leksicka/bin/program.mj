@@ -5,17 +5,14 @@ program test301
 	const int nula = 0;
 	const int jedan = 1;
 	const int pet = 5;
-	int my;
-	int your;
-	
+
 	int niz[];
 	char nizch[];
-	bool smor[];
+	
 {
 	void main()	
 		int bodovi;
 		bool bt;
-		int nula;
 	{
 		bodovi = 0;
 		bodovi++;
@@ -23,6 +20,7 @@ program test301
 		bodovi = bodovi * pet;
 		bodovi--;
 		print(bodovi); 
+			
 		
 		niz = new int[3];
 		niz[nula] = jedan;
@@ -32,6 +30,7 @@ program test301
 		print(bodovi); 
 		print(niz[2]);
 		
+		
 		nizch = new char[3];
 		nizch[0] = 'a';
 		nizch[jedan] = 'b';
@@ -39,7 +38,10 @@ program test301
 		print(nizch[1]);
 		print(nizch[jedan * 2]);
 		
-		bodovi = bodovi + (pet * jedan - 1) * bodovi - (3 % 2 + 3 * 2 - 3);
+		bodovi = bodovi + (pet * jedan - 1) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);
+			
+		read(bodovi);
 		print(bodovi);
 	}
 }
