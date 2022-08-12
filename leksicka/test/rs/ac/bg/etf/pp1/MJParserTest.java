@@ -16,6 +16,7 @@ import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
 
 public class MJParserTest {
 
@@ -49,7 +50,6 @@ public class MJParserTest {
 			SemanticPass v = new SemanticPass();
 			prog.traverseBottomUp(v); 
 	      
-	//		log.info(" Print count calls = " + v.printCallCount);
 
 			log.info("===================================");
 			TabE.dump();
@@ -57,7 +57,6 @@ public class MJParserTest {
 			if(!p.errorDetected && v.passed()){
 				File objFile = new File("test/program.obj");
 				if(objFile.exists()) objFile.delete();
-				
 				CodeGenerator codeGenerator = new CodeGenerator();
 				prog.traverseBottomUp(codeGenerator);
 				Code.mainPc = codeGenerator.getMainPc();

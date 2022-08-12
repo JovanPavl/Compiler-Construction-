@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.HashMap;
+
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.mj.runtime.*;
 import rs.etf.pp1.symboltable.Tab;
@@ -11,7 +13,7 @@ public class CodeGenerator extends VisitorAdaptor{
 	private int mainPc, tmpCnt = 0;
 	private Obj currentMethod;
 	private int debug = 0;
-	
+	HashMap<String, Obj> assignedObjs = new HashMap<String, Obj>();
 	public int getMainPc() {
 		return mainPc;
 	}
@@ -24,10 +26,8 @@ public class CodeGenerator extends VisitorAdaptor{
 		if(kind == Struct.Int) {
 			width = 5;
 		}
-		
-		if(kind == Struct.Int) {
-			Code.loadConst(width);
-		}
+
+		Code.loadConst(width);
 		
 		if(kind != Struct.Int) {
 			Code.put(Code.bprint);
@@ -64,18 +64,26 @@ public class CodeGenerator extends VisitorAdaptor{
 	}
 	
 	public void visit(DesignatorFullExpresion designatorFullExpresion) {
-		//TODO solve bug when left side of assigment is obj, no need to set it on stack
-		//correct inc and dec then 
+		SyntaxNode parent = designatorFullExpresion.getParent();
 		MultipleDesignator multiDes = designatorFullExpresion.getMultipleDesignator();
 		
-		//here index goes before address so need to pop it and push it back
 		if(multiDes instanceof DesignatorArray) {
-			Code.load(designatorFullExpresion.obj);
+//			Code.put(Code.getstatic);
+//			Code.put2(2);
+			Code.load(assignedObjs.get(designatorFullExpresion.getDesignatorName()));
 			Code.put(Code.dup_x1);
 			Code.put(Code.pop);
-		}else {
-			Code.load(designatorFullExpresion.obj);
 		}
+		
+		if(parent instanceof DesignatorStat) {
+			if(((DesignatorStat)parent).getDesignatorPostOperation() instanceof AssignDesignatorOp) {
+				//if designator is on left side of equal operation no need to put it on stack 
+				//but if it's an array we need address, we also need address if operator is on rightside
+				return ;
+			}
+		}
+		
+		Code.load(designatorFullExpresion.obj);
 	}
 	
 	public void visit(DesignatorStat designatorStat) {
@@ -83,10 +91,10 @@ public class CodeGenerator extends VisitorAdaptor{
 		DesignatorPostOperation tmpdPostOp = designatorStat.getDesignatorPostOperation();
 		
 		if(tmpdPostOp instanceof AssignDesignatorOp) {
-			//constant should already be on the stack
+			if(assignedObjs.get(tmpDesignator.obj.getName()) == null)
+				assignedObjs.put(tmpDesignator.obj.getName(), tmpDesignator.obj);
 			Code.store(tmpDesignator.obj);
 		}
-		
 		if(tmpdPostOp instanceof DesignatorIncrement) {
 			Code.loadConst(1);	//designator should already be on the stack
 			Code.put(Code.add);

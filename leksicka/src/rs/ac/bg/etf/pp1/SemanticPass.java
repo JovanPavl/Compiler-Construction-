@@ -127,8 +127,6 @@ public class SemanticPass extends VisitorAdaptor {
 		report_info("Constant: " + simpleConstDecl.getVarName() + " with value " + tmpValue + " declared", simpleConstDecl);
 		
 		Obj use = TabE.find(simpleConstDecl.getVarName());
-		
-		System.out.println("Zaaa " + simpleConstDecl.getVarName() + " " + use.getAdr() + " " + use.getLevel());
 	}
 
 	public void visit(SingleVariableDecl singleVariableDecl) {
@@ -157,7 +155,7 @@ public class SemanticPass extends VisitorAdaptor {
 		
 		TabE.insert(objType, singleVariableDecl.getVarName(), varType);
 		
-		report_info("Variable: " + singleVariableDecl.getVarName() + " with type " + infoArr + " " + currType.getKind() + " declared", singleVariableDecl);
+		report_info("Variable: " + singleVariableDecl.getVarName() + " with type " + infoArr + " " + currType.getKind() + " declared " , singleVariableDecl);
 		
 	}
 	public void visit(GlobalVariableDecl globalVariableDecl) {
@@ -174,8 +172,6 @@ public class SemanticPass extends VisitorAdaptor {
 		TabE.closeScope();
 		currMethod = null;
 		ask_method = 0;
-		Obj use = TabE.find("pet");
-		System.out.println("Ohoho " + "pet" + " " + use.getAdr() + " " + use.getLevel());
 	}
 	public void visit(SingleMethodName singleMethodName) {
 		if(TabE.currentScope.findSymbol(singleMethodName.getMethodName()) != null) {
