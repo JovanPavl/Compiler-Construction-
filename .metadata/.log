@@ -5066,3 +5066,16 @@ java.net.SocketException: Connection reset
 	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
 	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
 	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:96)
+
+!ENTRY org.eclipse.ant.launching 4 120 2022-08-13 00:10:45.394
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:689)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:762)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:684)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:650)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:583)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:540)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:91)
