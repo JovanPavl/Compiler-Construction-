@@ -214,6 +214,23 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
+	public void visit(BinaryOperator binaryOperator) {
+		binaryOperator.struct = binaryOperator.getExpr().struct;
+		if(binaryOperator.struct.getKind() != Struct.Int) {
+			report_error("Binary operator must be type of int", binaryOperator);
+		}
+	}
+	
+	public void visit(RestOfBinopMinusExpr restOfBinopMinusExpr) {
+		restOfBinopMinusExpr.struct = restOfBinopMinusExpr.getAddExpr().struct;
+		if(restOfBinopMinusExpr.struct.getKind() != Struct.Int) {
+			report_error("Binary operator must be type of int", restOfBinopMinusExpr);
+		}
+	}
+	
+	public void visit(RestOfBinopAddExptOnly restOfBinopAddExptOnly) {
+		restOfBinopAddExptOnly.struct = restOfBinopAddExptOnly.getAddExpr().struct;
+	}
 	public void visit(AddExptOnly addExptOnly) {
 		addExptOnly.struct = addExptOnly.getAddExpr().struct;
 	}

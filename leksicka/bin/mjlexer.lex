@@ -83,6 +83,7 @@ import java_cup.runtime.Symbol;
 ">="		{ return new_symbol(sym.GEQ, yytext()); }
 "<"			{ return new_symbol(sym.LE, yytext()); }
 ">"			{ return new_symbol(sym.GE, yytext()); }
+"??"		{ return new_symbol(sym.BINOP, yytext()); }
 
 "//" {yybegin(COMMENT);}
 <COMMENT> . {yybegin(COMMENT);}

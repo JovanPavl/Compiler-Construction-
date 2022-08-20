@@ -163,4 +163,19 @@ public class CodeGenerator extends VisitorAdaptor{
 			Code.put(0);
 		}
 	}
+	
+	public void visit(BinaryOperator binaryOperator) {
+		//Obj maxObj = new Obj(Obj.Var,"", Tab.intType); when you want to get something from stack temporarely 
+		//currently there are 2 constants on the stack..
+		Code.put(Code.dup2);
+		Code.put(Code.pop);
+		Code.loadConst(0);
+		Code.put(Code.jcc + Code.ne);		//check if left operand is zero
+		Code.put2(7);						
+		Code.put(Code.dup_x1);
+		Code.put(Code.pop);
+		Code.put(Code.pop);
+		Code.loadConst(0);
+		Code.put(Code.pop);
+	}
 }

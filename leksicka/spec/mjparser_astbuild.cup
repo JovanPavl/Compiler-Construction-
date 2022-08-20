@@ -51,10 +51,12 @@ terminal SWITCH, AND, OR, CASE, MODUL, MINUS, LBRACKET, RBRACKET, COL, CLASS, EX
 
 terminal RECORD, DO;
 
+terminal BINOP; 
 terminal String IDENT;
 terminal Character CHAR;
 terminal Integer BOOL;
 terminal Integer NUMBER;
+
 
 nonterminal DoWhileHeader DoWhileHeader;
 nonterminal DoWhileEnd DoWhileEnd;
@@ -111,7 +113,7 @@ nonterminal MultipleNumConst MultipleNumConst;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName, Designator, DesignatorFactor;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor, restOfBinop;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTerm, CondFact;
 precedence left ELSE;
 
@@ -247,7 +249,14 @@ AddExpr ::=(OneAddExpr)Term:T1 {: RESULT=new OneAddExpr(T1); RESULT.setLine(T1le
 			(MultipleAddExpr)AddExpr:A1 Addop:A2 Term:T3 {: RESULT=new MultipleAddExpr(A1, A2, T3); RESULT.setLine(A1left); :};
 Expr ::= (MinusExpr)MINUS AddExpr:A1 {: RESULT=new MinusExpr(A1); RESULT.setLine(A1left); :}
 		|
-		(AddExptOnly)AddExpr:A1 {: RESULT=new AddExptOnly(A1); RESULT.setLine(A1left); :};
+		(AddExptOnly)AddExpr:A1 {: RESULT=new AddExptOnly(A1); RESULT.setLine(A1left); :}
+		| 
+		(BinaryOperator) Expr:E1 BINOP restOfBinop:r2 {: RESULT=new BinaryOperator(E1, r2); RESULT.setLine(E1left); :};
+		
+restOfBinop ::= (RestOfBinopMinusExpr) MINUS AddExpr:A1 {: RESULT=new RestOfBinopMinusExpr(A1); RESULT.setLine(A1left); :}
+				|
+				(RestOfBinopAddExptOnly) AddExpr:A1 {: RESULT=new RestOfBinopAddExptOnly(A1); RESULT.setLine(A1left); :};
+				
 Term ::= (OneTerm)Factor:F1 {: RESULT=new OneTerm(F1); RESULT.setLine(F1left); :} 
 		|
 		 (MultipleTerm)Term:T1 Mulop:M2 Factor:F3 {: RESULT=new MultipleTerm(T1, M2, F3); RESULT.setLine(T1left); :};

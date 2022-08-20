@@ -4,7 +4,9 @@
     <fullyQualifiedTypeName name="java_cup.sym"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Struct"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.Tab"/>
     <fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
     <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Obj"/>
-    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.Tab"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.CodeGenerator"/>
 </qualifiedTypeNameHistroy>

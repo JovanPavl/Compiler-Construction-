@@ -1,6 +1,0 @@
-INFO  11:14:01,558 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
-INFO  11:14:01,676 - #2 program
-INFO  11:14:01,676 - #42 testiranje
-ERROR 11:14:01,676 - 
-Sintaksna greska na liniji 1
-ERROR 11:14:01,676 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

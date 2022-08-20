@@ -51,10 +51,12 @@ terminal SWITCH, AND, OR, CASE, MODUL, MINUS, LBRACKET, RBRACKET, COL, CLASS, EX
 
 terminal RECORD, DO;
 
+terminal BINOP; 
 terminal String IDENT;
 terminal Character CHAR;
 terminal Integer BOOL;
 terminal Integer NUMBER;
+
 
 nonterminal DoWhileHeader, DoWhileEnd;
 nonterminal Mdecl;
@@ -85,7 +87,7 @@ nonterminal Label, MultipleNumConst;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SingleMethodDecl, SingleMethodName, Designator, DesignatorFactor;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Consts, Expr, AddExpr, Term, Factor, NewTypeFactor, restOfBinop;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTerm, CondFact;
 precedence left ELSE;
 
@@ -221,7 +223,14 @@ AddExpr ::=(OneAddExpr)Term
 			(MultipleAddExpr)AddExpr Addop Term;
 Expr ::= (MinusExpr)MINUS AddExpr
 		|
-		(AddExptOnly)AddExpr;
+		(AddExptOnly)AddExpr
+		| 
+		(BinaryOperator) Expr BINOP restOfBinop;
+		
+restOfBinop ::= (RestOfBinopMinusExpr) MINUS AddExpr
+				|
+				(RestOfBinopAddExptOnly) AddExpr;
+				
 Term ::= (OneTerm)Factor 
 		|
 		 (MultipleTerm)Term Mulop Factor;
