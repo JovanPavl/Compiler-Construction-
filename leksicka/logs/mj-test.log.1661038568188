@@ -1,0 +1,236 @@
+INFO  01:35:42,353 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  01:35:42,489 - #2 program
+INFO  01:35:42,489 - #49 test301
+INFO  01:35:42,489 - #14 const
+INFO  01:35:42,491 - #49 int
+INFO  01:35:42,491 - #49 nula
+INFO  01:35:42,492 - #6 =
+INFO  01:35:42,493 - #52 0
+INFO  01:35:42,493 - #8 ;
+INFO  01:35:42,494 - #14 const
+INFO  01:35:42,495 - #49 int
+INFO  01:35:42,495 - #49 jedan
+INFO  01:35:42,496 - #6 =
+INFO  01:35:42,496 - #52 1
+INFO  01:35:42,496 - #8 ;
+INFO  01:35:42,496 - #14 const
+INFO  01:35:42,496 - #49 int
+INFO  01:35:42,496 - #49 tri
+INFO  01:35:42,497 - #6 =
+INFO  01:35:42,497 - #52 3
+INFO  01:35:42,497 - #8 ;
+INFO  01:35:42,497 - #14 const
+INFO  01:35:42,498 - #49 int
+INFO  01:35:42,498 - #49 pet
+INFO  01:35:42,498 - #6 =
+INFO  01:35:42,498 - #52 5
+INFO  01:35:42,498 - #8 ;
+INFO  01:35:42,498 - #49 int
+INFO  01:35:42,499 - #49 niz
+INFO  01:35:42,499 - #38 [
+INFO  01:35:42,499 - #39 ]
+INFO  01:35:42,499 - #8 ;
+INFO  01:35:42,500 - #49 char
+INFO  01:35:42,502 - #49 nizch
+INFO  01:35:42,502 - #38 [
+INFO  01:35:42,502 - #39 ]
+INFO  01:35:42,502 - #8 ;
+INFO  01:35:42,502 - #11 {
+INFO  01:35:42,502 - #13 void
+INFO  01:35:42,502 - #49 main
+INFO  01:35:42,504 - #9 (
+INFO  01:35:42,505 - #10 )
+INFO  01:35:42,506 - #49 int
+INFO  01:35:42,507 - #49 bodovi
+INFO  01:35:42,507 - #8 ;
+INFO  01:35:42,508 - #49 bool
+INFO  01:35:42,509 - #49 bt
+INFO  01:35:42,509 - #8 ;
+INFO  01:35:42,509 - #11 {
+INFO  01:35:42,509 - #49 bodovi
+INFO  01:35:42,510 - #6 =
+INFO  01:35:42,512 - #49 jds
+INFO  01:35:42,514 - #8 ;
+INFO  01:35:42,516 - #12 }
+INFO  01:35:42,516 - #12 }
+INFO  01:35:42,527 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  GlobalVariableDeclaration(
+    GlobalVariableDeclaration(
+      ConstantDeclaration(
+        ConstantDeclaration(
+          ConstantDeclaration(
+            ConstantDeclaration(
+              EmptyDeclaration(
+              ) [EmptyDeclaration]
+              ConstantDecl(
+                Type(
+                 int
+                ) [Type]
+                SimpleConstDecl(
+                 nula
+                  NumberConstant(
+                   0
+                  ) [NumberConstant]
+                ) [SimpleConstDecl]
+                LineConstDeclDerived1(
+                ) [LineConstDeclDerived1]
+              ) [ConstantDecl]
+            ) [ConstantDeclaration]
+            ConstantDecl(
+              Type(
+               int
+              ) [Type]
+              SimpleConstDecl(
+               jedan
+                NumberConstant(
+                 1
+                ) [NumberConstant]
+              ) [SimpleConstDecl]
+              LineConstDeclDerived1(
+              ) [LineConstDeclDerived1]
+            ) [ConstantDecl]
+          ) [ConstantDeclaration]
+          ConstantDecl(
+            Type(
+             int
+            ) [Type]
+            SimpleConstDecl(
+             tri
+              NumberConstant(
+               3
+              ) [NumberConstant]
+            ) [SimpleConstDecl]
+            LineConstDeclDerived1(
+            ) [LineConstDeclDerived1]
+          ) [ConstantDecl]
+        ) [ConstantDeclaration]
+        ConstantDecl(
+          Type(
+           int
+          ) [Type]
+          SimpleConstDecl(
+           pet
+            NumberConstant(
+             5
+            ) [NumberConstant]
+          ) [SimpleConstDecl]
+          LineConstDeclDerived1(
+          ) [LineConstDeclDerived1]
+        ) [ConstantDecl]
+      ) [ConstantDeclaration]
+      GlobalVariableDecl(
+        SingleVariableDecl(
+          Type(
+           int
+          ) [Type]
+         niz
+          ArrayOperator(
+          ) [ArrayOperator]
+        ) [SingleVariableDecl]
+        EmptyGlobalLineVariableDecl(
+        ) [EmptyGlobalLineVariableDecl]
+      ) [GlobalVariableDecl]
+    ) [GlobalVariableDeclaration]
+    GlobalVariableDecl(
+      SingleVariableDecl(
+        Type(
+         char
+        ) [Type]
+       nizch
+        ArrayOperator(
+        ) [ArrayOperator]
+      ) [SingleVariableDecl]
+      EmptyGlobalLineVariableDecl(
+      ) [EmptyGlobalLineVariableDecl]
+    ) [GlobalVariableDecl]
+  ) [GlobalVariableDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               int
+              ) [Type]
+             bodovi
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             bool
+            ) [Type]
+           bt
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        NoStatement(
+        ) [NoStatement]
+        OneStatementRed(
+          DesignStatement(
+            DesignatorStat(
+              DesignatorFullExpresion(
+               bodovi
+                EmptyMultipleDesignator(
+                ) [EmptyMultipleDesignator]
+              ) [DesignatorFullExpresion]
+              AssignDesignatorOp(
+                AssignOperation(
+                ) [AssignOperation]
+                AddExptOnly(
+                  OneAddExpr(
+                    OneTerm(
+                      DesignatorFactorExpresion(
+                        DesignatorOnly(
+                          DesignatorFullExpresion(
+                           jds
+                            EmptyMultipleDesignator(
+                            ) [EmptyMultipleDesignator]
+                          ) [DesignatorFullExpresion]
+                        ) [DesignatorOnly]
+                      ) [DesignatorFactorExpresion]
+                    ) [OneTerm]
+                  ) [OneAddExpr]
+                ) [AddExptOnly]
+              ) [AssignDesignatorOp]
+            ) [DesignatorStat]
+          ) [DesignStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  01:35:42,528 - ===================================
+INFO  01:35:42,533 - Constant: nula with value 0 declared on the line 5
+INFO  01:35:42,533 - Constant: jedan with value 1 declared on the line 6
+INFO  01:35:42,534 - Constant: tri with value 3 declared on the line 7
+INFO  01:35:42,534 - Constant: pet with value 5 declared on the line 8
+INFO  01:35:42,534 - Variable: niz with type array  1 declared  on the line 10
+INFO  01:35:42,534 - Variable: nizch with type array  2 declared  on the line 11
+INFO  01:35:42,534 - Method main with type 0 on the line 14
+INFO  01:35:42,535 - Variable: bodovi with type  1 declared  on the line 15
+INFO  01:35:42,535 - Variable: bt with type  5 declared  on the line 16
+ERROR 01:35:42,535 - Undeclared identifier jds on the line 18

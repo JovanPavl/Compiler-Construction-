@@ -1,0 +1,196 @@
+INFO  01:03:40,329 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  01:03:40,458 - #2 program
+INFO  01:03:40,459 - #49 test301
+INFO  01:03:40,459 - #14 const
+INFO  01:03:40,460 - #49 int
+INFO  01:03:40,460 - #49 nula
+INFO  01:03:40,461 - #6 =
+INFO  01:03:40,461 - #52 0
+INFO  01:03:40,461 - #49 mkj
+ERROR 01:03:40,461 - 
+Syntax fault  on the line 5
+INFO  01:03:40,462 - #8 ;
+INFO  01:03:40,462 - #14 const
+INFO  01:03:40,462 - #49 int
+INFO  01:03:40,462 - #49 jedan
+ERROR 01:03:40,462 - Error recovery of global variable on the line 5
+INFO  01:03:40,463 - #6 =
+INFO  01:03:40,463 - #52 1
+INFO  01:03:40,463 - #8 ;
+INFO  01:03:40,464 - #14 const
+INFO  01:03:40,465 - #49 int
+INFO  01:03:40,466 - #49 tri
+INFO  01:03:40,466 - #6 =
+INFO  01:03:40,466 - #52 3
+INFO  01:03:40,466 - #8 ;
+INFO  01:03:40,466 - #14 const
+INFO  01:03:40,466 - #49 int
+INFO  01:03:40,466 - #49 pet
+INFO  01:03:40,466 - #6 =
+INFO  01:03:40,466 - #52 5
+INFO  01:03:40,466 - #8 ;
+INFO  01:03:40,466 - #49 int
+INFO  01:03:40,467 - #49 niz
+INFO  01:03:40,467 - #38 [
+INFO  01:03:40,467 - #39 ]
+INFO  01:03:40,467 - #8 ;
+INFO  01:03:40,468 - #49 char
+INFO  01:03:40,468 - #49 nizch
+INFO  01:03:40,468 - #38 [
+INFO  01:03:40,468 - #39 ]
+INFO  01:03:40,468 - #8 ;
+INFO  01:03:40,468 - #11 {
+INFO  01:03:40,468 - #13 void
+INFO  01:03:40,468 - #49 main
+INFO  01:03:40,471 - #9 (
+INFO  01:03:40,472 - #10 )
+INFO  01:03:40,473 - #49 int
+INFO  01:03:40,473 - #49 bodovi
+INFO  01:03:40,474 - #8 ;
+INFO  01:03:40,474 - #49 bool
+INFO  01:03:40,476 - #49 bt
+INFO  01:03:40,476 - #8 ;
+INFO  01:03:40,476 - #11 {
+INFO  01:03:40,476 - #12 }
+INFO  01:03:40,477 - #12 }
+INFO  01:03:40,499 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  GlobalVariableDeclaration(
+    GlobalVariableDeclaration(
+      ConstantDeclaration(
+        ConstantDeclaration(
+          ConstantDeclaration(
+            GlobalVariableDeclaration(
+              EmptyDeclaration(
+              ) [EmptyDeclaration]
+              ErrorVarDecl(
+                EmptyGlobalLineVariableDecl(
+                ) [EmptyGlobalLineVariableDecl]
+              ) [ErrorVarDecl]
+            ) [GlobalVariableDeclaration]
+            ConstantDecl(
+              Type(
+               int
+              ) [Type]
+              SimpleConstDecl(
+               jedan
+                NumberConstant(
+                 1
+                ) [NumberConstant]
+              ) [SimpleConstDecl]
+              LineConstDeclDerived1(
+              ) [LineConstDeclDerived1]
+            ) [ConstantDecl]
+          ) [ConstantDeclaration]
+          ConstantDecl(
+            Type(
+             int
+            ) [Type]
+            SimpleConstDecl(
+             tri
+              NumberConstant(
+               3
+              ) [NumberConstant]
+            ) [SimpleConstDecl]
+            LineConstDeclDerived1(
+            ) [LineConstDeclDerived1]
+          ) [ConstantDecl]
+        ) [ConstantDeclaration]
+        ConstantDecl(
+          Type(
+           int
+          ) [Type]
+          SimpleConstDecl(
+           pet
+            NumberConstant(
+             5
+            ) [NumberConstant]
+          ) [SimpleConstDecl]
+          LineConstDeclDerived1(
+          ) [LineConstDeclDerived1]
+        ) [ConstantDecl]
+      ) [ConstantDeclaration]
+      GlobalVariableDecl(
+        SingleVariableDecl(
+          Type(
+           int
+          ) [Type]
+         niz
+          ArrayOperator(
+          ) [ArrayOperator]
+        ) [SingleVariableDecl]
+        EmptyGlobalLineVariableDecl(
+        ) [EmptyGlobalLineVariableDecl]
+      ) [GlobalVariableDecl]
+    ) [GlobalVariableDeclaration]
+    GlobalVariableDecl(
+      SingleVariableDecl(
+        Type(
+         char
+        ) [Type]
+       nizch
+        ArrayOperator(
+        ) [ArrayOperator]
+      ) [SingleVariableDecl]
+      EmptyGlobalLineVariableDecl(
+      ) [EmptyGlobalLineVariableDecl]
+    ) [GlobalVariableDecl]
+  ) [GlobalVariableDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               int
+              ) [Type]
+             bodovi
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             bool
+            ) [Type]
+           bt
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      NoStatement(
+      ) [NoStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  01:03:40,499 - ===================================
+INFO  01:03:40,523 - Constant: jedan with value 1 declared on the line 6
+INFO  01:03:40,523 - Constant: tri with value 3 declared on the line 7
+INFO  01:03:40,524 - Constant: pet with value 5 declared on the line 8
+INFO  01:03:40,524 - Variable: niz with type array  1 declared  on the line 10
+INFO  01:03:40,524 - Variable: nizch with type array  2 declared  on the line 11
+INFO  01:03:40,524 - Method main with type 0 on the line 14
+INFO  01:03:40,524 - Variable: bodovi with type  1 declared  on the line 15
+INFO  01:03:40,524 - Variable: bt with type  5 declared  on the line 16
+INFO  01:03:40,524 - programWithMethods on the line 3
+INFO  01:03:40,525 - ===================================
+ERROR 01:03:40,525 - Parsing failed!
