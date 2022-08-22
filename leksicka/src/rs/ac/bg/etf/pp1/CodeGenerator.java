@@ -13,6 +13,7 @@ public class CodeGenerator extends VisitorAdaptor{
 	private int mainPc, tmpCnt = 0;
 	private Obj currentMethod;
 	private int debug = 0;
+	private int arrayIncDec = 0;
 	HashMap<String, Obj> assignedObjs = new HashMap<String, Obj>();
 	public int getMainPc() {
 		return mainPc;
@@ -76,11 +77,12 @@ public class CodeGenerator extends VisitorAdaptor{
 	public void visit(DesignatorFullExpresion designatorFullExpresion) {
 		SyntaxNode parent = designatorFullExpresion.getParent();
 		MultipleDesignator multiDes = designatorFullExpresion.getMultipleDesignator();
-		
+		int okArray = 0;
 		if(multiDes instanceof DesignatorArray) {
 			Code.load(assignedObjs.get(designatorFullExpresion.getDesignatorName()));
 			Code.put(Code.dup_x1);
 			Code.put(Code.pop);
+			okArray = 1;
 		}
 		
 		if(parent instanceof ReadStatement) {
@@ -92,6 +94,14 @@ public class CodeGenerator extends VisitorAdaptor{
 				//if designator is on left side of equal operation no need to put it on stack 
 				//but if it's an array we need address, we also need address if operator is on rightside
 				return ;
+			}
+			
+			if(((DesignatorStat)parent).getDesignatorPostOperation() instanceof DesignatorIncrement && okArray == 1) {
+				Code.put(Code.dup2);
+			}
+			
+			if(((DesignatorStat)parent).getDesignatorPostOperation() instanceof DesignatorDecrement && okArray == 1) {
+				Code.put(Code.dup2);
 			}
 		}
 		
@@ -108,12 +118,14 @@ public class CodeGenerator extends VisitorAdaptor{
 			Code.store(tmpDesignator.obj);
 		}
 		if(tmpdPostOp instanceof DesignatorIncrement) {
+			//if it's array you need to put addr and index one more time
 			Code.loadConst(1);	//designator should already be on the stack
 			Code.put(Code.add);
 			Code.store(tmpDesignator.obj);
 		}
 		
 		if(tmpdPostOp instanceof DesignatorDecrement) {
+			//if it's array you need to put addr and index one more time
 			Code.loadConst(1);	//designator should already be on the stack
 			Code.put(Code.sub);
 			Code.store(tmpDesignator.obj);

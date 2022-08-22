@@ -1,0 +1,374 @@
+INFO  14:57:23,773 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\program.mj
+INFO  14:57:23,883 - #2 program
+INFO  14:57:23,883 - #49 test301
+INFO  14:57:23,883 - #14 const
+INFO  14:57:23,885 - #49 int
+INFO  14:57:23,886 - #49 nula
+INFO  14:57:23,887 - #6 =
+INFO  14:57:23,887 - #52 0
+INFO  14:57:23,887 - #8 ;
+INFO  14:57:23,888 - #14 const
+INFO  14:57:23,889 - #49 int
+INFO  14:57:23,889 - #49 jedan
+INFO  14:57:23,889 - #6 =
+INFO  14:57:23,890 - #52 1
+INFO  14:57:23,890 - #8 ;
+INFO  14:57:23,890 - #14 const
+INFO  14:57:23,890 - #49 int
+INFO  14:57:23,890 - #49 tri
+INFO  14:57:23,890 - #6 =
+INFO  14:57:23,890 - #52 3
+INFO  14:57:23,890 - #8 ;
+INFO  14:57:23,891 - #14 const
+INFO  14:57:23,891 - #49 int
+INFO  14:57:23,891 - #49 pet
+INFO  14:57:23,891 - #6 =
+INFO  14:57:23,891 - #52 5
+INFO  14:57:23,891 - #8 ;
+INFO  14:57:23,891 - #49 int
+INFO  14:57:23,892 - #49 niz
+INFO  14:57:23,892 - #38 [
+INFO  14:57:23,892 - #39 ]
+INFO  14:57:23,892 - #8 ;
+INFO  14:57:23,893 - #49 char
+INFO  14:57:23,894 - #49 nizch
+INFO  14:57:23,894 - #38 [
+INFO  14:57:23,894 - #39 ]
+INFO  14:57:23,894 - #8 ;
+INFO  14:57:23,894 - #11 {
+INFO  14:57:23,894 - #13 void
+INFO  14:57:23,894 - #49 main
+INFO  14:57:23,895 - #9 (
+INFO  14:57:23,896 - #10 )
+INFO  14:57:23,897 - #49 int
+INFO  14:57:23,898 - #49 bodovi
+INFO  14:57:23,898 - #8 ;
+INFO  14:57:23,899 - #49 bool
+INFO  14:57:23,900 - #49 bt
+INFO  14:57:23,900 - #8 ;
+INFO  14:57:23,900 - #49 int
+INFO  14:57:23,900 - #49 tmp
+INFO  14:57:23,900 - #8 ;
+INFO  14:57:23,901 - #11 {
+INFO  14:57:23,901 - #49 niz
+INFO  14:57:23,902 - #6 =
+INFO  14:57:23,903 - #21 new
+INFO  14:57:23,905 - #49 int
+INFO  14:57:23,905 - #38 [
+INFO  14:57:23,905 - #52 3
+INFO  14:57:23,905 - #39 ]
+INFO  14:57:23,905 - #8 ;
+INFO  14:57:23,906 - #31 read
+INFO  14:57:23,906 - #9 (
+INFO  14:57:23,906 - #49 niz
+INFO  14:57:23,906 - #38 [
+INFO  14:57:23,906 - #52 0
+INFO  14:57:23,906 - #39 ]
+INFO  14:57:23,906 - #10 )
+INFO  14:57:23,907 - #8 ;
+INFO  14:57:23,907 - #49 niz
+INFO  14:57:23,907 - #38 [
+INFO  14:57:23,907 - #52 0
+INFO  14:57:23,907 - #39 ]
+INFO  14:57:23,907 - #19 ++
+INFO  14:57:23,907 - #8 ;
+INFO  14:57:23,908 - #3 print
+INFO  14:57:23,908 - #9 (
+INFO  14:57:23,908 - #49 niz
+INFO  14:57:23,908 - #38 [
+INFO  14:57:23,908 - #52 0
+INFO  14:57:23,908 - #39 ]
+INFO  14:57:23,908 - #10 )
+INFO  14:57:23,909 - #8 ;
+INFO  14:57:23,909 - #12 }
+INFO  14:57:23,909 - #12 }
+INFO  14:57:23,916 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  GlobalVariableDeclaration(
+    GlobalVariableDeclaration(
+      ConstantDeclaration(
+        ConstantDeclaration(
+          ConstantDeclaration(
+            ConstantDeclaration(
+              EmptyDeclaration(
+              ) [EmptyDeclaration]
+              ConstantDecl(
+                Type(
+                 int
+                ) [Type]
+                SimpleConstDecl(
+                 nula
+                  NumberConstant(
+                   0
+                  ) [NumberConstant]
+                ) [SimpleConstDecl]
+                LineConstDeclDerived1(
+                ) [LineConstDeclDerived1]
+              ) [ConstantDecl]
+            ) [ConstantDeclaration]
+            ConstantDecl(
+              Type(
+               int
+              ) [Type]
+              SimpleConstDecl(
+               jedan
+                NumberConstant(
+                 1
+                ) [NumberConstant]
+              ) [SimpleConstDecl]
+              LineConstDeclDerived1(
+              ) [LineConstDeclDerived1]
+            ) [ConstantDecl]
+          ) [ConstantDeclaration]
+          ConstantDecl(
+            Type(
+             int
+            ) [Type]
+            SimpleConstDecl(
+             tri
+              NumberConstant(
+               3
+              ) [NumberConstant]
+            ) [SimpleConstDecl]
+            LineConstDeclDerived1(
+            ) [LineConstDeclDerived1]
+          ) [ConstantDecl]
+        ) [ConstantDeclaration]
+        ConstantDecl(
+          Type(
+           int
+          ) [Type]
+          SimpleConstDecl(
+           pet
+            NumberConstant(
+             5
+            ) [NumberConstant]
+          ) [SimpleConstDecl]
+          LineConstDeclDerived1(
+          ) [LineConstDeclDerived1]
+        ) [ConstantDecl]
+      ) [ConstantDeclaration]
+      GlobalVariableDecl(
+        SingleVariableDecl(
+          Type(
+           int
+          ) [Type]
+         niz
+          ArrayOperator(
+          ) [ArrayOperator]
+        ) [SingleVariableDecl]
+        EmptyGlobalLineVariableDecl(
+        ) [EmptyGlobalLineVariableDecl]
+      ) [GlobalVariableDecl]
+    ) [GlobalVariableDeclaration]
+    GlobalVariableDecl(
+      SingleVariableDecl(
+        Type(
+         char
+        ) [Type]
+       nizch
+        ArrayOperator(
+        ) [ArrayOperator]
+      ) [SingleVariableDecl]
+      EmptyGlobalLineVariableDecl(
+      ) [EmptyGlobalLineVariableDecl]
+    ) [GlobalVariableDecl]
+  ) [GlobalVariableDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          MultipleVariableDecl(
+            EmptyVariableDecl(
+            ) [EmptyVariableDecl]
+            VariableDecl(
+              SingleVariableDecl(
+                Type(
+                 int
+                ) [Type]
+               bodovi
+                EmptyArrayOperator(
+                ) [EmptyArrayOperator]
+              ) [SingleVariableDecl]
+              EmptyLineVariableDecl(
+              ) [EmptyLineVariableDecl]
+            ) [VariableDecl]
+          ) [MultipleVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               bool
+              ) [Type]
+             bt
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             int
+            ) [Type]
+           tmp
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        MultipleStatement(
+          MultipleStatement(
+            MultipleStatement(
+              NoStatement(
+              ) [NoStatement]
+              OneStatementRed(
+                DesignStatement(
+                  DesignatorStat(
+                    DesignatorFullExpresion(
+                     niz
+                      EmptyMultipleDesignator(
+                      ) [EmptyMultipleDesignator]
+                    ) [DesignatorFullExpresion]
+                    AssignDesignatorOp(
+                      AssignOperation(
+                      ) [AssignOperation]
+                      AddExptOnly(
+                        OneAddExpr(
+                          OneTerm(
+                            NewTypeFactorExpresion(
+                              NewTypeArray(
+                                Type(
+                                 int
+                                ) [Type]
+                                AddExptOnly(
+                                  OneAddExpr(
+                                    OneTerm(
+                                      NumConst(
+                                       3
+                                      ) [NumConst]
+                                    ) [OneTerm]
+                                  ) [OneAddExpr]
+                                ) [AddExptOnly]
+                              ) [NewTypeArray]
+                            ) [NewTypeFactorExpresion]
+                          ) [OneTerm]
+                        ) [OneAddExpr]
+                      ) [AddExptOnly]
+                    ) [AssignDesignatorOp]
+                  ) [DesignatorStat]
+                ) [DesignStatement]
+              ) [OneStatementRed]
+            ) [MultipleStatement]
+            OneStatementRed(
+              ReadStatement(
+                DesignatorFullExpresion(
+                 niz
+                  DesignatorArray(
+                    EmptyMultipleDesignator(
+                    ) [EmptyMultipleDesignator]
+                    AddExptOnly(
+                      OneAddExpr(
+                        OneTerm(
+                          NumConst(
+                           0
+                          ) [NumConst]
+                        ) [OneTerm]
+                      ) [OneAddExpr]
+                    ) [AddExptOnly]
+                  ) [DesignatorArray]
+                ) [DesignatorFullExpresion]
+              ) [ReadStatement]
+            ) [OneStatementRed]
+          ) [MultipleStatement]
+          OneStatementRed(
+            DesignStatement(
+              DesignatorStat(
+                DesignatorFullExpresion(
+                 niz
+                  DesignatorArray(
+                    EmptyMultipleDesignator(
+                    ) [EmptyMultipleDesignator]
+                    AddExptOnly(
+                      OneAddExpr(
+                        OneTerm(
+                          NumConst(
+                           0
+                          ) [NumConst]
+                        ) [OneTerm]
+                      ) [OneAddExpr]
+                    ) [AddExptOnly]
+                  ) [DesignatorArray]
+                ) [DesignatorFullExpresion]
+                DesignatorIncrement(
+                ) [DesignatorIncrement]
+              ) [DesignatorStat]
+            ) [DesignStatement]
+          ) [OneStatementRed]
+        ) [MultipleStatement]
+        OneStatementRed(
+          PrintStatement(
+            AddExptOnly(
+              OneAddExpr(
+                OneTerm(
+                  DesignatorFactorExpresion(
+                    DesignatorOnly(
+                      DesignatorFullExpresion(
+                       niz
+                        DesignatorArray(
+                          EmptyMultipleDesignator(
+                          ) [EmptyMultipleDesignator]
+                          AddExptOnly(
+                            OneAddExpr(
+                              OneTerm(
+                                NumConst(
+                                 0
+                                ) [NumConst]
+                              ) [OneTerm]
+                            ) [OneAddExpr]
+                          ) [AddExptOnly]
+                        ) [DesignatorArray]
+                      ) [DesignatorFullExpresion]
+                    ) [DesignatorOnly]
+                  ) [DesignatorFactorExpresion]
+                ) [OneTerm]
+              ) [OneAddExpr]
+            ) [AddExptOnly]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  14:57:23,917 - ===================================
+INFO  14:57:23,921 - Constant: nula with value 0 declared on the line 5
+INFO  14:57:23,921 - Constant: jedan with value 1 declared on the line 6
+INFO  14:57:23,921 - Constant: tri with value 3 declared on the line 7
+INFO  14:57:23,921 - Constant: pet with value 5 declared on the line 8
+INFO  14:57:23,921 - Variable: niz with type array  1 declared  on the line 10
+INFO  14:57:23,921 - Variable: nizch with type array  2 declared  on the line 11
+INFO  14:57:23,921 - Method main with type 0 on the line 14
+INFO  14:57:23,921 - Variable: bodovi with type  1 declared  on the line 15
+INFO  14:57:23,922 - Variable: bt with type  5 declared  on the line 16
+INFO  14:57:23,922 - Variable: tmp with type  1 declared  on the line 17
+INFO  14:57:23,923 - Array operator used  on the line 20
+INFO  14:57:23,923 - Array operator used  on the line 21
+INFO  14:57:23,923 - Array operator used  on the line 22
+INFO  14:57:23,923 - programWithMethods on the line 3
+INFO  14:57:23,923 - ===================================
+INFO  14:57:23,928 - Parsing finished succesfully!

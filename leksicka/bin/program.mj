@@ -14,8 +14,11 @@ program test301
 	void main()	
 		int bodovi;
 		bool bt;
-	{
-		bodovi =+-jds;
+	{	
+		niz = new int[3];	
+		read(niz[0]);
+		niz[0]++;
+		print(niz[0]);
 	}
 }
 

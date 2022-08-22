@@ -148,7 +148,6 @@ public class SemanticPass extends VisitorAdaptor {
 			infoArr = "";
 		}
 		
-		
 		//TODO:need to find out if it's declared inside method, class field or global
 		//for now only global will be used
 		int objType = Obj.Var;
