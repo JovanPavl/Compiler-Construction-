@@ -1,0 +1,129 @@
+INFO  11:15:18,816 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\TestFailBadAssigning.mj
+INFO  11:15:19,016 - #2 program
+INFO  11:15:19,016 - #49 test301
+INFO  11:15:19,016 - #14 const
+INFO  11:15:19,018 - #49 int
+INFO  11:15:19,018 - #49 nula
+INFO  11:15:19,019 - #6 =
+INFO  11:15:19,019 - #52 0
+INFO  11:15:19,019 - #8 ;
+INFO  11:15:19,020 - #11 {
+INFO  11:15:19,021 - #13 void
+INFO  11:15:19,021 - #49 hoh
+INFO  11:15:19,022 - #9 (
+INFO  11:15:19,023 - #10 )
+INFO  11:15:19,024 - #49 int
+INFO  11:15:19,024 - #49 bodovi
+INFO  11:15:19,024 - #8 ;
+INFO  11:15:19,027 - #49 bool
+INFO  11:15:19,028 - #49 tmp
+INFO  11:15:19,028 - #8 ;
+INFO  11:15:19,028 - #11 {
+INFO  11:15:19,032 - #49 tmp
+INFO  11:15:19,033 - #6 =
+INFO  11:15:19,034 - #49 nula
+INFO  11:15:19,036 - #8 ;
+INFO  11:15:19,037 - #12 }
+INFO  11:15:19,037 - #12 }
+INFO  11:15:19,047 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstantDeclaration(
+    EmptyDeclaration(
+    ) [EmptyDeclaration]
+    ConstantDecl(
+      Type(
+       int
+      ) [Type]
+      SimpleConstDecl(
+       nula
+        NumberConstant(
+         0
+        ) [NumberConstant]
+      ) [SimpleConstDecl]
+      LineConstDeclDerived1(
+      ) [LineConstDeclDerived1]
+    ) [ConstantDecl]
+  ) [ConstantDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       hoh
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               int
+              ) [Type]
+             bodovi
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             bool
+            ) [Type]
+           tmp
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        NoStatement(
+        ) [NoStatement]
+        OneStatementRed(
+          DesignStatement(
+            DesignatorStat(
+              DesignatorFullExpresion(
+               tmp
+                EmptyMultipleDesignator(
+                ) [EmptyMultipleDesignator]
+              ) [DesignatorFullExpresion]
+              AssignDesignatorOp(
+                AssignOperation(
+                ) [AssignOperation]
+                AddExptOnly(
+                  OneAddExpr(
+                    OneTerm(
+                      DesignatorFactorExpresion(
+                        DesignatorOnly(
+                          DesignatorFullExpresion(
+                           nula
+                            EmptyMultipleDesignator(
+                            ) [EmptyMultipleDesignator]
+                          ) [DesignatorFullExpresion]
+                        ) [DesignatorOnly]
+                      ) [DesignatorFactorExpresion]
+                    ) [OneTerm]
+                  ) [OneAddExpr]
+                ) [AddExptOnly]
+              ) [AssignDesignatorOp]
+            ) [DesignatorStat]
+          ) [DesignStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  11:15:19,048 - ===================================
+INFO  11:15:19,052 - Constant: nula with value 0 declared on the line 5
+INFO  11:15:19,052 - Method hoh with type 0 on the line 7
+INFO  11:15:19,052 - Variable: bodovi with type  1 declared  on the line 8
+INFO  11:15:19,052 - Variable: tmp with type  5 declared  on the line 9

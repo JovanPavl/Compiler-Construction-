@@ -1,0 +1,14 @@
+// Test301
+
+program test301
+
+	const int nula = 0;
+{
+	void hoh()	
+		int bodovi;
+	{
+		bodovi = 1;
+	}
+}
+
+

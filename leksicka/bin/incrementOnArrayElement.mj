@@ -14,11 +14,11 @@ program test301
 	void main()	
 		int bodovi;
 		bool bt;
-	{	
-		niz = new int[3];	
-		read(niz[0]);
-		niz[0]++;
-		print(niz[0]);
+	{		
+		niz = new int[3];
+		niz[nula] = jedan;
+		niz[nula]++;
+		print(niz[nula]);
 	}
 }
 

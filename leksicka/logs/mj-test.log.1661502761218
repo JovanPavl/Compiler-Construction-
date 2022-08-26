@@ -1,0 +1,36 @@
+INFO  10:32:23,361 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\testFailErrorRecovery.mj
+INFO  10:32:23,551 - #2 program
+INFO  10:32:23,551 - #49 test301
+INFO  10:32:23,551 - #14 const
+INFO  10:32:23,553 - #49 int
+INFO  10:32:23,553 - #49 nula
+INFO  10:32:23,553 - #6 =
+INFO  10:32:23,554 - #52 0
+INFO  10:32:23,554 - #8 ;
+INFO  10:32:23,555 - #11 {
+INFO  10:32:23,556 - #13 void
+INFO  10:32:23,556 - #49 main
+INFO  10:32:23,556 - #9 (
+INFO  10:32:23,558 - #10 )
+INFO  10:32:23,560 - #49 int
+INFO  10:32:23,562 - #49 bodovi
+INFO  10:32:23,562 - #6 =
+ERROR 10:32:23,562 - 
+Syntax fault  on the line 8
+INFO  10:32:23,562 - #52 0
+INFO  10:32:23,562 - #49 a
+INFO  10:32:23,566 - #8 ;
+INFO  10:32:23,567 - #11 {
+INFO  10:32:23,567 - #49 bodovi
+INFO  10:32:23,568 - #6 =
+ERROR 10:32:23,568 - Error recovery of global variable on the line 6
+ERROR 10:32:23,569 - 
+Syntax fault  on the line 10
+INFO  10:32:23,569 - #52 0
+INFO  10:32:23,569 - #8 ;
+INFO  10:32:23,569 - #49 bodovi
+INFO  10:32:23,569 - #19 ++
+INFO  10:32:23,570 - #8 ;
+INFO  10:32:23,570 - #12 }
+INFO  10:32:23,570 - #12 }
+ERROR 10:32:23,570 - Fatal error, parsing couldn't be continued on the line 17

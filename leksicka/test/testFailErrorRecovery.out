@@ -1,0 +1,218 @@
+INFO  10:47:39,346 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\testFailErrorRecovery.mj
+INFO  10:47:39,532 - #2 program
+INFO  10:47:39,532 - #49 test301
+INFO  10:47:39,533 - #14 const
+INFO  10:47:39,535 - #49 int
+INFO  10:47:39,535 - #49 nula
+INFO  10:47:39,536 - #49 a
+ERROR 10:47:39,537 - 
+Syntax fault  on the line 5
+INFO  10:47:39,537 - #6 =
+INFO  10:47:39,537 - #52 0
+INFO  10:47:39,537 - #8 ;
+INFO  10:47:39,538 - #11 {
+INFO  10:47:39,539 - #13 void
+INFO  10:47:39,539 - #49 main
+ERROR 10:47:39,540 - Error recovery of global variable on the line 5
+INFO  10:47:39,544 - #9 (
+INFO  10:47:39,546 - #10 )
+INFO  10:47:39,547 - #49 int
+INFO  10:47:39,548 - #49 bodovi
+INFO  10:47:39,549 - #8 ;
+INFO  10:47:39,551 - #49 bool
+INFO  10:47:39,552 - #49 b
+INFO  10:47:39,552 - #8 ;
+INFO  10:47:39,553 - #11 {
+INFO  10:47:39,553 - #49 bodovi
+INFO  10:47:39,554 - #6 =
+INFO  10:47:39,560 - #52 0
+INFO  10:47:39,562 - #8 ;
+INFO  10:47:39,563 - #49 bodovi
+INFO  10:47:39,564 - #19 ++
+INFO  10:47:39,564 - #8 ;
+INFO  10:47:39,565 - #49 b
+INFO  10:47:39,566 - #6 =
+INFO  10:47:39,566 - #51 0
+INFO  10:47:39,566 - #8 ;
+INFO  10:47:39,567 - #3 print
+INFO  10:47:39,567 - #9 (
+INFO  10:47:39,567 - #49 bodovi
+INFO  10:47:39,567 - #10 )
+INFO  10:47:39,569 - #8 ;
+INFO  10:47:39,570 - #12 }
+INFO  10:47:39,570 - #12 }
+INFO  10:47:39,586 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  GlobalVariableDeclaration(
+    EmptyDeclaration(
+    ) [EmptyDeclaration]
+    ErrorVarDecl(
+      EmptyGlobalLineVariableDecl(
+      ) [EmptyGlobalLineVariableDecl]
+    ) [ErrorVarDecl]
+  ) [GlobalVariableDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               int
+              ) [Type]
+             bodovi
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             bool
+            ) [Type]
+           b
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        MultipleStatement(
+          MultipleStatement(
+            MultipleStatement(
+              NoStatement(
+              ) [NoStatement]
+              OneStatementRed(
+                DesignStatement(
+                  DesignatorStat(
+                    DesignatorFullExpresion(
+                     bodovi
+                      EmptyMultipleDesignator(
+                      ) [EmptyMultipleDesignator]
+                    ) [DesignatorFullExpresion]
+                    AssignDesignatorOp(
+                      AssignOperation(
+                      ) [AssignOperation]
+                      AddExptOnly(
+                        OneAddExpr(
+                          OneTerm(
+                            NumConst(
+                             0
+                            ) [NumConst]
+                          ) [OneTerm]
+                        ) [OneAddExpr]
+                      ) [AddExptOnly]
+                    ) [AssignDesignatorOp]
+                  ) [DesignatorStat]
+                ) [DesignStatement]
+              ) [OneStatementRed]
+            ) [MultipleStatement]
+            OneStatementRed(
+              DesignStatement(
+                DesignatorStat(
+                  DesignatorFullExpresion(
+                   bodovi
+                    EmptyMultipleDesignator(
+                    ) [EmptyMultipleDesignator]
+                  ) [DesignatorFullExpresion]
+                  DesignatorIncrement(
+                  ) [DesignatorIncrement]
+                ) [DesignatorStat]
+              ) [DesignStatement]
+            ) [OneStatementRed]
+          ) [MultipleStatement]
+          OneStatementRed(
+            DesignStatement(
+              DesignatorStat(
+                DesignatorFullExpresion(
+                 b
+                  EmptyMultipleDesignator(
+                  ) [EmptyMultipleDesignator]
+                ) [DesignatorFullExpresion]
+                AssignDesignatorOp(
+                  AssignOperation(
+                  ) [AssignOperation]
+                  AddExptOnly(
+                    OneAddExpr(
+                      OneTerm(
+                        BoolConst(
+                         0
+                        ) [BoolConst]
+                      ) [OneTerm]
+                    ) [OneAddExpr]
+                  ) [AddExptOnly]
+                ) [AssignDesignatorOp]
+              ) [DesignatorStat]
+            ) [DesignStatement]
+          ) [OneStatementRed]
+        ) [MultipleStatement]
+        OneStatementRed(
+          PrintStatement(
+            AddExptOnly(
+              OneAddExpr(
+                OneTerm(
+                  DesignatorFactorExpresion(
+                    DesignatorOnly(
+                      DesignatorFullExpresion(
+                       bodovi
+                        EmptyMultipleDesignator(
+                        ) [EmptyMultipleDesignator]
+                      ) [DesignatorFullExpresion]
+                    ) [DesignatorOnly]
+                  ) [DesignatorFactorExpresion]
+                ) [OneTerm]
+              ) [OneAddExpr]
+            ) [AddExptOnly]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  10:47:39,592 - ===================================
+INFO  10:47:39,598 - Method main with type 0 on the line 7
+INFO  10:47:39,598 - Variable: bodovi with type  1 declared  on the line 8
+INFO  10:47:39,598 - Variable: b with type  5 declared  on the line 9
+INFO  10:47:39,600 - programWithMethods on the line 3
+INFO  10:47:39,600 - ===================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog test301: notype, 0, 1 
+   Meth main: notype, 0, 0 
+      Var bodovi: int, 0, 1 
+      Var b: bool, 1, 1 
+
+
+
+ERROR 10:47:39,601 - Parsing failed!

@@ -8,7 +8,7 @@ import rs.etf.pp1.symboltable.concepts.*;
 
 
 //Tab.init
-public class SemanticPass extends VisitorAdaptor {
+public class SemanticAnalyzer extends VisitorAdaptor {
 	Logger log = Logger.getLogger(getClass());
 
 	int numberOfVariables, tmpValue, ask_method = 0,  while_depth = 0, global_adr = 0;
@@ -64,6 +64,9 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(ProgramWithMethods programWithMethods) {
 		numberOfVariables = TabE.currentScope.getnVars();
 		TabE.chainLocalSymbols(programWithMethods.getProgName().obj);
+		Obj mainMethod = TabE.find("main");
+		if (mainMethod == TabE.noObj || mainMethod.getKind() != Obj.Meth || mainMethod.getType() != TabE.noType && mainMethod.getLevel() != 0)
+			report_error("main has wrong type or doesn't exist !", programWithMethods);
 		TabE.closeScope();
 		report_info("programWithMethods", programWithMethods);
 	}
@@ -335,9 +338,7 @@ public class SemanticPass extends VisitorAdaptor {
 				return ;
 			}
 			if(!checkCompatibility(tmpDesignator.obj.getType(), ((AssignDesignatorOp) tmpdPostOp).getExpr().struct)) {
-				report_error("Left and right side of assign operation are not compatible " + tmpDesignator.obj.getType().getKind() + " " + 
-						((AssignDesignatorOp) tmpdPostOp).getExpr().struct.getKind() + " " + tmpDesignator.obj.getType().getElemType().getKind() + " " +
-						((AssignDesignatorOp) tmpdPostOp).getExpr().struct.getElemType().getKind()
+				report_error("Left and right side of assign operation are not compatible "
 				, designatorStat);
 				return ;
 			}

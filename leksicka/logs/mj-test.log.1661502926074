@@ -1,0 +1,29 @@
+INFO  10:35:08,458 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\testFailErrorRecovery.mj
+INFO  10:35:08,615 - #2 program
+INFO  10:35:08,615 - #49 test301
+INFO  10:35:08,615 - #14 const
+INFO  10:35:08,617 - #49 int
+INFO  10:35:08,617 - #49 nula
+INFO  10:35:08,618 - #6 =
+INFO  10:35:08,618 - #52 0
+INFO  10:35:08,619 - #8 ;
+INFO  10:35:08,620 - #11 {
+INFO  10:35:08,621 - #13 void
+INFO  10:35:08,621 - #49 main
+INFO  10:35:08,623 - #9 (
+INFO  10:35:08,624 - #10 )
+INFO  10:35:08,625 - #49 int
+INFO  10:35:08,626 - #49 bodovi
+INFO  10:35:08,627 - #8 ;
+INFO  10:35:08,650 - #11 {
+INFO  10:35:08,659 - #49 bodovi
+INFO  10:35:08,674 - #49 a
+ERROR 10:35:08,675 - 
+Syntax fault  on the line 10
+INFO  10:35:08,675 - #6 =
+INFO  10:35:08,676 - #52 0
+INFO  10:35:08,676 - #19 ++
+INFO  10:35:08,677 - #8 ;
+INFO  10:35:08,677 - #12 }
+INFO  10:35:08,677 - #12 }
+ERROR 10:35:08,677 - Fatal error, parsing couldn't be continued on the line 16

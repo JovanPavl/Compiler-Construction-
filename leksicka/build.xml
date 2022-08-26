@@ -7,8 +7,9 @@
 				<exclude name="sym_old.java"/>
 				<exclude name="util/Log4JUtils.java"/>
 				<exclude name="Yylex.java"/>
+				<exclude name="Compiler.java"/>
 				<exclude name="RuleVisitor.java"/>
-				<exclude name="SemanticPass.java"/>
+				<exclude name="SemanticAnalyzer.java"/>
 				<exclude name="TabE.java"/>
 				<exclude name="DumpSymbolTableVisitorE.java"/>
 				<exclude name="CodeGenerator.java"/>

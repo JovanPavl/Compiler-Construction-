@@ -1,0 +1,112 @@
+INFO  10:45:07,375 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\TestFailNoMain.mj
+INFO  10:45:07,577 - #2 program
+INFO  10:45:07,577 - #49 test301
+INFO  10:45:07,577 - #14 const
+INFO  10:45:07,579 - #49 int
+INFO  10:45:07,579 - #49 nula
+INFO  10:45:07,579 - #6 =
+INFO  10:45:07,580 - #52 0
+INFO  10:45:07,580 - #8 ;
+INFO  10:45:07,586 - #11 {
+INFO  10:45:07,588 - #13 void
+INFO  10:45:07,588 - #49 hoh
+INFO  10:45:07,589 - #9 (
+INFO  10:45:07,590 - #10 )
+INFO  10:45:07,591 - #49 int
+INFO  10:45:07,592 - #49 bodovi
+INFO  10:45:07,592 - #8 ;
+INFO  10:45:07,594 - #11 {
+INFO  10:45:07,595 - #49 bodovi
+INFO  10:45:07,596 - #6 =
+INFO  10:45:07,598 - #49 a
+INFO  10:45:07,604 - #8 ;
+INFO  10:45:07,605 - #12 }
+INFO  10:45:07,605 - #12 }
+INFO  10:45:07,616 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstantDeclaration(
+    EmptyDeclaration(
+    ) [EmptyDeclaration]
+    ConstantDecl(
+      Type(
+       int
+      ) [Type]
+      SimpleConstDecl(
+       nula
+        NumberConstant(
+         0
+        ) [NumberConstant]
+      ) [SimpleConstDecl]
+      LineConstDeclDerived1(
+      ) [LineConstDeclDerived1]
+    ) [ConstantDecl]
+  ) [ConstantDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       hoh
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        EmptyVariableDecl(
+        ) [EmptyVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             int
+            ) [Type]
+           bodovi
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        NoStatement(
+        ) [NoStatement]
+        OneStatementRed(
+          DesignStatement(
+            DesignatorStat(
+              DesignatorFullExpresion(
+               bodovi
+                EmptyMultipleDesignator(
+                ) [EmptyMultipleDesignator]
+              ) [DesignatorFullExpresion]
+              AssignDesignatorOp(
+                AssignOperation(
+                ) [AssignOperation]
+                AddExptOnly(
+                  OneAddExpr(
+                    OneTerm(
+                      DesignatorFactorExpresion(
+                        DesignatorOnly(
+                          DesignatorFullExpresion(
+                           a
+                            EmptyMultipleDesignator(
+                            ) [EmptyMultipleDesignator]
+                          ) [DesignatorFullExpresion]
+                        ) [DesignatorOnly]
+                      ) [DesignatorFactorExpresion]
+                    ) [OneTerm]
+                  ) [OneAddExpr]
+                ) [AddExptOnly]
+              ) [AssignDesignatorOp]
+            ) [DesignatorStat]
+          ) [DesignStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  10:45:07,617 - ===================================
+INFO  10:45:07,622 - Constant: nula with value 0 declared on the line 5
+INFO  10:45:07,623 - Method hoh with type 0 on the line 7
+INFO  10:45:07,623 - Variable: bodovi with type  1 declared  on the line 8
+ERROR 10:45:07,623 - Undeclared identifier a on the line 10

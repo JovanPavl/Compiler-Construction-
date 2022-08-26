@@ -1,0 +1,156 @@
+INFO  11:19:37,251 - Compiling source file: C:\Users\Jovan\Desktop\compilers\materijali\Leksicka_analiza\workspace\leksicka\test\TestFailBadAssigning.mj
+INFO  11:19:37,414 - #2 program
+INFO  11:19:37,414 - #49 test301
+INFO  11:19:37,414 - #14 const
+INFO  11:19:37,416 - #49 int
+INFO  11:19:37,416 - #49 nula
+INFO  11:19:37,416 - #6 =
+INFO  11:19:37,417 - #52 0
+INFO  11:19:37,417 - #8 ;
+INFO  11:19:37,418 - #11 {
+INFO  11:19:37,418 - #13 void
+INFO  11:19:37,418 - #49 main
+INFO  11:19:37,419 - #9 (
+INFO  11:19:37,420 - #10 )
+INFO  11:19:37,420 - #49 int
+INFO  11:19:37,421 - #49 bodovi
+INFO  11:19:37,421 - #8 ;
+INFO  11:19:37,423 - #49 bool
+INFO  11:19:37,424 - #49 tmp
+INFO  11:19:37,424 - #8 ;
+INFO  11:19:37,424 - #11 {
+INFO  11:19:37,428 - #49 tmp
+INFO  11:19:37,430 - #6 =
+INFO  11:19:37,431 - #49 nula
+INFO  11:19:37,433 - #8 ;
+INFO  11:19:37,434 - #12 }
+INFO  11:19:37,434 - #12 }
+INFO  11:19:37,454 - ProgramWithMethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstantDeclaration(
+    EmptyDeclaration(
+    ) [EmptyDeclaration]
+    ConstantDecl(
+      Type(
+       int
+      ) [Type]
+      SimpleConstDecl(
+       nula
+        NumberConstant(
+         0
+        ) [NumberConstant]
+      ) [SimpleConstDecl]
+      LineConstDeclDerived1(
+      ) [LineConstDeclDerived1]
+    ) [ConstantDecl]
+  ) [ConstantDeclaration]
+  OneMethodDeclaration(
+    SingleMethodDeclaration(
+      SingleMethodName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [SingleMethodName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MultipleVariableDecl(
+        MultipleVariableDecl(
+          EmptyVariableDecl(
+          ) [EmptyVariableDecl]
+          VariableDecl(
+            SingleVariableDecl(
+              Type(
+               int
+              ) [Type]
+             bodovi
+              EmptyArrayOperator(
+              ) [EmptyArrayOperator]
+            ) [SingleVariableDecl]
+            EmptyLineVariableDecl(
+            ) [EmptyLineVariableDecl]
+          ) [VariableDecl]
+        ) [MultipleVariableDecl]
+        VariableDecl(
+          SingleVariableDecl(
+            Type(
+             bool
+            ) [Type]
+           tmp
+            EmptyArrayOperator(
+            ) [EmptyArrayOperator]
+          ) [SingleVariableDecl]
+          EmptyLineVariableDecl(
+          ) [EmptyLineVariableDecl]
+        ) [VariableDecl]
+      ) [MultipleVariableDecl]
+      MultipleStatement(
+        NoStatement(
+        ) [NoStatement]
+        OneStatementRed(
+          DesignStatement(
+            DesignatorStat(
+              DesignatorFullExpresion(
+               tmp
+                EmptyMultipleDesignator(
+                ) [EmptyMultipleDesignator]
+              ) [DesignatorFullExpresion]
+              AssignDesignatorOp(
+                AssignOperation(
+                ) [AssignOperation]
+                AddExptOnly(
+                  OneAddExpr(
+                    OneTerm(
+                      DesignatorFactorExpresion(
+                        DesignatorOnly(
+                          DesignatorFullExpresion(
+                           nula
+                            EmptyMultipleDesignator(
+                            ) [EmptyMultipleDesignator]
+                          ) [DesignatorFullExpresion]
+                        ) [DesignatorOnly]
+                      ) [DesignatorFactorExpresion]
+                    ) [OneTerm]
+                  ) [OneAddExpr]
+                ) [AddExptOnly]
+              ) [AssignDesignatorOp]
+            ) [DesignatorStat]
+          ) [DesignStatement]
+        ) [OneStatementRed]
+      ) [MultipleStatement]
+    ) [SingleMethodDeclaration]
+  ) [OneMethodDeclaration]
+) [ProgramWithMethods]
+INFO  11:19:37,454 - ===================================
+INFO  11:19:37,458 - Constant: nula with value 0 declared on the line 5
+INFO  11:19:37,458 - Method main with type 0 on the line 7
+INFO  11:19:37,458 - Variable: bodovi with type  1 declared  on the line 8
+INFO  11:19:37,458 - Variable: tmp with type  5 declared  on the line 9
+ERROR 11:19:37,459 - Left and right side of assign operation are not compatible  on the line 11
+INFO  11:19:37,459 - programWithMethods on the line 3
+INFO  11:19:37,459 - ===================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog test301: notype, 0, 1 
+   Con nula: int, 0, 0 
+   Meth main: notype, 0, 0 
+      Var bodovi: int, 0, 1 
+      Var tmp: bool, 1, 1 
+
+
+
+ERROR 11:19:37,460 - Parsing failed!
